@@ -13,6 +13,10 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 7. [Day 1 practical task cards](day-01-eda/TASK_CARDS.md)
 8. [Day 1 student notebook](day-01-eda/student.ipynb) and [worked notebook](day-01-eda/worked.ipynb)
 
+## Presentations
+
+[Open the Canva presentation index](presentations/README.md). Days 1, 2, 3 and 5 are linked. Day 4 is still pending. The index records remaining review issues and export status.
+
 ## Course map
 
 | Day | Start here | Included |
@@ -25,7 +29,7 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 
 Days 2–5 each include a teaching guide, timed task cards, runnable student/worked notebooks, exercise solutions, answer key with exit questions, and saved numerical results/figures. The [final practical assessment](assessments/FINAL_PRACTICAL.md) includes an [instructor rubric](assessments/FINAL_PRACTICAL_KEY.md).
 
-[Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation. Slide decks remain pending. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
+[Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation. Canva decks for Days 1, 2, 3 and 5 are linked in the presentation index. Day 4, full deck review and downloadable exports remain pending. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
 
 The provisional schedule includes two 15-minute breaks within each five-hour day. Confirm whether the organiser instead requires five contact hours, excluding breaks. Technical level and interpretation mode are not yet confirmed. Advanced coverage requires an agreed scope and instructor rehearsal.
 
