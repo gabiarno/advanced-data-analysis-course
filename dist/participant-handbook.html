@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Participant Handbook</title>
+<style>
+:root {
+  --page: #ffffff; --ink: #14213d; --muted: #5a6478; --rule: #d8dde8;
+  --accent: #0f766e; --accent-soft: #e6f2f1; --code-bg: #f5f7fa;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #12151c; --ink: #e8ecf4; --muted: #9aa5bb; --rule: #2b3444;
+    --accent: #5eead4; --accent-soft: #16302f; --code-bg: #1a1f2a;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #12151c; --ink: #e8ecf4; --muted: #9aa5bb; --rule: #2b3444;
+  --accent: #5eead4; --accent-soft: #16302f; --code-bg: #1a1f2a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--page); color: var(--ink);
+  font: 16px/1.62 Georgia, "Times New Roman", serif;
+  -webkit-text-size-adjust: 100%;
+}
+.sheet { max-width: 44rem; margin: 0 auto; padding: 3rem 16px 6rem; }
+h1, h2, h3, h4 { font-family: "Helvetica Neue", Arial, sans-serif; line-height: 1.25; color: var(--ink); }
+h1 { font-size: 2rem; margin: 3.5rem 0 1.25rem; padding-bottom: .5rem; border-bottom: 3px solid var(--accent); }
+h2 { font-size: 1.35rem; margin: 2.5rem 0 .75rem; }
+h3 { font-size: 1.08rem; margin: 1.75rem 0 .5rem; }
+h4 { font-size: .95rem; margin: 1.25rem 0 .4rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+p { margin: 0 0 .9rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.4rem; }
+li { margin-bottom: .35rem; }
+ul.tasklist { list-style: none; padding-left: .2rem; }
+li.task::before { content: "\2610"; margin-right: .6rem; color: var(--accent); }
+a { color: var(--accent); }
+code {
+  font: .88em/1.5 "SF Mono", Menlo, Consolas, monospace;
+  background: var(--code-bg); padding: .1em .35em; border-radius: 3px;
+}
+pre {
+  background: var(--code-bg); border-left: 3px solid var(--accent);
+  padding: .9rem 1rem; overflow-x: auto; border-radius: 4px; margin: 0 0 1.1rem;
+}
+pre code { background: none; padding: 0; font-size: .85rem; }
+blockquote {
+  margin: 0 0 1.1rem; padding: .85rem 1.1rem;
+  background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 0 4px 4px 0;
+}
+blockquote p:last-child { margin-bottom: 0; }
+table {
+  width: 100%; border-collapse: collapse; margin: 0 0 1.2rem;
+  font-family: "Helvetica Neue", Arial, sans-serif; font-size: .86rem;
+}
+th, td { border: 1px solid var(--rule); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); font-weight: 600; }
+hr.section-break { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+.cover { text-align: center; padding: 4rem 0 3rem; border-bottom: 3px solid var(--accent); }
+.cover h1 { border: 0; font-size: 2.5rem; margin: 0 0 .4rem; }
+.cover .sub { font-size: 1.15rem; color: var(--muted); font-family: "Helvetica Neue", Arial, sans-serif; }
+.cover .meta { margin-top: 2rem; font-size: .9rem; color: var(--muted); font-family: "Helvetica Neue", Arial, sans-serif; }
+.contents { margin: 2.5rem 0; font-family: "Helvetica Neue", Arial, sans-serif; font-size: .92rem; }
+.contents ol { list-style: none; padding: 0; }
+.contents .lvl2 { padding-left: 1.4rem; font-size: .86rem; color: var(--muted); }
+.contents a { text-decoration: none; }
+.contents a:hover { text-decoration: underline; }
+.note { font-size: .85rem; color: var(--muted); font-family: "Helvetica Neue", Arial, sans-serif; }
+
+@media print {
+  :root {
+    --page: #fff; --ink: #14213d; --muted: #555; --rule: #bbb;
+    --accent: #0f766e; --accent-soft: #eef4f3; --code-bg: #f4f4f4;
+  }
+  @page { size: A4; margin: 18mm 16mm; }
+  body { font-size: 10.5pt; }
+  .sheet { max-width: none; padding: 0; }
+  .contents { page-break-after: always; }
+  h1 { page-break-before: always; page-break-after: avoid; }
+  .cover h1 { page-break-before: auto; }
+  h2, h3, h4 { page-break-after: avoid; }
+  table, pre, blockquote { page-break-inside: avoid; }
+  tr { page-break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+  .screen-only { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="cover">
+    <h1>Advanced Data Analysis Techniques</h1>
+    <div class="sub">Participant handbook</div>
+    <div class="meta">
+      Five days &middot; Genoa &middot; English delivery with Arabic interpretation<br>
+      <span class="screen-only">Print this page to PDF, or read it on any device offline.</span>
+    </div>
+  </header>
+  <nav class="contents">
+    <h2>Contents</h2>
+    <ol><li class="lvl1"><a href="#handbook-advanced-data-analysis-techniques">Advanced Data Analysis Techniques</a></li><li class="lvl2"><a href="#handbook-participant-handbook">Participant handbook</a></li><li class="lvl2"><a href="#handbook-how-to-use-this-handbook">How to use this handbook</a></li><li class="lvl2"><a href="#handbook-the-briefing-the-format-you-will-use-all-week">The briefing: the format you will use all week</a></li><li class="lvl2"><a href="#handbook-choosing-a-chart">Choosing a chart</a></li><li class="lvl1"><a href="#handbook-day-1-exploratory-data-analysis">Day 1 — Exploratory data analysis</a></li><li class="lvl2"><a href="#handbook-before-you-start">Before you start</a></li><li class="lvl2"><a href="#handbook-key-ideas">Key ideas</a></li><li class="lvl2"><a href="#handbook-lab-a-can-we-trust-the-raw-table-40-minutes">Lab A — Can we trust the raw table? (40 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-b-make-a-transparent-summary-45-minutes">Lab B — Make a transparent summary (45 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-c-explain-a-result-to-a-manager-50-minutes">Lab C — Explain a result to a manager (50 minutes)</a></li><li class="lvl2"><a href="#handbook-choose-your-capstone-problem">Choose your capstone problem</a></li><li class="lvl2"><a href="#handbook-close-the-day">Close the day</a></li><li class="lvl1"><a href="#handbook-day-2-machine-learning-for-decisions">Day 2 — Machine learning for decisions</a></li><li class="lvl2"><a href="#handbook-before-you-start-2">Before you start</a></li><li class="lvl2"><a href="#handbook-key-ideas-2">Key ideas</a></li><li class="lvl2"><a href="#handbook-lab-a-is-the-prediction-useful-40-minutes">Lab A — Is the prediction useful? (40 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-b-which-mistakes-matter-45-minutes">Lab B — Which mistakes matter? (45 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-c-explore-without-inventing-meaning-50-minutes">Lab C — Explore without inventing meaning (50 minutes)</a></li><li class="lvl2"><a href="#handbook-capstone-check-in">Capstone check-in</a></li><li class="lvl2"><a href="#handbook-close-the-day-2">Close the day</a></li><li class="lvl1"><a href="#handbook-day-3-time-series-and-natural-language">Day 3 — Time series and natural language</a></li><li class="lvl2"><a href="#handbook-before-you-start-3">Before you start</a></li><li class="lvl2"><a href="#handbook-key-ideas-3">Key ideas</a></li><li class="lvl2"><a href="#handbook-lab-a-forecasting-and-baselines-40-minutes">Lab A — Forecasting and baselines (40 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-b-classifying-messages-45-minutes">Lab B — Classifying messages (45 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-c-validate-honestly-50-minutes">Lab C — Validate honestly (50 minutes)</a></li><li class="lvl2"><a href="#handbook-capstone-check-in-2">Capstone check-in</a></li><li class="lvl2"><a href="#handbook-close-the-day-3">Close the day</a></li><li class="lvl1"><a href="#handbook-day-4-bayesian-analysis-and-generative-models">Day 4 — Bayesian analysis and generative models</a></li><li class="lvl2"><a href="#handbook-before-you-start-4">Before you start</a></li><li class="lvl2"><a href="#handbook-key-ideas-4">Key ideas</a></li><li class="lvl2"><a href="#handbook-lab-a-update-a-probability-40-minutes">Lab A — Update a probability (40 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-b-inspect-the-chains-45-minutes">Lab B — Inspect the chains (45 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-c-simulate-and-critique-50-minutes">Lab C — Simulate and critique (50 minutes)</a></li><li class="lvl2"><a href="#handbook-capstone-check-in-3">Capstone check-in</a></li><li class="lvl2"><a href="#handbook-close-the-day-4">Close the day</a></li><li class="lvl1"><a href="#handbook-day-5-big-data-advanced-models-and-capstone">Day 5 — Big data, advanced models and capstone</a></li><li class="lvl2"><a href="#handbook-before-you-start-5">Before you start</a></li><li class="lvl2"><a href="#handbook-key-ideas-5">Key ideas</a></li><li class="lvl2"><a href="#handbook-lab-a-spark-aggregation-and-sql-40-minutes">Lab A — Spark aggregation and SQL (40 minutes)</a></li><li class="lvl2"><a href="#handbook-lab-b-mllib-and-a-baseline-45-minutes">Lab B — MLlib and a baseline (45 minutes)</a></li><li class="lvl2"><a href="#handbook-capstone-50-minutes">Capstone (50 minutes)</a></li><li class="lvl2"><a href="#handbook-final-practical-20-minutes">Final practical (20 minutes)</a></li><li class="lvl2"><a href="#handbook-close-the-course">Close the course</a></li><li class="lvl1"><a href="#capstone-capstone-your-own-problem-across-the-week">Capstone — your own problem, across the week</a></li><li class="lvl2"><a href="#capstone-choose-your-problem-on-day-1">Choose your problem on Day 1</a></li><li class="lvl2"><a href="#capstone-what-you-build-each-day">What you build each day</a></li><li class="lvl2"><a href="#capstone-the-one-page">The one page</a></li><li class="lvl2"><a href="#capstone-presenting">Presenting</a></li><li class="lvl2"><a href="#capstone-how-it-is-assessed">How it is assessed</a></li><li class="lvl1"><a href="#cheatsheet-methods-reference-1-choosing-and-evaluating-a-method">Reference 1 — Choosing and evaluating a method</a></li><li class="lvl2"><a href="#cheatsheet-methods-match-the-question-to-the-method">Match the question to the method</a></li><li class="lvl2"><a href="#cheatsheet-methods-which-metric-and-why">Which metric, and why</a></li><li class="lvl2"><a href="#cheatsheet-methods-the-evaluation-split-chosen-by-how-the-data-arose">The evaluation split, chosen by how the data arose</a></li><li class="lvl2"><a href="#cheatsheet-methods-seven-ways-a-good-result-turns-out-to-be-wrong">Seven ways a good result turns out to be wrong</a></li><li class="lvl2"><a href="#cheatsheet-methods-sentences-worth-memorising">Sentences worth memorising</a></li><li class="lvl2"><a href="#cheatsheet-methods-words-to-avoid-and-what-to-say-instead">Words to avoid, and what to say instead</a></li><li class="lvl1"><a href="#cheatsheet-python-reference-2-python-and-pandas-for-this-course">Reference 2 — Python and pandas for this course</a></li><li class="lvl2"><a href="#cheatsheet-python-getting-started">Getting started</a></li><li class="lvl2"><a href="#cheatsheet-python-looking-at-a-table">Looking at a table</a></li><li class="lvl2"><a href="#cheatsheet-python-selecting-and-filtering">Selecting and filtering</a></li><li class="lvl2"><a href="#cheatsheet-python-data-quality">Data quality</a></li><li class="lvl2"><a href="#cheatsheet-python-creating-and-aggregating">Creating and aggregating</a></li><li class="lvl2"><a href="#cheatsheet-python-dates">Dates</a></li><li class="lvl2"><a href="#cheatsheet-python-charts">Charts</a></li><li class="lvl2"><a href="#cheatsheet-python-modelling-the-standard-shape">Modelling, the standard shape</a></li><li class="lvl2"><a href="#cheatsheet-python-classification">Classification</a></li><li class="lvl2"><a href="#cheatsheet-python-time-series-splitting-correctly">Time series, splitting correctly</a></li><li class="lvl2"><a href="#cheatsheet-python-fixing-the-common-errors">Fixing the common errors</a></li><li class="lvl2"><a href="#cheatsheet-python-two-habits-that-prevent-most-problems">Two habits that prevent most problems</a></li><li class="lvl1"><a href="#glossary-en-ar-reference-3-english-arabic-glossary">Reference 3 — English–Arabic glossary</a></li><li class="lvl2"><a href="#glossary-en-ar-data-and-description">Data and description</a></li><li class="lvl2"><a href="#glossary-en-ar-modelling">Modelling</a></li><li class="lvl2"><a href="#glossary-en-ar-evaluation">Evaluation</a></li><li class="lvl2"><a href="#glossary-en-ar-time-series-and-text">Time series and text</a></li><li class="lvl2"><a href="#glossary-en-ar-bayesian-and-generative">Bayesian and generative</a></li><li class="lvl2"><a href="#glossary-en-ar-scale-and-operations">Scale and operations</a></li><li class="lvl2"><a href="#glossary-en-ar-ambiguities-the-interpreter-should-watch">Ambiguities the interpreter should watch</a></li></ol>
+  </nav>
+  <section id="handbook"><h1 id="handbook-advanced-data-analysis-techniques">Advanced Data Analysis Techniques</h1>
+<h2 id="handbook-participant-handbook">Participant handbook</h2>
+<p>Five days · Genoa · English delivery with Arabic interpretation</p>
+<p>This handbook is yours. Write in it. The blank result tables are part of the course: filling them in while you work is what makes the results yours rather than something you watched.</p>
+<hr class="section-break">
+<h2 id="handbook-how-to-use-this-handbook">How to use this handbook</h2>
+<p>Each day has four parts:</p>
+<ul><li><strong>Before you start</strong> — the question the day answers and what you will be able to do by the end.</li><li><strong>Key ideas</strong> — the concepts, in short form. The full explanation happens in the room; this is what you keep.</li><li><strong>Your labs</strong> — what to do, and a table to record what you found.</li><li><strong>Close the day</strong> — three questions to answer before you leave, and space for what you want to follow up.</li></ul>
+<p>At the back you will find three reference sections you will use after the course ends: the method-selection card, the Python reference, and the English–Arabic glossary.</p>
+<h3 id="handbook-working-in-pairs">Working in pairs</h3>
+<p>You will work with one partner all day, with two roles:</p>
+<ul><li><strong>The driver</strong> types and runs the code.</li><li><strong>The analyst</strong> watches the screen, checks the result is what was expected, and writes the finding down.</li></ul>
+<p><strong>Swap roles every 10–15 minutes.</strong> Both roles matter equally and both are assessed. If you do not write code today, the analyst role is real work, not a consolation — the analyst writes the briefing that the group presents.</p>
+<h3 id="handbook-when-you-are-stuck">When you are stuck</h3>
+<p>Ask for help after five minutes, not after twenty. Five minutes of being stuck is learning; twenty is waste. Use the three signals:</p>
+<ol><li><strong>Ready</strong> — we have finished and have a result.</li><li><strong>Question</strong> — we are working but want to check something.</li><li><strong>Blocked</strong> — we cannot continue.</li></ol>
+<h3 id="handbook-a-note-about-the-data">A note about the data</h3>
+<p>Nearly every dataset in this course is <strong>synthetic</strong>: generated by a published rule, with no real people, customers or organisations in it. This is deliberate. It means every result is reproducible, nothing confidential is involved, and you can take the notebooks home without restriction.</p>
+<p>It also means <strong>no result in this course is evidence about any real market</strong>. Part of what you are practising this week is saying that out loud. That habit is the most transferable thing you will take away.</p>
+<hr class="section-break">
+<h2 id="handbook-the-briefing-the-format-you-will-use-all-week">The briefing: the format you will use all week</h2>
+<p>Every lab ends with you reporting a finding. Use this structure every time. It takes about four minutes to write and it is the format most stakeholders actually want.</p>
+<blockquote><p><strong>Finding.</strong> One sentence. The thing you found, in plain language, with the number in it.</p><p><strong>Evidence.</strong> One or two sentences. What you computed, on what data, compared against what.</p><p><strong>Limitation.</strong> One sentence. The main reason this could be wrong or could not generalise.</p><p><strong>Next step.</strong> One sentence. The specific, concrete thing that would reduce the uncertainty.</p><p><strong>What would change my mind.</strong> One sentence. What result would make you abandon this conclusion?</p></blockquote>
+<p>The last line is uncomfortable the first time. It is also the line that makes a technical person credible in a room of decision-makers, because it proves you are not defending a position.</p>
+<h3 id="handbook-a-worked-example">A worked example</h3>
+<blockquote><p><strong>Finding.</strong> Store orders account for EUR 6,310 of recorded revenue against EUR 3,700 online, but this compares 63 orders with 53, not like with like.</p><p><strong>Evidence.</strong> Sum of units × unit price over 116 priced orders in the cleaned synthetic table, split by channel; three valid orders have unknown prices and are excluded.</p><p><strong>Limitation.</strong> The excluded orders could carry any value, and a channel difference in total revenue says nothing about why — it may reflect order count, order size, or how orders were assigned to channels.</p><p><strong>Next step.</strong> Recover the three missing prices and compare average revenue per order rather than totals.</p><p><strong>What would change my mind.</strong> If average revenue per order is similar across channels, the difference is a volume story and not a channel-performance story.</p></blockquote>
+<h3 id="handbook-the-checklist-before-you-present">The checklist before you present</h3>
+<ul class="tasklist"><li class="task">Does my finding contain a number, and is that number correct?</li><li class="task">Have I said what I compared against? (A number with nothing to compare it to is not a finding.)</li><li class="task">Have I stated one real limitation, not a token one?</li><li class="task">Is my next step something a person could actually do on Monday?</li><li class="task">Have I avoided the words <em>proves</em>, <em>causes</em> and <em>optimal</em>?</li></ul>
+<hr class="section-break">
+<h2 id="handbook-choosing-a-chart">Choosing a chart</h2>
+<p>A chart is an argument. Pick the form that makes your argument legible, then remove everything that does not serve it.</p>
+<table><thead><tr><th>Your question</th><th>Chart to use</th><th>Chart to avoid</th></tr></thead><tbody><tr><td>How does one quantity compare across a few categories?</td><td>Horizontal bar, sorted by value</td><td>Pie chart, 3D anything</td></tr><tr><td>How has one quantity changed over time?</td><td>Line chart, time on the horizontal axis</td><td>Bar chart with many bars</td></tr><tr><td>How are values distributed?</td><td>Histogram, or a box plot to compare groups</td><td>A single mean with no spread</td></tr><tr><td>Do two quantities move together?</td><td>Scatter plot</td><td>Two lines on two different vertical axes</td></tr><tr><td>How does a total break into parts?</td><td>Stacked bar, or a small sorted bar chart</td><td>Pie chart with more than four slices</td></tr><tr><td>What is one headline number?</td><td>The number itself, large, with its qualifier</td><td>A gauge, a dial, a speedometer</td></tr></tbody></table>
+<h3 id="handbook-six-rules-that-fix-most-charts">Six rules that fix most charts</h3>
+<ol><li><strong>Label both axes, with units.</strong> "EUR" and "minutes" are not obvious to your reader.</li><li><strong>Give it a title that states the finding</strong>, not the contents. "Store revenue exceeds online by EUR 2,610" beats "Revenue by channel".</li><li><strong>Sort categorical bars by value</strong>, not alphabetically, unless the order is meaningful (like months).</li><li><strong>Start bar charts at zero.</strong> A truncated bar axis exaggerates the difference. Line charts may be truncated, but say so.</li><li><strong>Say what the data is.</strong> Every chart in this course carries "synthetic data" and, where relevant, "priced orders only". Your charts at work should carry the equivalent.</li><li><strong>Remove the decoration.</strong> Gridlines you do not read, borders, shadows, background fills and a legend for a single series all cost attention and return nothing.</li></ol>
+<h3 id="handbook-three-charts-you-will-be-asked-to-repair-on-day-1">Three charts you will be asked to repair on Day 1</h3>
+<p>Keep these in mind when you see them — the problem in each is fixable in one change.</p>
+<ol><li>A pie chart with nine slices, four of them below 3%.</li><li>A bar chart of revenue whose vertical axis starts at 5,000.</li><li>A line chart of daily demand with no axis labels and a title that reads "Chart 1".</li></ol>
+<hr class="section-break">
+<h1 id="handbook-day-1-exploratory-data-analysis">Day 1 — Exploratory data analysis</h1>
+<h2 id="handbook-before-you-start">Before you start</h2>
+<p><strong>The question:</strong> can I trust this table, and what can I honestly say about it?</p>
+<p><strong>By the end of today you can:</strong> audit a table for quality problems; make and document cleaning decisions; describe a distribution with the right statistic; tell an error from a genuine unusual value; and present a qualified finding.</p>
+<h2 id="handbook-key-ideas">Key ideas</h2>
+<p><strong>Exploratory data analysis</strong> is what you do before modelling: understanding what each row represents, what is recorded, what is missing, and what is wrong. Skipping it does not save time; it moves the cost to later, where it is higher.</p>
+<p><strong>One row, one observation.</strong> Before anything else, say out loud what a single row of your table represents. In today's table, one row is one order — not one customer and not one product.</p>
+<p><strong>Missing is not zero.</strong> A missing price means the price was not recorded. It does not mean the product was free. Replacing missing values with zero invents data and biases every total that follows.</p>
+<p><strong>Duplicate is not always error.</strong> Two identical rows may be a genuine repeat event or an export fault. Which one it is depends on the business rule, not on the data. In this exercise, the rule says duplicates are export errors.</p>
+<p><strong>Mean and median answer different questions.</strong> For the values 10, 12, 13, 15, 100 the mean is 30 and the median is 13. Neither is wrong. The mean answers "what would each get if we shared equally"; the median answers "what is typical". A large value moves the mean and barely moves the median.</p>
+<p><strong>Spread matters as much as centre.</strong> Standard deviation describes spread around the mean. The interquartile range describes the middle half and is less disturbed by extremes.</p>
+<p><strong>An outlier is a flag, not a verdict.</strong> It says <em>investigate this</em>. Today's 80-unit order is a legitimate bulk order and stays in the report. Today's negative quantity is invalid under the stated business rule and is excluded. The difference came from the rule, not from the number.</p>
+<p><strong>Correlation is not cause.</strong> Revenue equals units multiplied by price, so revenue and units are associated by construction. That tells you nothing about what would happen if you changed one.</p>
+<h2 id="handbook-lab-a-can-we-trust-the-raw-table-40-minutes">Lab A — Can we trust the raw table? (40 minutes)</h2>
+<p>Open <code>day-01-eda/student.ipynb</code>. Run the setup section, then:</p>
+<ol><li>Count the rows: <code>len(raw)</code></li><li>Count exact duplicates: <code>raw.duplicated().sum()</code></li><li>Count missing values per column: <code>raw.isna().sum()</code></li><li>Inspect non-positive quantities: <code>raw.loc[raw['units'] &lt;= 0]</code></li><li>Read the data dictionary and decide which records need review.</li></ol>
+<p><strong>Record your audit:</strong></p>
+<table><thead><tr><th>What</th><th>Your count</th></tr></thead><tbody><tr><td>Rows in the raw table</td><td></td></tr><tr><td>Exact duplicate records</td><td></td></tr><tr><td>Missing prices</td><td></td></tr><tr><td>Missing channels</td><td></td></tr><tr><td>Non-positive quantities</td><td></td></tr></tbody></table>
+<p><strong>Check question.</strong> Why is an 80-unit order treated differently from a −2-unit order, when both are unusual?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-b-make-a-transparent-summary-45-minutes">Lab B — Make a transparent summary (45 minutes)</h2>
+<ol><li>Remove exact duplicate records.</li><li>Save the invalid-quantity record separately, then exclude it from valid orders.</li><li>Label missing channels <code>Unknown</code>. Leave missing prices missing.</li><li>Calculate <code>revenue = units * unit_price</code>.</li><li>Compare channel counts and recorded revenue.</li><li>Draw one chart with a title that states the finding, and labelled axes with units.</li></ol>
+<p><strong>Record your results:</strong></p>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Valid orders after cleaning</td><td></td></tr><tr><td>Orders with a known price</td><td></td></tr><tr><td>Recorded revenue (EUR, priced orders only)</td><td></td></tr><tr><td>Revenue, Store</td><td></td></tr><tr><td>Revenue, Online</td><td></td></tr><tr><td>Revenue, Unknown channel</td><td></td></tr></tbody></table>
+<p><strong>Check question.</strong> Why must the report mention the three unknown prices, even though they are only three rows out of 119?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-c-explain-a-result-to-a-manager-50-minutes">Lab C — Explain a result to a manager (50 minutes)</h2>
+<p>Write a briefing on channel performance using the five-line structure at the front of this handbook. Then join another pair and agree one finding between you.</p>
+<p><strong>Your briefing:</strong></p>
+<p>Finding: ______________________________________________________</p>
+<p>Evidence: _____________________________________________________</p>
+<p>Limitation: ___________________________________________________</p>
+<p>Next step: ____________________________________________________</p>
+<p>What would change my mind: ____________________________________</p>
+<p><strong>Extension.</strong> Produce the summary with and without the bulk order, clearly labelling both. Explain why removing a valid order changes the question being answered rather than improving the answer.</p>
+<h2 id="handbook-choose-your-capstone-problem">Choose your capstone problem</h2>
+<p>Before you leave today, write down the problem you will work on across the week. See the capstone brief for options if you do not have one from your own work.</p>
+<p>My capstone problem: __________________________________________</p>
+<p>The decision it would support: ________________________________</p>
+<h2 id="handbook-close-the-day">Close the day</h2>
+<ol><li>Why is a missing value different from a zero?</li><li>When can an unusual observation legitimately stay in the analysis?</li><li>What limits the channel revenue comparison?</li></ol>
+<p><strong>Questions I want answered:</strong> _________________________________</p>
+<hr class="section-break">
+<h1 id="handbook-day-2-machine-learning-for-decisions">Day 2 — Machine learning for decisions</h1>
+<h2 id="handbook-before-you-start-2">Before you start</h2>
+<p><strong>The question:</strong> can I predict something useful, and how would I know if the prediction is any good?</p>
+<p><strong>By the end of today you can:</strong> tell regression, classification and clustering apart; split data correctly before modelling; compare a model against a baseline; read a confusion matrix; explain overfitting and leakage; and say which features the model actually used.</p>
+<h2 id="handbook-key-ideas-2">Key ideas</h2>
+<p><strong>Start with the decision, not the algorithm.</strong> "We want to estimate travel duration before dispatch." Then ask: what information genuinely exists at that moment? Planned distance and planned stops exist. The actual arrival time does not.</p>
+<p><strong>Features and target.</strong> Features (X) are what you know when you predict. The target (y) is what you want to predict. If a feature would not be available at prediction time, it is not a feature.</p>
+<p><strong>Three kinds of task.</strong> Regression predicts a number. Classification predicts a category. Clustering groups similar observations with no target at all. The same operational situation can support all three, depending on the question.</p>
+<p><strong>Split before you do anything else.</strong> Hold out a test set and do not look at it. Use the remaining data for training and for validation. Cross-validation repeatedly splits only the training portion.</p>
+<p><strong>Preprocessing goes inside the pipeline.</strong> If you fill missing values using the whole dataset before splitting, information from the held-out data has leaked into training. Your evaluation is then optimistic and you will not find out until production.</p>
+<p><strong>A baseline is not optional.</strong> "Always predict the training mean" is a real model. If your model does not beat it, you have not shown anything. Today's regression scores about 8.43 minutes MAE against a baseline of 24.34.</p>
+<p><strong>MAE is an average, not a promise.</strong> Errors of 5, 10 and 15 minutes give an MAE of 10 minutes. It does not mean every prediction is within 10 minutes.</p>
+<p><strong>Read the confusion matrix as four costs.</strong> Correctly identified, false alarm, missed event, correctly caught. If a missed delay costs more than a false alarm, accuracy is the wrong thing to look at — look at recall and at the counts.</p>
+<p><strong>Trees, forests and depth.</strong> A tree makes successive decisions on feature values. More depth fits more detail, including noise. A forest averages many randomised trees, which usually helps stability. Neither is guaranteed to win.</p>
+<p><strong>Hyperparameters are chosen on validation data.</strong> Grid search compares candidates on training folds. Its best validation score is a <em>selection</em> statistic and tends to be optimistic. The test set stays sealed.</p>
+<p><strong>Clustering does not discover truth.</strong> Choosing k=3 produces three groups. It does not prove three groups exist. Scale your features first, because distance depends on units.</p>
+<h2 id="handbook-lab-a-is-the-prediction-useful-40-minutes">Lab A — Is the prediction useful? (40 minutes)</h2>
+<p>Open <code>day-02-machine-learning/student.ipynb</code>, sections 1–2. Identify features and target, confirm the 300/100 split, then record:</p>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Baseline MAE (minutes)</td><td></td></tr><tr><td>Model MAE (minutes)</td><td></td></tr><tr><td>Improvement</td><td></td></tr></tbody></table>
+<p><strong>Check question.</strong> Write one sentence explaining the difference to someone who does not know what MAE is — without using the word "average".</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-b-which-mistakes-matter-45-minutes">Lab B — Which mistakes matter? (45 minutes)</h2>
+<p>Run section 3. Find the validation scores, identify which model was selected <em>before</em> testing, then read the confusion matrix with your partner.</p>
+<table><thead><tr><th>What</th><th>Your count</th></tr></thead><tbody><tr><td>Missed delays</td><td></td></tr><tr><td>False alarms</td><td></td></tr><tr><td>Model selected on validation</td><td></td></tr></tbody></table>
+<p><strong>Operational consequence of a missed delay:</strong> _________________</p>
+<p><strong>Operational consequence of a false alarm:</strong> __________________</p>
+<p><strong>Check question.</strong> Why is a higher training score on its own not a reason to choose a model?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-c-explore-without-inventing-meaning-50-minutes">Lab C — Explore without inventing meaning (50 minutes)</h2>
+<p>Run section 4. Record cluster sizes and retained variance, then compare tree depths 1, 3 and 8 on training folds only.</p>
+<table><thead><tr><th>Depth</th><th>Training score</th><th>Validation score</th></tr></thead><tbody><tr><td>1</td><td></td><td></td></tr><tr><td>3</td><td></td><td></td></tr><tr><td>8</td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Cluster sizes (k=3)</td><td></td></tr><tr><td>Variance retained by the first component</td><td></td></tr></tbody></table>
+<p><strong>Extension.</strong> Compare k=2 and k=4. Explain why both partitions require validation against the intended use rather than against each other.</p>
+<h2 id="handbook-capstone-check-in">Capstone check-in</h2>
+<p>Which of today's three task types fits your capstone problem, and what would the target be?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-close-the-day-2">Close the day</h2>
+<ol><li>Why can we not train on all the data?</li><li>What is leakage, and give one example that is not about missing values.</li><li>Your model's accuracy is 92%. What is the first question you ask?</li></ol>
+<p><strong>Questions I want answered:</strong> _________________________________</p>
+<hr class="section-break">
+<h1 id="handbook-day-3-time-series-and-natural-language">Day 3 — Time series and natural language</h1>
+<h2 id="handbook-before-you-start-3">Before you start</h2>
+<p><strong>The question:</strong> how do I forecast something, and how do I handle data that is not in a table at all?</p>
+<p><strong>By the end of today you can:</strong> respect time order in evaluation; identify trend and seasonality; compare a forecast against a seasonal baseline; explain ARIMA's three orders; run a text-classification pipeline; and explain how text and time connect.</p>
+<h2 id="handbook-key-ideas-3">Key ideas</h2>
+<p><strong>Time order changes everything about evaluation.</strong> A random split lets the model learn from the future. Always hold out the <em>last</em> period, never a random sample.</p>
+<p><strong>Check the series before you model it.</strong> Is it regularly spaced? Are there gaps? Did the definition of the measure change halfway through? A missing date usually does not mean zero.</p>
+<p><strong>Trend, seasonality, cycle.</strong> Trend is a sustained direction. Seasonality repeats at a known calendar interval — the series today has a seven-day pattern. A cycle repeats without a fixed period. Decomposition splits observed values into trend plus seasonal plus residual. The residual is what this decomposition did not explain, not proof of randomness.</p>
+<p><strong>Baselines for series are strong.</strong> "Repeat the last value" and "repeat the last seven values" are cheap and frequently beat sophisticated models. Today the weekly baseline scores about 5.53 MAE against 22.11 for a fixed non-seasonal ARIMA. That is the lesson, not an accident.</p>
+<p><strong>ARIMA's three orders.</strong> <em>p</em> uses previous observations, <em>d</em> differences the series to reduce certain non-stationary patterns, <em>q</em> models dependence on previous errors. ARIMA(1,1,1) does not represent weekly seasonality; a seasonal model needs additional specification.</p>
+<p><strong>Forecast intervals are model-based.</strong> The shaded band follows from the model's assumptions. It is not a guarantee about how often reality will fall inside it.</p>
+<p><strong>One test window is weak evidence.</strong> Real evaluation uses rolling origins: forecast from many successive cut points and look at the distribution of errors, not one number.</p>
+<p><strong>Text becomes features.</strong> A text pipeline turns documents into numbers — counting words, weighting them — then applies an ordinary classifier. Fit the vocabulary on the training set only; fitting it on everything is leakage.</p>
+<p><strong>A perfect score on few examples is not a result.</strong> Today's text model may score 100% on eight held-out English messages. That is eight messages, in one language, written by one author.</p>
+<p><strong>Text and time connect.</strong> Messages arrive with timestamps. Message volume is a time series. Category share moves over time. A text-derived signal can become a feature in a forecast — provided it was available before the moment you are forecasting.</p>
+<h2 id="handbook-lab-a-forecasting-and-baselines-40-minutes">Lab A — Forecasting and baselines (40 minutes)</h2>
+<p>Open <code>day-03-time-series-nlp/student.ipynb</code>. Compute baselines, run decomposition and ARIMA on the chronological holdout.</p>
+<table><thead><tr><th>Method</th><th>MAE on the test window</th></tr></thead><tbody><tr><td>Last-value baseline</td><td></td></tr><tr><td>Weekly (seasonal naive) baseline</td><td></td></tr><tr><td>ARIMA(1,1,1)</td><td></td></tr></tbody></table>
+<p><strong>Check question.</strong> ARIMA is the more sophisticated model. Why did it lose?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-b-classifying-messages-45-minutes">Lab B — Classifying messages (45 minutes)</h2>
+<p>Run the text sections. Record the score, then find the messages the model gets wrong.</p>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Training / test messages</td><td></td></tr><tr><td>Test accuracy</td><td></td></tr><tr><td>A message it got wrong, and why</td><td></td></tr></tbody></table>
+<p><strong>Check question.</strong> Your stakeholder sees 100% accuracy. Write the one sentence you must say next.</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-c-validate-honestly-50-minutes">Lab C — Validate honestly (50 minutes)</h2>
+<p>Cut a validation window out of the <em>training</em> data and use it to choose between the forecasting methods, without touching the test set. Then document one text failure case.</p>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Validation window used</td><td></td></tr><tr><td>Method chosen on validation</td><td></td></tr><tr><td>Its score on the sealed test window</td><td></td></tr></tbody></table>
+<p><strong>Extension.</strong> Repeat the forecast from three different cut points. Report the range of errors rather than one number, and say what that range tells you that a single number did not.</p>
+<h2 id="handbook-capstone-check-in-2">Capstone check-in</h2>
+<p>Does your capstone problem have a time dimension, a text dimension, or both? What would you hold out?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-close-the-day-3">Close the day</h2>
+<ol><li>Why can a forecast never be validated on a random sample of dates?</li><li>What does a seasonal-naive baseline do, and why is it hard to beat?</li><li>What is the most important limitation of today's text result?</li></ol>
+<p><strong>Questions I want answered:</strong> _________________________________</p>
+<hr class="section-break">
+<h1 id="handbook-day-4-bayesian-analysis-and-generative-models">Day 4 — Bayesian analysis and generative models</h1>
+<h2 id="handbook-before-you-start-4">Before you start</h2>
+<p><strong>The question:</strong> how do I reason when I am uncertain, and how do I turn uncertainty into a decision?</p>
+<p><strong>By the end of today you can:</strong> update a probability using prior and data; interpret a credible interval correctly; distinguish parameter uncertainty from outcome variability; explain what MCMC does; turn a posterior into a recommendation; and critique synthetic data.</p>
+<h2 id="handbook-key-ideas-4">Key ideas</h2>
+<p><strong>The Bayesian question is different.</strong> Instead of "what is the value?", it asks "what is the distribution of plausible values, given what I believed before and what I have now seen?"</p>
+<p><strong>Prior, likelihood, posterior.</strong> The prior is what you believed before this data. The likelihood says how compatible the data is with each possible value. The posterior is the updated belief: posterior is proportional to likelihood times prior.</p>
+<p><strong>Today's exact example.</strong> Prior Beta(2,18), mean 0.10. Observe 8 defective out of 100. Posterior is Beta(10,110), mean about 0.0833. The posterior mean is not 0.08 because the prior still contributes. More data reduces the prior's relative influence.</p>
+<p><strong>A credible interval is not a confidence interval.</strong> A 95% credible interval contains 95% of the posterior probability <em>under this model and this prior</em>. That is a statement about belief given assumptions, not a guarantee.</p>
+<p><strong>Parameter uncertainty is not outcome variability.</strong> You may be very confident the defect rate is near 8%, and still be unable to predict how many defects appear in the next batch of 50. These are two different questions and they need two different calculations.</p>
+<p><strong>MCMC in three actions.</strong> Propose a nearby value. Compare its posterior density to the current one. Accept it, or stay. Staying is part of the chain, not a missing measurement. Discard an initial warm-up. Run several chains from different starts and check they agree.</p>
+<p><strong>High acceptance is not good on its own.</strong> Tiny proposals get accepted constantly while the chain barely moves. Look at the trace and the autocorrelation, not only the acceptance rate.</p>
+<p><strong>From posterior to decision.</strong> The useful output is rarely the estimate. It is a statement like: "there is a 12% posterior probability that the defect rate exceeds the 10% contractual limit." That number triggers an action; the point estimate does not.</p>
+<p><strong>Synthetic data inherits its source.</strong> Generated data reproduces the patterns of what generated it, including its biases and its errors. Matching a mean is easy; matching a distribution, the tails and the relationships between variables is not. Synthetic data is not automatically anonymous, and generating it does not by itself discharge a privacy obligation.</p>
+<h2 id="handbook-lab-a-update-a-probability-40-minutes">Lab A — Update a probability (40 minutes)</h2>
+<p>Open <code>day-04-bayesian-generative/student.ipynb</code>.</p>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Prior (a, b) and its mean</td><td></td></tr><tr><td>Observations (defective / total)</td><td></td></tr><tr><td>Posterior (a, b) and its mean</td><td></td></tr><tr><td>95% credible interval</td><td></td></tr></tbody></table>
+<p><strong>Then:</strong> compute the posterior probability that the rate exceeds 0.10.</p>
+<p>Probability above the contractual limit: _______________________</p>
+<p>The action this triggers: ______________________________________</p>
+<p><strong>Check question.</strong> You change the prior to Beta(1,1). What happens to the posterior, and why?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-b-inspect-the-chains-45-minutes">Lab B — Inspect the chains (45 minutes)</h2>
+<p>Run four chains and compare them against the exact posterior.</p>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Chain means</td><td></td></tr><tr><td>Acceptance rate</td><td></td></tr><tr><td>Lag-1 autocorrelation</td><td></td></tr><tr><td>Agreement with the exact posterior</td><td></td></tr></tbody></table>
+<p><strong>Check question.</strong> One chain's trace looks like a flat line with occasional jumps. What is wrong?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-c-simulate-and-critique-50-minutes">Lab C — Simulate and critique (50 minutes)</h2>
+<p>Simulate the defect count in a future batch, then generate synthetic service durations and critique them.</p>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Predicted defects in a batch of 50, interval</td><td></td></tr><tr><td>Synthetic mean vs target</td><td></td></tr><tr><td>Synthetic standard deviation vs target</td><td></td></tr></tbody></table>
+<p><strong>Your critique in one sentence:</strong> ______________________________</p>
+<p><strong>Governance question.</strong> You want to share this synthetic dataset with an external supplier. List two things you would check first.</p>
+<ol><li>____________________________________________________________</li><li>____________________________________________________________</li></ol>
+<h2 id="handbook-capstone-check-in-3">Capstone check-in</h2>
+<p>Is there a quantity in your capstone problem you are genuinely uncertain about, where a probability would be more useful than an estimate?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-close-the-day-4">Close the day</h2>
+<ol><li>Explain prior, likelihood and posterior to a colleague in three sentences.</li><li>What does a 95% credible interval actually claim?</li><li>Your generator matched the target mean. Why is that not sufficient?</li></ol>
+<p><strong>Questions I want answered:</strong> _________________________________</p>
+<hr class="section-break">
+<h1 id="handbook-day-5-big-data-advanced-models-and-capstone">Day 5 — Big data, advanced models and capstone</h1>
+<h2 id="handbook-before-you-start-5">Before you start</h2>
+<p><strong>The question:</strong> what changes when the data does not fit on one machine, and what would it take to put any of this into production?</p>
+<p><strong>By the end of today you can:</strong> explain partitioned aggregation; run Spark DataFrame and SQL operations; evaluate a Spark MLlib model against a baseline; distinguish distributed computing from deep learning; explain generator and discriminator roles; and state what production readiness requires.</p>
+<h2 id="handbook-key-ideas-5">Key ideas</h2>
+<p><strong>"Big data" is an engineering constraint, not a row count.</strong> What matters is volume, arrival rate, format, the computation required, and available memory. Small workloads are often faster in pandas. Distribution buys capacity and costs coordination.</p>
+<p><strong>Partitioned aggregation.</strong> Compute partial results on each partition, then combine matching keys. Partition 1 gives A:15, B:20; partition 2 gives C:15, B:3; combined gives A:15, B:23, C:15. That idea is the whole of MapReduce.</p>
+<p><strong>The Hadoop ecosystem has distinct parts.</strong> HDFS is distributed storage. YARN manages resources. MapReduce is a processing framework. Spark is a <em>separate</em> execution engine that can integrate with some of those parts. Keep them distinct — conflating them is the most common error on this topic.</p>
+<p><strong>Spark is lazy.</strong> Transformations such as <code>filter</code> and <code>groupBy</code> build a plan. Actions such as <code>count</code>, <code>show</code> and <code>collect</code> trigger execution. Grouping usually requires a shuffle, which moves data between partitions and is where the time goes.</p>
+<p><strong><code>collect()</code> is dangerous by default.</strong> It pulls every result row into the driver's memory. Safe for a two-row aggregate; unsafe as a habit.</p>
+<p><strong>Spark on your laptop is still your laptop.</strong> Running two local threads demonstrates the API works. It demonstrates nothing about cluster performance.</p>
+<p><strong>Deep learning and distributed computing are separate ideas.</strong> A neural network is a model family. Distribution is how you run computation. You can have either without the other.</p>
+<p><strong>GANs: two models competing.</strong> A generator produces candidate data; a discriminator tries to tell generated from real. Each improves against the other. A toy scalar GAN in a classroom illustrates the mechanism and proves nothing about generating realistic data.</p>
+<p><strong>Production readiness is not "the code runs".</strong> It needs: representative data with clear governance; agreed error costs; a monitored performance metric; a defined retraining trigger; a plan for what happens when the model is wrong; and a named owner. A model nobody monitors is a model quietly degrading.</p>
+<h2 id="handbook-lab-a-spark-aggregation-and-sql-40-minutes">Lab A — Spark aggregation and SQL (40 minutes)</h2>
+<p>Open <code>day-05-big-data/spark_student.ipynb</code>, or use the saved outputs and <code>OFFLINE_ACTIVITY.md</code> if Spark will not start.</p>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Aggregation via the DataFrame API</td><td></td></tr><tr><td>The same aggregation in Spark SQL</td><td></td></tr><tr><td>Do they agree?</td><td></td></tr></tbody></table>
+<p><strong>Check question.</strong> Which operation here required a shuffle, and why?</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-lab-b-mllib-and-a-baseline-45-minutes">Lab B — MLlib and a baseline (45 minutes)</h2>
+<table><thead><tr><th>What</th><th>Your result</th></tr></thead><tbody><tr><td>Test-set size</td><td></td></tr><tr><td>MLlib model MAE</td><td></td></tr><tr><td>Baseline (training mean) MAE</td><td></td></tr></tbody></table>
+<p><strong>Check question.</strong> The split uses id modulo five. Name one situation where that split would be wrong.</p>
+<p>_______________________________________________________________</p>
+<h2 id="handbook-capstone-50-minutes">Capstone (50 minutes)</h2>
+<p>Complete your briefing. It should answer:</p>
+<ol><li><strong>The problem.</strong> What decision does it support, and who makes that decision?</li><li><strong>The method.</strong> Which technique, and why that one?</li><li><strong>The data.</strong> What you would need, where it comes from, and what governance applies.</li><li><strong>The evaluation.</strong> What split, which baseline, which metric, and why that metric matches the cost of being wrong.</li><li><strong>The limitation.</strong> What this could not tell you, even if it worked perfectly.</li><li><strong>The next step.</strong> What you will do in the two weeks after this course.</li></ol>
+<p><strong>Your presentation is three minutes.</strong> Use the five-line briefing format. Lead with the finding.</p>
+<h2 id="handbook-final-practical-20-minutes">Final practical (20 minutes)</h2>
+<p>You will be given a scenario in which a manager makes three false claims about a set of results. Your task is to choose appropriate methods, specify an evaluation, interpret two results, correct the three claims, and propose one next step.</p>
+<h2 id="handbook-close-the-course">Close the course</h2>
+<ol><li>Name the single most common way a good-looking result turns out to be wrong.</li><li>What is the first question you will ask the next time someone shows you a model score?</li><li>What are you going to try first when you get back?</li></ol>
+<p><strong>My first three actions after this course:</strong></p>
+<ol><li>____________________________________________________________</li><li>____________________________________________________________</li><li>____________________________________________________________</li></ol></section><section id="capstone"><h1 id="capstone-capstone-your-own-problem-across-the-week">Capstone — your own problem, across the week</h1>
+<p>The capstone runs through the whole course. It costs no extra timetable: you develop it in the daily reporting slots and present it in the Day 5 capstone session.</p>
+<p>The deliverable is <strong>one page and a three-minute presentation</strong>. It is not a coding exercise. It is the thing you would send to a decision-maker to get a project approved.</p>
+<h2 id="capstone-choose-your-problem-on-day-1">Choose your problem on Day 1</h2>
+<p><strong>Option A — a problem from your own work.</strong> Strongly preferred. Choose something where a decision is currently made on judgement alone, or where you suspect the current method is not evaluated. Do not bring confidential data; bring the <em>problem</em>, described in general terms. No data leaves your laptop, and nothing you describe needs to name a system, customer or figure you cannot share.</p>
+<p><strong>Option B — a supplied scenario.</strong> Pick one if you do not have a suitable problem, or if confidentiality makes Option A awkward.</p>
+<ol><li><strong>Field service.</strong> A maintenance team wants to know which scheduled visits will overrun, so they can warn customers the morning of the visit.</li><li><strong>Demand planning.</strong> A distribution centre wants next week's daily volume per product family, to set shift sizes.</li><li><strong>Support triage.</strong> Incoming written requests need to be routed to one of five teams within minutes of arrival.</li><li><strong>Quality assurance.</strong> An inspection process samples batches; the team wants to know when a batch's defect rate has genuinely moved rather than fluctuated.</li><li><strong>Customer segmentation.</strong> A commercial team wants to know whether their accounts fall into meaningfully different groups, and whether acting on those groups is justified.</li></ol>
+<h2 id="capstone-what-you-build-each-day">What you build each day</h2>
+<table><thead><tr><th>Day</th><th>Add to your capstone</th><th>Where</th></tr></thead><tbody><tr><td>1</td><td>The problem, the decision it supports, and who makes that decision. What data would exist, and what would be missing or unreliable about it.</td><td>Day 1 Lab C slot</td></tr><tr><td>2</td><td>Is this regression, classification or clustering? What is the target? What features would genuinely be available at decision time?</td><td>Day 2 check-in</td></tr><tr><td>3</td><td>Does it have a time or text dimension? What would you hold out, and why that split?</td><td>Day 3 check-in</td></tr><tr><td>4</td><td>Where is the genuine uncertainty, and would a probability be more useful than a point estimate?</td><td>Day 4 check-in</td></tr><tr><td>5</td><td>Baseline, metric, limitation, next step. Then present.</td><td>Day 5 capstone session</td></tr></tbody></table>
+<h2 id="capstone-the-one-page">The one page</h2>
+<p>Six headings. One short paragraph each. Total about 400 words.</p>
+<p><strong>1. The decision.</strong> What decision does this support, who makes it, how often, and how is it made today?</p>
+<p><strong>2. The method.</strong> Which technique, and why that one rather than the obvious alternative?</p>
+<p><strong>3. The data.</strong> What you would need, where it would come from, what governance or privacy constraints apply, and what is likely to be missing or wrong.</p>
+<p><strong>4. The evaluation.</strong> Which split, which baseline, which metric — and why that metric matches the cost of being wrong. State what each type of error costs.</p>
+<p><strong>5. The limitation.</strong> What this could not tell you <em>even if it worked perfectly</em>. Not a hedge; a real boundary.</p>
+<p><strong>6. The next step.</strong> What you will actually do in the two weeks after this course.</p>
+<h2 id="capstone-presenting">Presenting</h2>
+<p>Three minutes, plus interpretation. Use the five-line briefing format from the front of the handbook. Lead with the decision, not the method — your audience cares what changes, not which library you used.</p>
+<h2 id="capstone-how-it-is-assessed">How it is assessed</h2>
+<p>Formative, discussed rather than scored. What a strong capstone shows:</p>
+<table><thead><tr><th>Element</th><th>What good looks like</th></tr></thead><tbody><tr><td>Problem framing</td><td>A real decision, with a named decision-maker and a current alternative</td></tr><tr><td>Method fit</td><td>The method matches the question; the alternative was considered and rejected for a reason</td></tr><tr><td>Data realism</td><td>Acknowledges what will be missing, late, wrong or ungoverned</td></tr><tr><td>Evaluation design</td><td>Split matches how the data arises; baseline is named; metric matches error costs</td></tr><tr><td>Limitation</td><td>A genuine boundary, stated without being asked</td></tr><tr><td>Next step</td><td>Something a person could start on Monday</td></tr></tbody></table>
+<p>The most common weakness is a next step that is really a wish ("get better data"). Make it specific: <em>who</em> asks <em>whom</em> for <em>what</em>, by <em>when</em>.</p></section><section id="cheatsheet-methods"><h1 id="cheatsheet-methods-reference-1-choosing-and-evaluating-a-method">Reference 1 — Choosing and evaluating a method</h1>
+<p>The card to keep on your desk. Read across: the question you have, the method that fits, how you evaluate it, and the mistake that most often invalidates it.</p>
+<h2 id="cheatsheet-methods-match-the-question-to-the-method">Match the question to the method</h2>
+<table><thead><tr><th>Your question</th><th>Method</th><th>Output</th><th>Evaluate with</th><th>Baseline to beat</th><th>The usual mistake</th></tr></thead><tbody><tr><td>How much / how many?</td><td>Regression</td><td>A number</td><td>MAE or RMSE on held-out data</td><td>Predict the training mean</td><td>Reporting the metric without the baseline</td></tr><tr><td>Which category?</td><td>Classification</td><td>A label, or a probability</td><td>Precision, recall, confusion matrix</td><td>Predict the most common class</td><td>Using accuracy when classes are imbalanced</td></tr><tr><td>Which of these are similar?</td><td>Clustering</td><td>Group assignments</td><td>Stability, and fitness for the intended use</td><td>A sensible manual segmentation</td><td>Treating the clusters as discovered truth</td></tr><tr><td>Too many columns to work with</td><td>PCA / dimensionality reduction</td><td>Fewer derived columns</td><td>Variance retained</td><td>Keeping the original columns</td><td>Reading retained variance as accuracy</td></tr><tr><td>What happens next, in time?</td><td>Time-series forecast</td><td>Future values, with an interval</td><td>MAE on a <em>chronological</em> holdout, ideally rolling</td><td>Repeat last value; repeat last season</td><td>Random train/test split</td></tr><tr><td>What is this text about?</td><td>Text classification</td><td>A label</td><td>Precision and recall on held-out documents</td><td>Most common class</td><td>Fitting the vocabulary before splitting</td></tr><tr><td>How likely is it, given what I knew?</td><td>Bayesian inference</td><td>A posterior distribution</td><td>Posterior predictive checks</td><td>The prior alone</td><td>Reading a credible interval as a guarantee</td></tr><tr><td>I need data I cannot share</td><td>Generative / synthetic data</td><td>Artificial records</td><td>Compare distributions, not just means</td><td>The real data's summary statistics</td><td>Assuming synthetic implies anonymous</td></tr><tr><td>It does not fit in memory</td><td>Distributed processing (Spark)</td><td>The same answer, at scale</td><td>Correctness against a small-sample check</td><td>Doing it in pandas</td><td>Believing a local run proves scalability</td></tr></tbody></table>
+<h2 id="cheatsheet-methods-which-metric-and-why">Which metric, and why</h2>
+<table><thead><tr><th>Metric</th><th>Says</th><th>Use it when</th><th>Careful</th></tr></thead><tbody><tr><td>MAE</td><td>Average size of the error, in the target's units</td><td>Errors cost roughly in proportion to their size</td><td>Averages hide the worst cases</td></tr><tr><td>RMSE</td><td>Like MAE but punishes large errors more</td><td>One big error is much worse than several small</td><td>Not in the target's units in an intuitive way</td></tr><tr><td>Accuracy</td><td>Fraction of predictions that were right</td><td>Classes are balanced and errors cost the same</td><td>Useless at 95% when 95% of cases are one class</td></tr><tr><td>Precision</td><td>Of the cases we flagged, how many were real</td><td>False alarms are expensive</td><td>Says nothing about what you missed</td></tr><tr><td>Recall</td><td>Of the real cases, how many we caught</td><td>Missing a case is expensive</td><td>Trivially 100% if you flag everything</td></tr><tr><td>F1</td><td>A balance of precision and recall</td><td>You need one number and costs are symmetric</td><td>Hides an asymmetric cost structure</td></tr><tr><td>Variance retained (PCA)</td><td>How much variation the kept components represent</td><td>Deciding how many components</td><td>Not a measure of predictive performance</td></tr></tbody></table>
+<h2 id="cheatsheet-methods-the-evaluation-split-chosen-by-how-the-data-arose">The evaluation split, chosen by how the data arose</h2>
+<table><thead><tr><th>If your data is...</th><th>Split by</th><th>Because</th></tr></thead><tbody><tr><td>Independent cases, no order</td><td>Random</td><td>Nothing links the rows</td></tr><tr><td>Ordered in time</td><td>Time — hold out the <em>latest</em> period</td><td>You will never have future data at prediction time</td></tr><tr><td>Repeated per customer, patient, site</td><td>Group — all of one entity on one side</td><td>Otherwise the model recognises the entity, not the pattern</td></tr><tr><td>Strongly imbalanced classes</td><td>Stratified random</td><td>To keep rare cases in both halves</td></tr><tr><td>Text</td><td>Random by document, vocabulary fitted on the training side only</td><td>Vocabulary built on everything leaks</td></tr></tbody></table>
+<h2 id="cheatsheet-methods-seven-ways-a-good-result-turns-out-to-be-wrong">Seven ways a good result turns out to be wrong</h2>
+<ol><li><strong>Leakage.</strong> A feature encodes the answer, or preprocessing saw the held-out data. <em>Test:</em> would this value genuinely be available at the moment of prediction?</li><li><strong>Contaminated test set.</strong> You tuned, looked at the test score, tuned again. <em>Test:</em> how many times have you looked at that number?</li><li><strong>Wrong split.</strong> Random split on ordered or grouped data. <em>Test:</em> how did these rows arise?</li><li><strong>No baseline.</strong> An impressive-sounding score that a trivial rule matches. <em>Test:</em> what does "always guess the mean" score?</li><li><strong>Unrepresentative data.</strong> The evaluation set does not resemble deployment. <em>Test:</em> who and what is missing from this data?</li><li><strong>Too few examples.</strong> 100% on eight cases. <em>Test:</em> how many held-out cases, really?</li><li><strong>Metric does not match the cost.</strong> Optimising accuracy when a missed case costs 50 times a false alarm. <em>Test:</em> what does each type of error cost?</li></ol>
+<h2 id="cheatsheet-methods-sentences-worth-memorising">Sentences worth memorising</h2>
+<ul><li>"What is the baseline?"</li><li>"How was the data split, and why that way?"</li><li>"How many examples are in the test set?"</li><li>"How many times has that test set been looked at?"</li><li>"What would this <em>not</em> tell us, even if it worked perfectly?"</li><li>"Who is missing from this data?"</li></ul>
+<h2 id="cheatsheet-methods-words-to-avoid-and-what-to-say-instead">Words to avoid, and what to say instead</h2>
+<table><thead><tr><th>Instead of</th><th>Say</th></tr></thead><tbody><tr><td>This proves</td><td>This is consistent with</td></tr><tr><td>X causes Y</td><td>X and Y are associated; the data cannot separate cause here</td></tr><tr><td>The model is 94% accurate</td><td>The model caught 41 of 46 delays and raised 8 false alarms on held-out data</td></tr><tr><td>The optimal model</td><td>The best of the four candidates we compared on validation data</td></tr><tr><td>The data shows</td><td>This sample shows, with these caveats</td></tr></tbody></table></section><section id="cheatsheet-python"><h1 id="cheatsheet-python-reference-2-python-and-pandas-for-this-course">Reference 2 — Python and pandas for this course</h1>
+<p>Everything here appears in the course notebooks. Copy from this page freely.</p>
+<h2 id="cheatsheet-python-getting-started">Getting started</h2>
+<pre><code>import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('datasets/retail_orders.csv')</code></pre>
+<p>If <code>read_csv</code> cannot find the file, you opened Jupyter from the wrong folder. Open it from the repository root.</p>
+<h2 id="cheatsheet-python-looking-at-a-table">Looking at a table</h2>
+<pre><code>df.head()             # first five rows
+df.shape              # (rows, columns)
+df.info()             # column names, types, non-null counts
+df.describe()         # numeric summary
+df.columns            # column names
+df['channel'].unique()          # distinct values
+df['channel'].value_counts()    # counts per value</code></pre>
+<h2 id="cheatsheet-python-selecting-and-filtering">Selecting and filtering</h2>
+<pre><code>df['units']                      # one column
+df[['units', 'unit_price']]      # several columns
+df.loc[df['units'] &gt; 10]         # rows matching a condition
+df.loc[df['units'] &gt; 10, 'unit_price']       # condition plus column
+df.loc[(df['units'] &gt; 10) &amp; (df['channel'] == 'Store')]   # two conditions</code></pre>
+<p>Use <code>&amp;</code> for and, <code>|</code> for or, and put each condition in its own brackets. Python's <code>and</code> / <code>or</code> do not work on columns.</p>
+<h2 id="cheatsheet-python-data-quality">Data quality</h2>
+<pre><code>df.duplicated().sum()            # count exact duplicate rows
+df.drop_duplicates()             # remove them
+df.isna().sum()                  # missing values per column
+df.dropna(subset=['unit_price']) # drop rows missing a price
+df['channel'].fillna('Unknown')  # label missing categories</code></pre>
+<p>Do not fill missing numbers with zero unless zero is genuinely the right value.</p>
+<h2 id="cheatsheet-python-creating-and-aggregating">Creating and aggregating</h2>
+<pre><code>df['revenue'] = df['units'] * df['unit_price']
+
+df['revenue'].sum()
+df['revenue'].mean()
+df['revenue'].median()
+df['revenue'].std()
+df['revenue'].quantile([0.25, 0.75])
+
+df.groupby('channel')['revenue'].sum()
+df.groupby('channel').agg(orders=('order_id', 'count'),
+                          revenue=('revenue', 'sum'))</code></pre>
+<p>Sums and means skip missing values silently. That is why you report how many rows contributed.</p>
+<h2 id="cheatsheet-python-dates">Dates</h2>
+<pre><code>df['date'] = pd.to_datetime(df['date'])
+df = df.sort_values('date')
+df.set_index('date').resample('D')['units'].sum()   # daily totals</code></pre>
+<h2 id="cheatsheet-python-charts">Charts</h2>
+<pre><code>fig, ax = plt.subplots(figsize=(8, 4))
+ax.bar(totals.index, totals.values)
+ax.set_title('Store revenue exceeds online by EUR 2,610 (synthetic data)')
+ax.set_xlabel('Channel')
+ax.set_ylabel('Recorded revenue (EUR, priced orders only)')
+plt.tight_layout()</code></pre>
+<p>A chart without labelled axes and a stated finding is not finished.</p>
+<h2 id="cheatsheet-python-modelling-the-standard-shape">Modelling, the standard shape</h2>
+<pre><code>from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error
+
+X = df[['distance_km', 'planned_stops']]
+y = df['duration_min']
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.25, random_state=42)
+
+model = Pipeline([
+    ('impute', SimpleImputer(strategy='median')),
+    ('fit', LinearRegression()),
+])
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+mean_absolute_error(y_test, predictions)</code></pre>
+<p>Put every preprocessing step inside the <code>Pipeline</code>. That is what stops the held-out data influencing training.</p>
+<pre><code>baseline = np.full_like(y_test, y_train.mean(), dtype=float)
+mean_absolute_error(y_test, baseline)     # always compute this</code></pre>
+<h2 id="cheatsheet-python-classification">Classification</h2>
+<pre><code>from sklearn.metrics import confusion_matrix, classification_report
+
+confusion_matrix(y_test, predictions)     # rows actual, columns predicted
+print(classification_report(y_test, predictions))</code></pre>
+<p>Reading the matrix, with classes ordered [0, 1]:</p>
+<table><thead><tr><th></th><th>Predicted 0</th><th>Predicted 1</th></tr></thead><tbody><tr><td><strong>Actual 0</strong></td><td>correct negative</td><td>false alarm</td></tr><tr><td><strong>Actual 1</strong></td><td>missed event</td><td>correct positive</td></tr></tbody></table>
+<h2 id="cheatsheet-python-time-series-splitting-correctly">Time series, splitting correctly</h2>
+<pre><code>train = series.iloc[:-28]        # everything except the last 28 days
+test  = series.iloc[-28:]        # the last 28 days
+
+last_value = np.repeat(train.iloc[-1], len(test))          # naive baseline
+weekly     = np.tile(train.iloc[-7:].values, 4)[:len(test)]  # seasonal naive</code></pre>
+<p>Never use <code>train_test_split</code> on a time series.</p>
+<h2 id="cheatsheet-python-fixing-the-common-errors">Fixing the common errors</h2>
+<table><thead><tr><th>Message</th><th>What it means</th><th>Fix</th></tr></thead><tbody><tr><td><code>ModuleNotFoundError</code></td><td>The package is not in this kernel's environment</td><td>Install requirements into the environment the kernel uses</td></tr><tr><td><code>FileNotFoundError</code></td><td>Wrong working directory</td><td>Start Jupyter from the repository root</td></tr><tr><td><code>NameError: 'df' is not defined</code></td><td>You skipped a cell, or restarted the kernel</td><td>Restart the kernel and run all cells in order</td></tr><tr><td><code>KeyError: 'revenue'</code></td><td>The column does not exist yet, or is misspelled</td><td>Check <code>df.columns</code></td></tr><tr><td><code>SettingWithCopyWarning</code></td><td>You are editing a slice of another frame</td><td>Use <code>.copy()</code> when you create the subset</td></tr><tr><td><code>ValueError: could not convert string to float</code></td><td>A numeric column contains text</td><td>Inspect with <code>df['col'].unique()</code></td></tr><tr><td>Chart does not appear</td><td>An earlier cell raised an exception</td><td>Scroll up and fix the first error, not the last</td></tr></tbody></table>
+<h2 id="cheatsheet-python-two-habits-that-prevent-most-problems">Two habits that prevent most problems</h2>
+<ol><li><strong>Restart the kernel and run all cells</strong> before you trust a result. Notebooks keep old variables alive; a result that only works in your current session is not reproducible.</li><li><strong>Print the shape after every filter.</strong> <code>print(df.shape)</code> costs nothing and catches the moment you silently dropped half your data.</li></ol></section><section id="glossary-en-ar"><h1 id="glossary-en-ar-reference-3-english-arabic-glossary">Reference 3 — English–Arabic glossary</h1>
+<p><strong>Draft for interpreter validation.</strong> The Arabic column is a starting proposal, not an approved translation. Review it with the interpreter before Day 1 and correct anything they disagree with — their judgement takes precedence over this table in every case. Once agreed, the terms must be used consistently for all five days; switching terms mid-course is the fastest way to lose a bilingual audience.</p>
+<p><strong>Code stays in English.</strong> Function names, variable names, file paths and library names (<code>pandas</code>, <code>fit</code>, <code>predict</code>, <code>df</code>, <code>.ipynb</code>) are never translated. They are read aloud in English.</p>
+<h2 id="glossary-en-ar-data-and-description">Data and description</h2>
+<table><thead><tr><th>English</th><th>Plain-English meaning</th><th>العربية</th></tr></thead><tbody><tr><td>Dataset</td><td>A collection of observations</td><td>مجموعة بيانات</td></tr><tr><td>Row / observation</td><td>One recorded case</td><td>صف / مُشاهَدة</td></tr><tr><td>Column / variable</td><td>One recorded property</td><td>عمود / متغيّر</td></tr><tr><td>Missing value</td><td>Not recorded; not the same as zero</td><td>قيمة مفقودة</td></tr><tr><td>Duplicate record</td><td>A repeated row; whether it is an error depends on the rule</td><td>سجل مكرّر</td></tr><tr><td>Sample</td><td>The observations we actually have</td><td>عيّنة</td></tr><tr><td>Population</td><td>The wider set we want to describe</td><td>مجتمع الدراسة</td></tr><tr><td>Mean</td><td>Sum divided by count</td><td>المتوسط الحسابي</td></tr><tr><td>Median</td><td>The middle value after sorting</td><td>الوسيط</td></tr><tr><td>Standard deviation</td><td>Spread around the mean</td><td>الانحراف المعياري</td></tr><tr><td>Interquartile range</td><td>The range of the middle half</td><td>المدى الربيعي</td></tr><tr><td>Outlier</td><td>An unusually distant value; not necessarily an error</td><td>قيمة شاذّة</td></tr><tr><td>Correlation</td><td>Association between two quantities</td><td>الارتباط</td></tr><tr><td>Causation</td><td>One thing producing another</td><td>السببية</td></tr><tr><td>Distribution</td><td>How values are spread across their range</td><td>التوزيع</td></tr><tr><td>Probability</td><td>A number between 0 and 1 expressing how likely</td><td>الاحتمال</td></tr><tr><td>Uncertainty</td><td>What we do not know about a quantity</td><td>عدم اليقين</td></tr><tr><td>Bias</td><td>A systematic error in one direction</td><td>التحيّز</td></tr><tr><td>Synthetic data</td><td>Artificially generated observations</td><td>بيانات اصطناعية</td></tr></tbody></table>
+<h2 id="glossary-en-ar-modelling">Modelling</h2>
+<table><thead><tr><th>English</th><th>Plain-English meaning</th><th>العربية</th></tr></thead><tbody><tr><td>Model</td><td>A rule fitted from data to produce an output</td><td>نموذج</td></tr><tr><td>Feature</td><td>An input the model uses</td><td>سمة / متغيّر مُدخَل</td></tr><tr><td>Target</td><td>The outcome the model predicts</td><td>المتغيّر الهدف</td></tr><tr><td>Training</td><td>Estimating a model from examples</td><td>التدريب</td></tr><tr><td>Prediction</td><td>Applying the fitted model to a new input</td><td>التنبؤ</td></tr><tr><td>Training set</td><td>Examples used to fit the model</td><td>مجموعة التدريب</td></tr><tr><td>Validation set</td><td>Examples used to choose between models</td><td>مجموعة التحقّق</td></tr><tr><td>Test set</td><td>Held-out examples used once, for final evaluation</td><td>مجموعة الاختبار</td></tr><tr><td>Baseline</td><td>A simple reference method to compare against</td><td>النموذج المرجعي</td></tr><tr><td>Overfitting</td><td>Learning patterns that do not generalise</td><td>الإفراط في الملاءمة</td></tr><tr><td>Underfitting</td><td>The model is too simple to capture the pattern</td><td>قصور الملاءمة</td></tr><tr><td>Data leakage</td><td>Using information that would not really be available</td><td>تسرّب البيانات</td></tr><tr><td>Cross-validation</td><td>Repeated fitting and checking within the training data</td><td>التحقّق المتقاطع</td></tr><tr><td>Hyperparameter</td><td>A setting chosen outside the fitting</td><td>معلَمة فائقة</td></tr><tr><td>Pipeline</td><td>Preprocessing and model bound into one object</td><td>خط المعالجة</td></tr><tr><td>Regression</td><td>Predicting a number</td><td>الانحدار</td></tr><tr><td>Classification</td><td>Predicting a category</td><td>التصنيف</td></tr><tr><td>Clustering</td><td>Grouping similar observations, with no target</td><td>التجميع العنقودي</td></tr><tr><td>Decision tree</td><td>Successive decisions on feature values</td><td>شجرة القرار</td></tr><tr><td>Random forest</td><td>An average of many randomised trees</td><td>الغابة العشوائية</td></tr><tr><td>Dimensionality reduction</td><td>Representing data with fewer derived columns</td><td>تخفيض الأبعاد</td></tr><tr><td>PCA</td><td>Principal component analysis</td><td>تحليل المكوّنات الرئيسية</td></tr></tbody></table>
+<h2 id="glossary-en-ar-evaluation">Evaluation</h2>
+<table><thead><tr><th>English</th><th>Plain-English meaning</th><th>العربية</th></tr></thead><tbody><tr><td>Confusion matrix</td><td>A table of correct and incorrect predictions by class</td><td>مصفوفة الالتباس</td></tr><tr><td>Accuracy</td><td>Fraction of all predictions that were correct</td><td>الدقة الإجمالية</td></tr><tr><td>Precision</td><td>Of the cases flagged, how many were real</td><td>الإحكام</td></tr><tr><td>Recall</td><td>Of the real cases, how many were caught</td><td>الاستدعاء</td></tr><tr><td>False alarm (false positive)</td><td>Flagged, but it was not real</td><td>إنذار كاذب</td></tr><tr><td>Missed case (false negative)</td><td>Real, but not flagged</td><td>حالة فائتة</td></tr><tr><td>MAE</td><td>Mean absolute error, in the target's units</td><td>متوسط الخطأ المطلق</td></tr><tr><td>RMSE</td><td>Root mean squared error; punishes large errors more</td><td>الجذر التربيعي لمتوسط مربّع الخطأ</td></tr></tbody></table>
+<h2 id="glossary-en-ar-time-series-and-text">Time series and text</h2>
+<table><thead><tr><th>English</th><th>Plain-English meaning</th><th>العربية</th></tr></thead><tbody><tr><td>Time series</td><td>Observations indexed in time order</td><td>سلسلة زمنية</td></tr><tr><td>Trend</td><td>A sustained direction over time</td><td>الاتجاه العام</td></tr><tr><td>Seasonality</td><td>A repeating pattern at a known period</td><td>الموسمية</td></tr><tr><td>Cycle</td><td>A repeating pattern without a fixed period</td><td>الدورة</td></tr><tr><td>Decomposition</td><td>Splitting a series into trend, season and residual</td><td>التفكيك</td></tr><tr><td>Residual</td><td>What the decomposition or model did not explain</td><td>البواقي</td></tr><tr><td>Forecast</td><td>A predicted future value</td><td>التنبؤ المستقبلي</td></tr><tr><td>Backtesting</td><td>Testing a forecast from many past cut points</td><td>الاختبار الرجعي</td></tr><tr><td>ARIMA</td><td>Autoregressive integrated moving average</td><td>نموذج أريما</td></tr><tr><td>Stationarity</td><td>Statistical properties that do not change over time</td><td>الاستقرارية</td></tr><tr><td>NLP</td><td>Natural language processing</td><td>معالجة اللغات الطبيعية</td></tr><tr><td>Text classification</td><td>Assigning a category to a document</td><td>تصنيف النصوص</td></tr><tr><td>Vocabulary</td><td>The set of terms the model represents</td><td>المفردات</td></tr><tr><td>Embedding</td><td>A numeric vector representing meaning</td><td>تضمين متّجهي</td></tr><tr><td>Large language model</td><td>A large model trained to process and produce text</td><td>نموذج لغوي كبير</td></tr></tbody></table>
+<h2 id="glossary-en-ar-bayesian-and-generative">Bayesian and generative</h2>
+<table><thead><tr><th>English</th><th>Plain-English meaning</th><th>العربية</th></tr></thead><tbody><tr><td>Prior</td><td>The distribution believed before this data</td><td>التوزيع القَبْلي</td></tr><tr><td>Likelihood</td><td>How compatible the data is with each possible value</td><td>دالة الإمكان</td></tr><tr><td>Posterior</td><td>The updated distribution after the data</td><td>التوزيع البَعْدي</td></tr><tr><td>Credible interval</td><td>An interval holding a stated posterior probability</td><td>الفترة المصداقية</td></tr><tr><td>MCMC</td><td>Markov chain Monte Carlo sampling</td><td>سلاسل ماركوف مونت كارلو</td></tr><tr><td>Chain</td><td>One sequence of sampled values</td><td>السلسلة</td></tr><tr><td>Warm-up / burn-in</td><td>Early draws discarded before the chain settles</td><td>فترة الإحماء</td></tr><tr><td>Autocorrelation</td><td>How much consecutive draws resemble each other</td><td>الارتباط الذاتي</td></tr><tr><td>Generative model</td><td>A model that produces new data resembling its source</td><td>نموذج توليدي</td></tr><tr><td>GAN</td><td>Generative adversarial network</td><td>الشبكات التوليدية التنافسية</td></tr><tr><td>Generator</td><td>Produces candidate data</td><td>المولِّد</td></tr><tr><td>Discriminator</td><td>Tries to distinguish generated from real</td><td>المميِّز</td></tr></tbody></table>
+<h2 id="glossary-en-ar-scale-and-operations">Scale and operations</h2>
+<table><thead><tr><th>English</th><th>Plain-English meaning</th><th>العربية</th></tr></thead><tbody><tr><td>Big data</td><td>Data whose size or rate exceeds one machine's capacity</td><td>البيانات الضخمة</td></tr><tr><td>Distributed computing</td><td>Processing across several machines or cores</td><td>الحوسبة الموزّعة</td></tr><tr><td>Partition</td><td>One slice of the data processed independently</td><td>تجزئة</td></tr><tr><td>MapReduce</td><td>Compute partial results, then combine by key</td><td>ماب-ريديوس</td></tr><tr><td>Shuffle</td><td>Moving data between partitions to group matching keys</td><td>إعادة توزيع البيانات</td></tr><tr><td>Cluster (computing)</td><td>Several machines working as one system</td><td>عنقود حاسوبي</td></tr><tr><td>Neural network</td><td>A model of connected layers of simple units</td><td>الشبكة العصبية</td></tr><tr><td>Deep learning</td><td>Neural networks with many layers</td><td>التعلّم العميق</td></tr><tr><td>Drift</td><td>The data or relationship changing after deployment</td><td>الانجراف</td></tr><tr><td>Monitoring</td><td>Continuously checking a deployed model's behaviour</td><td>المراقبة</td></tr></tbody></table>
+<h2 id="glossary-en-ar-ambiguities-the-interpreter-should-watch">Ambiguities the interpreter should watch</h2>
+<p>These cause real confusion in bilingual technical delivery. Agree a handling for each before Day 1.</p>
+<ol><li><strong>Precision and accuracy.</strong> Both are commonly rendered as الدقة. They are different measures and Day 2 contrasts them directly. Agree two distinct terms, or keep the English words and define them once.</li><li><strong>Cluster.</strong> Day 2 means a group of similar observations; Day 5 means a group of machines. Different words are needed.</li><li><strong>Model.</strong> A statistical model, not a business model and not a model of behaviour.</li><li><strong>Training.</strong> Training a model, not training people — in a training course, this collides constantly.</li><li><strong>Sample.</strong> A statistical sample, not a product sample.</li><li><strong>Row.</strong> A row of a table, not a row of seats in the classroom.</li><li><strong>Significant.</strong> Avoid entirely unless discussing statistical significance, which this course does not.</li><li><strong>Validation.</strong> Choosing between models, distinct from final testing and from data validation in the quality sense.</li></ol>
+<p>Spell out <strong>NLP</strong>, <strong>MAE</strong>, <strong>MCMC</strong>, <strong>PCA</strong>, <strong>GAN</strong> and <strong>ARIMA</strong> in full the first time each is used on each day.</p></section>
+</div>
+</body>
+</html>
