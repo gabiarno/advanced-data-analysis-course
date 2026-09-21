@@ -1,0 +1,3 @@
+# Optional tooling for producing the participant handbook and slide decks.
+# The handbook builder needs nothing beyond the Python standard library.
+python-pptx==1.0.2

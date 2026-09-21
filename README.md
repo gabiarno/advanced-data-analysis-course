@@ -4,14 +4,29 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 
 ## Start here
 
-1. [Course guide and material status](COURSE_GUIDE.md)
-2. [Seven-day instructor preparation plan](instructor/PREPARATION_PLAN.md)
-3. [Classroom and interpreter guidance](instructor/CLASSROOM_AND_INTERPRETER.md)
-4. [Environment setup](SETUP.md)
-5. [Your first model](instructor/first_model.ipynb)
-6. [Day 1 teaching guide](day-01-eda/TEACHING_GUIDE.md)
-7. [Day 1 practical task cards](day-01-eda/TASK_CARDS.md)
-8. [Day 1 student notebook](day-01-eda/student.ipynb) and [worked notebook](day-01-eda/worked.ipynb)
+**Delivering the course?** Read [the Spanish quick guide](instructor/GUIA_RAPIDA_ES.md) — it explains how everything here is organised, in what order to use it, and what to decide first. Then work through [the seven-day preparation plan](instructor/PREPARATION_PLAN.md).
+
+**Presenting to the organiser?** Send [the programme](PROGRAMME.md), and use the traceability table in [the curriculum review](CURRICULUM_REVIEW.md) to show the contracted outline is covered.
+
+**Preparing the room?** [Classroom and interpreter guidance](instructor/CLASSROOM_AND_INTERPRETER.md), then [the day-of runbook](instructor/RUNBOOK.md).
+
+**Setting up?** [Environment setup](SETUP.md), then [your first model](instructor/first_model.ipynb).
+
+**Building the slides?** [The presentation index](presentations/README.md) lists the Canva designs for Days 1, 2, 3 and 5, the generated decks for all five days, and what still needs reviewing.
+
+## What is here
+
+| | |
+|---|---|
+| [PROGRAMME.md](PROGRAMME.md) | The client-facing programme: outcomes, daily content, assessment, requirements |
+| [CURRICULUM_REVIEW.md](CURRICULUM_REVIEW.md) | Brochure promises against delivered material; gaps, additions and the open questions for the organiser |
+| [COURSE_GUIDE.md](COURSE_GUIDE.md) | Material status and delivery principles |
+| [instructor/](instructor/) | Preparation plan, day-of runbook, question bank, interpreter glossary, Spanish orientation |
+| [participant/](participant/) | Handbook, reference cards, capstone, pre- and post-course packs, evaluation forms |
+| [day-01-eda/](day-01-eda/) … [day-05-big-data/](day-05-big-data/) | Teaching guides, task cards, notebooks, solutions and recorded results |
+| [assessments/](assessments/) | Entry diagnostic, final practical and rubric |
+| [presentations/](presentations/) | Five slide plans, the Canva design index and the deck review status |
+| [dist/](dist/) | Generated deliverables: printable handbook and five slide decks |
 
 ## Presentations
 
@@ -27,9 +42,23 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 | 4 | [Bayesian/generative guide](day-04-bayesian-generative/TEACHING_GUIDE.md) | Exact updating, MCMC, predictive simulation and synthetic data |
 | 5 | [Big-data guide](day-05-big-data/TEACHING_GUIDE.md) | Spark SQL/MLlib, local neural network, toy GAN and fallback activity |
 
-Days 2–5 each include a teaching guide, timed task cards, runnable student/worked notebooks, exercise solutions, answer key with exit questions, and saved numerical results/figures. The [final practical assessment](assessments/FINAL_PRACTICAL.md) includes an [instructor rubric](assessments/FINAL_PRACTICAL_KEY.md).
+Days 1–5 each include a teaching guide, timed task cards, runnable student/worked notebooks, exercise solutions, an answer key with exit questions, and saved numerical results and figures. The [final practical assessment](assessments/FINAL_PRACTICAL.md) includes an [instructor rubric](assessments/FINAL_PRACTICAL_KEY.md).
 
-[Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation. Canva decks for Days 1, 2, 3 and 5 are linked in the presentation index. Day 4, full deck review and downloadable exports remain pending. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
+## Producing the handouts
+
+```bash
+python -m pip install -r requirements-build.txt
+python scripts/build_participant_handbook.py    # dist/participant-handbook.html
+python scripts/build_slide_decks.py             # dist/slides/day-0N.pptx
+```
+
+The handbook is one self-contained file: print it to A4 double-sided, or send it as the online version. It works offline on any device. See [dist/README.md](dist/README.md).
+
+## Status
+
+[Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation.
+
+Still open: Day 4 has no Canva design, the Canva decks need their slide-by-slide review and three of them do not match their plans' slide counts, the generated decks need their visual placeholders replaced, the six teaching modules recommended in [the curriculum review](CURRICULUM_REVIEW.md) are specified but not implemented, and no real dataset is included. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
 
 The provisional schedule includes two 15-minute breaks within each five-hour day. Confirm whether the organiser instead requires five contact hours, excluding breaks. Technical level and interpretation mode are not yet confirmed. Advanced coverage requires an agreed scope and instructor rehearsal.
 
