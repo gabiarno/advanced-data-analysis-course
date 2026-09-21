@@ -16,10 +16,10 @@ Ask the organiser for: contact hours versus breaks; audience roles and prerequis
 |---|---|---|
 | 1 | 1h setup; 2h Day 1 worked notebook; 1h student tasks; 1h teach-back | Explain every cleaning choice and interpret each chart without reading notes. |
 | 2 | 1h train/test concepts; 2h first-model notebook; 1h metrics and baselines; 1h rehearsal | Explain X, y, fit, predict, MAE, baseline and leakage. |
-| 3 | 2h classification/trees/forests; 1h cross-validation/tuning; 1h clustering/PCA; 1h rehearsal | Distinguish supervised and unsupervised tasks, training error and validation error. Full labs pending. |
-| 4 | 2h series and temporal validation; 1h ARIMA; 1h NLP; 1h rehearsal | Explain why future observations cannot enter past training data. Full labs pending. |
-| 5 | 2h Bayesian example; 1h MCMC intuition; 1h generative-data discussion; 1h rehearsal | Explain prior, likelihood and posterior; identify limits of a small demonstration. Full labs pending. |
-| 6 | 2h Spark setup and SQL; 1h distributed-computing concepts; 1h neural networks/GANs; 1h rehearsal | Run the planned Spark demo and explain why a local demo is not a performance benchmark. Full labs pending. |
+| 3 | 2h classification/trees/forests; 1h cross-validation/tuning; 1h clustering/PCA; 1h rehearsal | Distinguish supervised and unsupervised tasks, training error and validation error. Use the developed day folder, solutions and recorded results. |
+| 4 | 2h series and temporal validation; 1h ARIMA; 1h NLP; 1h rehearsal | Explain why future observations cannot enter past training data. Use the developed day folder, solutions and recorded results. |
+| 5 | 2h Bayesian example; 1h MCMC intuition; 1h generative-data discussion; 1h rehearsal | Explain prior, likelihood and posterior; identify limits of a small demonstration. Use the developed day folder, solutions and recorded results. |
+| 6 | 2h Spark setup and SQL; 1h distributed-computing concepts; 1h neural networks/GANs; 1h rehearsal | Run the planned Spark demo and explain why a local demo is not a performance benchmark. Use the developed day folder, solutions and recorded results. |
 | 7 | 2h all-lab run; 2h difficult explanations; 1h timing and fallback check | All labs run from clean kernels; limitations and unanswered questions documented. |
 
 ## First-model vocabulary

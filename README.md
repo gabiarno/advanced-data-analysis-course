@@ -15,13 +15,17 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 
 ## Course map
 
-- Day 1: exploratory data analysis — initial practical package available.
-- Day 2: machine learning — session outline and instructor first-model exercise available.
-- Day 3: time series and NLP — session outline available.
-- Day 4: Bayesian inference and generative models — session outline available.
-- Day 5: big data and advanced models — session outline available.
+| Day | Start here | Included |
+|---|---|---|
+| 1 | [EDA guide](day-01-eda/TEACHING_GUIDE.md) | Guide, tasks, student/worked notebooks and data |
+| 2 | [Machine-learning guide](day-02-machine-learning/TEACHING_GUIDE.md) | Regression, classification, validation, trees/forests, clustering/PCA |
+| 3 | [Time-series and NLP guide](day-03-time-series-nlp/TEACHING_GUIDE.md) | Baselines, decomposition, ARIMA and text classification |
+| 4 | [Bayesian/generative guide](day-04-bayesian-generative/TEACHING_GUIDE.md) | Exact updating, MCMC, predictive simulation and synthetic data |
+| 5 | [Big-data guide](day-05-big-data/TEACHING_GUIDE.md) | Spark SQL/MLlib, local neural network, toy GAN and fallback activity |
 
-Full Days 2–5 labs, slide decks and final assessment remain to be developed. See [validation evidence](VALIDATION.md) for what has actually been executed.
+Days 2–5 each include a teaching guide, timed task cards, runnable student/worked notebooks, exercise solutions, answer key with exit questions, and saved numerical results/figures. The [final practical assessment](assessments/FINAL_PRACTICAL.md) includes an [instructor rubric](assessments/FINAL_PRACTICAL_KEY.md).
+
+[Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation. Slide decks remain pending. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
 
 The provisional schedule includes two 15-minute breaks within each five-hour day. Confirm whether the organiser instead requires five contact hours, excluding breaks. Technical level and interpretation mode are not yet confirmed. Advanced coverage requires an agreed scope and instructor rehearsal.
 

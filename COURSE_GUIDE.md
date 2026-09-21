@@ -19,12 +19,12 @@ The supplied outline covers EDA, machine learning, time series, NLP, Bayesian in
 | Day | Topics | Current materials |
 |---|---|---|
 | 1 | Python, EDA, visualisation, descriptive statistics, correlation, outliers | Teaching guide, timed task cards, student notebook, worked notebook, dataset and answer key |
-| 2 | Regression, classification, trees, forests, clustering, PCA, validation and tuning | Session outline; instructor first-model preparation notebook |
-| 3 | Time series, decomposition, seasonality, ARIMA; separate NLP activity | Session outline only |
-| 4 | Bayes, distributions, posterior inference, MCMC, generative models | Session outline only |
-| 5 | Distributed computing, Hadoop/MapReduce, Spark/SQL/MLlib, deep learning, GANs | Session outline only |
+| 2 | Regression, classification, trees, forests, clustering, PCA, validation and tuning | Guide, tasks, worked/student/solution notebooks, answer key and results |
+| 3 | Time series, decomposition, seasonality, ARIMA; separate NLP activity | Guide, tasks, worked/student/solution notebooks, answer key and results |
+| 4 | Bayes, distributions, posterior inference, MCMC, generative models | Guide, tasks, worked/student/solution notebooks, answer key and results |
+| 5 | Distributed computing, Hadoop/MapReduce, Spark/SQL/MLlib, deep learning, GANs | Guide, tasks, worked/student/solution notebooks, answer key and results |
 
-Slide decks, full Day 2–5 labs, daily quizzes beyond Day 1, and the final assessment are not yet included. The notebook code was executed locally in sequence; full browser/Jupyter rendering has not been verified. See VALIDATION.md.
+Days 2–5 now include runnable labs, detailed instructor explanations, pair task cards, exercise solutions and exit questions with answers. Day 5 also has a separate Spark lab and an offline fallback. The final practical assessment and rubric are in assessments/. Slide decks are still pending. The worked/solution code has been executed locally; see KERNEL_VALIDATION.md for execution results and the remaining Jupyter startup check. Classroom timing and the actual learner environments remain unverified.
 
 ## Timing assumption
 

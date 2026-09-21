@@ -1,6 +1,6 @@
 # Validation record
 
-Code cells executed sequentially in fresh Python namespaces on 2026-09-21, using Python 3.12.14, NumPy 2.3.5, pandas 2.2.3, matplotlib 3.10.8 and scikit-learn 1.8.0. Numerical/data-quality assertions passed. Notebooks use standard nbformat 4 JSON. Full Jupyter UI execution and graphical rendering have not been verified; rehearse in the classroom environment. Student solution cells are intentionally blank. Days 2–5 full labs are pending.
+Code cells executed sequentially in fresh Python namespaces on 2026-09-21, using Python 3.12.14, NumPy 2.3.5, pandas 2.2.3, matplotlib 3.10.8 and scikit-learn 1.8.0. Numerical/data-quality assertions passed. Notebooks use standard nbformat 4 JSON. Full Jupyter UI execution and graphical rendering have not been verified; rehearse in the classroom environment. Student solution cells are intentionally blank. This paragraph records the initial Day 1 check. Days 2–5 execution is now documented separately in KERNEL_VALIDATION.md and each day’s worked_RESULTS.md; solution results are in solutions_RESULTS.md.
 
 ## day-01-eda/worked.ipynb
 
