@@ -120,6 +120,40 @@
 | Drift | The data or relationship changing after deployment | الانجراف |
 | Monitoring | Continuously checking a deployed model's behaviour | المراقبة |
 
+## Governance and European practice
+
+This vocabulary is harder to interpret consistently than the statistical terms, and it carries legal weight. Give it its own time in the interpreter briefing.
+
+| English | Plain-English meaning | العربية |
+|---|---|---|
+| Data protection | The body of rules governing use of personal data | حماية البيانات |
+| Personal data | Information relating to an identifiable person | البيانات الشخصية |
+| Data subject | The person the data is about | صاحب البيانات |
+| Data controller | The body that decides why and how data is processed | المتحكم في البيانات |
+| Legal basis | The lawful ground permitting the processing | الأساس القانوني |
+| Purpose limitation | Data may be used only for the purpose it was collected for | تحديد الغرض |
+| Data minimisation | Use no more data than the purpose requires | تقليل البيانات إلى الحد الأدنى |
+| Storage limitation | Keep data no longer than necessary | تحديد مدة الاحتفاظ |
+| Necessity | The measure is genuinely required to achieve the aim | الضرورة |
+| Proportionality | The interference is no greater than the aim requires | التناسب |
+| Fundamental rights | Basic protected rights of the individual | الحقوق الأساسية |
+| Impact assessment | A documented assessment of risks before deployment | تقييم الأثر |
+| Human oversight | A competent person able to review and override | الإشراف البشري |
+| Automated decision | A decision made by a system without human involvement | القرار الآلي |
+| Redress | The route by which a person challenges a decision | الانتصاف |
+| Accountability | Being able to demonstrate compliance, not merely achieve it | المساءلة |
+| Transparency | The affected person can find out what happened and why | الشفافية |
+| Supervisory authority | The independent body that oversees and can sanction | السلطة الرقابية |
+| Profiling | Automated evaluation of personal aspects of an individual | التنميط |
+| High-risk system | A category carrying a defined set of obligations | نظام عالي المخاطر |
+| Prohibited practice | A use that is not permitted at all | ممارسة محظورة |
+| Discrimination | Unjustified differential treatment of a group | التمييز |
+| Logging / audit trail | A record allowing a decision to be reconstructed later | سجل التتبّع |
+| Anonymisation | Rendering data no longer attributable to a person | إخفاء الهوية |
+| Pseudonymisation | Replacing identifiers so re-identification needs extra information | الترميز |
+| Law enforcement | Prevention, investigation and prosecution of offences | إنفاذ القانون |
+| Suspect / witness / victim | Categories of person that must be kept distinct in records | مشتبه به / شاهد / ضحية |
+
 ## Ambiguities the interpreter should watch
 
 These cause real confusion in bilingual technical delivery. Agree a handling for each before Day 1.
@@ -132,5 +166,8 @@ These cause real confusion in bilingual technical delivery. Agree a handling for
 6. **Row.** A row of a table, not a row of seats in the classroom.
 7. **Significant.** Avoid entirely unless discussing statistical significance, which this course does not.
 8. **Validation.** Choosing between models, distinct from final testing and from data validation in the quality sense.
+9. **Assessment.** Three different things this week: evaluating a model, an impact assessment document, and a personal assessment recorded about someone. The third is the one European law insists is kept separate from fact. Agree three distinct terms.
+10. **Risk.** Statistical risk, legal risk to the organisation, and risk to a person's rights are not the same, and the European material moves between them. Do not let one word carry all three.
+11. **Bias.** Statistical bias (a systematic error) and discriminatory bias (unjustified treatment of a group) are different ideas that share an English word, and Day 2 uses both.
 
 Spell out **NLP**, **MAE**, **MCMC**, **PCA**, **GAN** and **ARIMA** in full the first time each is used on each day.

@@ -10,11 +10,13 @@ The deliverable is **one page and a three-minute presentation**. It is not a cod
 
 **Option B — a supplied scenario.** Pick one if you do not have a suitable problem, or if confidentiality makes Option A awkward.
 
-1. **Field service.** A maintenance team wants to know which scheduled visits will overrun, so they can warn customers the morning of the visit.
-2. **Demand planning.** A distribution centre wants next week's daily volume per product family, to set shift sizes.
-3. **Support triage.** Incoming written requests need to be routed to one of five teams within minutes of arrival.
-4. **Quality assurance.** An inspection process samples batches; the team wants to know when a batch's defect rate has genuinely moved rather than fluctuated.
-5. **Customer segmentation.** A commercial team wants to know whether their accounts fall into meaningfully different groups, and whether acting on those groups is justified.
+1. **Inspection scheduling.** An inspection unit wants to know, before dispatch, which scheduled rounds will overrun their slot, so it can rebalance the day and stop cancelling citizens' appointments.
+2. **Service-centre demand.** A directorate wants next week's daily volume per office, to set counter staffing instead of staffing to last week's average.
+3. **Correspondence routing.** Written public correspondence arrives through a portal and must reach the responsible unit within minutes. Misrouting delays the response.
+4. **Records quality.** A quarterly audit samples processed records against a service standard. The team needs to know whether a change in the error rate is real or normal variation.
+5. **Road safety.** A roads authority wants to know where collisions concentrate, in order to prioritise engineering work and enforcement presence by location.
+
+All five allocate resources rather than score individuals. That is deliberate — see the European practice reference. If your own problem is a person-scoring one, do not discard it: bring it, and we will look for its resource-shaped sibling together. Almost every one has a version framed around locations, times, process steps or document types, and that version is usually both more useful and far easier to defend.
 
 ## What you build each day
 
@@ -42,6 +44,16 @@ Six headings. One short paragraph each. Total about 400 words.
 
 **6. The next step.** What you will actually do in the two weeks after this course.
 
+### Three governance questions
+
+Added because the cohort asked how this is done in Europe. About ten minutes of writing, and they are what separates a proposal that could be approved from one that could not.
+
+**7. People or resources?** Does your proposal score individuals, or allocate resources? If it scores individuals, what would the European position be, and what changes if you reframe it as a resource question?
+
+**8. Purpose and minimisation.** What is the stated purpose, was the data collected for that purpose, and what is the least data that achieves it?
+
+**9. Oversight and redress.** Who makes the final decision, what can they see, what can they override, and how does an affected person find out and challenge it?
+
 ## Presenting
 
 In the no-code route, five groups present one shared briefing each: three minutes speaking, three minutes interpretation and one minute feedback. Every participant retains an individual written page. Use the five-line briefing format from the front of the handbook. Lead with the decision, not the method — your audience cares what changes, not which library you used.
@@ -58,5 +70,6 @@ Formative, discussed rather than scored. What a strong capstone shows:
 | Evaluation design | Split matches how the data arises; baseline is named; metric matches error costs |
 | Limitation | A genuine boundary, stated without being asked |
 | Next step | Something a person could start on Monday |
+| Governance | The people-or-resources question answered honestly, a stated purpose, and a named human who can override |
 
 The most common weakness is a next step that is really a wish ("get better data"). Make it specific: *who* asks *whom* for *what*, by *when*.

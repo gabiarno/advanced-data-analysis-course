@@ -1,6 +1,15 @@
 # Delivery with zero programmers
 
-This is the default route while participant experience is unknown. It builds on the participant handbook, capstone and runbook added in the curriculum revision. It replaces mandatory coding labs with supplied evidence, calculations, critique and decisions. No participant needs to install software or modify code. Python is an optional instructor demonstration and a technical extension.
+**Status: fallback route, not the default.** The cohort has since been confirmed as Ministry of Interior personnel who work with Python and are not beginners, so the coding route in `RUNBOOK.md` is the default and `PROGRAMME.md` is written around it. This document remains fully valid and stays in the pack for four situations:
+
+1. **Individual participants who turn out not to code.** Run them on this route within a mixed room; the assessed outcomes and the capstone are common to both.
+2. **A total environment failure.** Locked-down laptops, a venue problem, no power at the seats.
+3. **A cohort that does not match the briefing.** If the entry diagnostic shows most participants struggling with its foundational questions, switch and tell the organiser the same day, in writing.
+4. **Any single activity** where the point is judgement rather than implementation. Several of these paper activities are better than their coded equivalents and can be used on the default route deliberately.
+
+Do not discard this material. A confirmed profile is a briefing, not a guarantee, and the cost of discovering on Monday morning that it was wrong is a wasted week.
+
+**Two adjustments when using it with this cohort.** Re-frame every scenario using `DOMAIN_MAPPING.md` — the workbook's retail framing is wrong for this audience regardless of route. And keep the European segments from `european-practice/DAILY_INTEGRATION.md`; they need no laptop at all, so they transfer to this route unchanged.
 
 ## Start here
 

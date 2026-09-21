@@ -21,13 +21,16 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "participant"
 OUTPUT = ROOT / "dist" / "participant-handbook.html"
 
-# Order matters: this is the order the printed handbook is bound in.
+# Order matters: this is the order the printed handbook is bound in. The coding
+# route is the default for the confirmed cohort, so HANDBOOK leads and the
+# no-code workbook follows it as the fallback route.
 SECTIONS = [
-    "NO_CODE_WORKBOOK.md",
     "HANDBOOK.md",
     "CAPSTONE.md",
+    "NO_CODE_WORKBOOK.md",
     "CHEATSHEET_METHODS.md",
     "CHEATSHEET_PYTHON.md",
+    "EUROPEAN_PRACTICE.md",
     "GLOSSARY_EN_AR.md",
 ]
 

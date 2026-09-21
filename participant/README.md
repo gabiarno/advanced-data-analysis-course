@@ -12,6 +12,7 @@ Everything in this folder is written for participants, not for the instructor. I
 | [HANDBOOK.md](HANDBOOK.md) | The printed workbook: five days of content, labs and blank result tables to fill in | Handed out on Day 1 |
 | [CHEATSHEET_METHODS.md](CHEATSHEET_METHODS.md) | Method selection, metrics, splits and the seven ways a result goes wrong | Bound into the handbook; used all week and after |
 | [CHEATSHEET_PYTHON.md](CHEATSHEET_PYTHON.md) | Python and pandas reference with the course's actual code patterns | Bound into the handbook |
+| [EUROPEAN_PRACTICE.md](EUROPEAN_PRACTICE.md) | How Europe governs public-sector analysis: which rules apply, the principles that constrain design, two European failures | Bound into the handbook; taught across all five days |
 | [GLOSSARY_EN_AR.md](GLOSSARY_EN_AR.md) | English–Arabic glossary, **draft for interpreter validation** | Interpreter briefing, then bound into the handbook |
 | [CAPSTONE.md](CAPSTONE.md) | The week-long project brief and its five supplied scenarios | Introduced Day 1, presented Day 5 |
 | [PRE_COURSE_PACK.md](PRE_COURSE_PACK.md) | Welcome letter, setup instructions, what to bring | Send as soon as possible before Day 1 |
