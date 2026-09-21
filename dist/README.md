@@ -19,6 +19,8 @@ Everything here is produced by the scripts in `scripts/`. Do not edit these file
 
 Five editable 16:9 PowerPoint decks, one per day, with the speaker notes from each plan carried into the notes pane.
 
+These do **not** replace the Canva designs indexed in `presentations/README.md`, which are the intended delivery decks for Days 1, 2, 3 and 5. They exist for three reasons: Day 4 has no Canva design yet; a venue may not give you an account or a connection, and a local `.pptx` always opens; and because they are generated from the plans, their slide count and figures are correct by construction, which makes them a reference for reviewing the Canva decks.
+
 **They are not finished.** Every deck contains `[ VISUAL TO ADD ]` placeholders marking where a chart, table or diagram belongs, with the plan's description of what it should show. Before delivery:
 
 1. Replace every placeholder with the real chart, table or diagram. The Day 2–5 figures already exist in each day's `figures/` folder.
@@ -26,4 +28,4 @@ Five editable 16:9 PowerPoint decks, one per day, with the speaker notes from ea
 3. Confirm readability from the back of the room — titles about 36pt, body at least 24pt.
 4. Ask the organiser whether LPC requires its own template, cover slide and branding. If so, import these slides into it rather than restyling them by hand.
 
-The alternative route is to build the decks in Canva from the plans in `presentations/`, as originally intended. These generated files are a working starting point that preserves every figure and every speaker note; they are not a substitute for the review pass.
+Whichever route reaches the classroom, the review pass is not optional: Days 1, 3 and 5 currently have Canva page counts that do not match their plans, and Day 2 still carries the template text "BORCELLE".

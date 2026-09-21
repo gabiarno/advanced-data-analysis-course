@@ -12,6 +12,8 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 
 **Setting up?** [Environment setup](SETUP.md), then [your first model](instructor/first_model.ipynb).
 
+**Building the slides?** [The presentation index](presentations/README.md) lists the Canva designs for Days 1, 2, 3 and 5, the generated decks for all five days, and what still needs reviewing.
+
 ## What is here
 
 | | |
@@ -23,8 +25,12 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 | [participant/](participant/) | Handbook, reference cards, capstone, pre- and post-course packs, evaluation forms |
 | [day-01-eda/](day-01-eda/) … [day-05-big-data/](day-05-big-data/) | Teaching guides, task cards, notebooks, solutions and recorded results |
 | [assessments/](assessments/) | Entry diagnostic, final practical and rubric |
-| [presentations/](presentations/) | Five slide plans |
+| [presentations/](presentations/) | Five slide plans, the Canva design index and the deck review status |
 | [dist/](dist/) | Generated deliverables: printable handbook and five slide decks |
+
+## Presentations
+
+[Open the Canva presentation index](presentations/README.md). Days 1, 2, 3 and 5 are linked. Day 4 is still pending. The index records remaining review issues and export status.
 
 ## Course map
 
@@ -41,8 +47,8 @@ Days 1–5 each include a teaching guide, timed task cards, runnable student/wor
 ## Producing the handouts
 
 ```bash
+python -m pip install -r requirements-build.txt
 python scripts/build_participant_handbook.py    # dist/participant-handbook.html
-python -m pip install python-pptx
 python scripts/build_slide_decks.py             # dist/slides/day-0N.pptx
 ```
 
@@ -52,7 +58,7 @@ The handbook is one self-contained file: print it to A4 double-sided, or send it
 
 [Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation.
 
-Still open: the slide decks need their visual placeholders replaced and their figures verified; the six teaching modules recommended in [the curriculum review](CURRICULUM_REVIEW.md) are specified but not implemented; no real dataset is included. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
+Still open: Day 4 has no Canva design, the Canva decks need their slide-by-slide review and three of them do not match their plans' slide counts, the generated decks need their visual placeholders replaced, the six teaching modules recommended in [the curriculum review](CURRICULUM_REVIEW.md) are specified but not implemented, and no real dataset is included. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
 
 The provisional schedule includes two 15-minute breaks within each five-hour day. Confirm whether the organiser instead requires five contact hours, excluding breaks. Technical level and interpretation mode are not yet confirmed. Advanced coverage requires an agreed scope and instructor rehearsal.
 

@@ -128,14 +128,14 @@ Ethics and bias are deliberately not a separate block. They are more credible di
 |---|---|---|---|
 | 1 | Participant handbook, cheat sheets, packs, evaluation | — | **Done in this change** |
 | 2 | Instructor runbook, question bank, Spanish orientation | — | **Done in this change** |
-| 3 | Generated slide decks from the five existing plans | — | **Done in this change** (`scripts/build_slide_decks.py`) |
+| 3 | Generated slide decks from the five existing plans | — | **Done in this change** (`scripts/build_slide_decks.py`) — covers Day 4, which Canva does not |
 | 4 | Additions 4 and 5 — backtesting and the text-to-series bridge (Day 3) | 1 day | Specified |
 | 5 | Addition 3 — explainability (Day 2) | 0.5 day | Specified |
 | 6 | Additions 6 and 7 — decision and governance (Day 4) | 0.5 day | Specified |
 | 7 | Addition 9 — production readiness (Day 5) | 0.5 day | Specified |
 | 8 | R1 — one licensed real dataset | 0.5 day | Specified, needs instructor decision |
 | 9 | Addition 8 — LLM and embedding segment | 0.5 day | Specified |
-| 10 | Deck review pass in Canva against the plans | 1 day | Open |
+| 10 | Day 4 Canva design, and a slide-by-slide review of all decks against the plans | 1 day | Open — Days 1, 3 and 5 do not match their plans' slide counts, and Day 2 still carries template text |
 
 ## Open questions for the organiser
 

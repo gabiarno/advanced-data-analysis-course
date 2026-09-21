@@ -32,7 +32,7 @@ Days 2–5 now include runnable labs, detailed instructor explanations, pair tas
 
 Participant-facing material is in [participant/](participant/): a printable handbook, two reference cards, a draft English–Arabic glossary, the week-long capstone brief, pre- and post-course packs, the course evaluation and an exit self-assessment. Build it with `python scripts/build_participant_handbook.py`.
 
-Slide decks are generated from the five plans by `python scripts/build_slide_decks.py`. They still need their visual placeholders replaced and their figures verified against each day's recorded results.
+Canva designs exist for Days 1, 2, 3 and 5; Day 4 does not have one yet, and three of the four do not match their plans' slide counts. `python scripts/build_slide_decks.py` generates plain PowerPoint decks for all five days from the same plans, which cover the Day 4 gap, work offline, and give the Canva review pass something to check against. Both routes are indexed in [presentations/README.md](presentations/README.md).
 
 ## Timing assumption
 
