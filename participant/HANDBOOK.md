@@ -1,5 +1,7 @@
 # Advanced Data Analysis Techniques
 
+**Activity route:** for the practical course without programming, use [NO_CODE_WORKBOOK.md](NO_CODE_WORKBOOK.md). This handbook supplies background explanations; its notebook labs are optional technical extensions.
+
 ## Participant handbook
 
 Five days · Genoa · English delivery with Arabic interpretation
@@ -19,9 +21,9 @@ Each day has four parts:
 
 At the back you will find three reference sections you will use after the course ends: the method-selection card, the Python reference, and the English–Arabic glossary.
 
-### Working in pairs
+### Optional coding pairs
 
-You will work with one partner all day, with two roles:
+If you choose the coding extension, work with one partner using two roles:
 
 - **The driver** types and runs the code.
 - **The analyst** watches the screen, checks the result is what was expected, and writes the finding down.
@@ -62,7 +64,7 @@ The last line is uncomfortable the first time. It is also the line that makes a 
 
 ### A worked example
 
-> **Finding.** Store orders account for EUR 6,310 of recorded revenue against EUR 3,700 online, but this compares 63 orders with 53, not like with like.
+> **Finding.** Store orders account for EUR 6,310 of recorded revenue against EUR 3,700 online, but this compares 60 priced Store orders with 54 priced Online orders (61 and 56 valid orders respectively), not like with like.
 >
 > **Evidence.** Sum of units × unit price over 116 priced orders in the cleaned synthetic table, split by channel; three valid orders have unknown prices and are excluded.
 >

@@ -1,5 +1,7 @@
 # Curriculum review — brochure promises against current materials
 
+**Delivery adaptation after this review:** a complete paper-based route now exists in [instructor/NO_CODE_DELIVERY.md](instructor/NO_CODE_DELIVERY.md), with [participant activities](participant/NO_CODE_WORKBOOK.md) and [answers](instructor/NO_CODE_ANSWER_KEY.md). It preserves the existing handbook, capstone and technical notebooks. This route teaches evaluation and decisions; it does not certify independent implementation.
+
 Reviewed on 2026-09-21 against the LPC Training brochure *Advanced Data Analysis Techniques* (5 days, category "Data Science & Visualisation"). This document records what the brochure commits to, where the repository already delivers it, what is missing, and what should be added. It is a planning document for the instructor and the organiser, not classroom material.
 
 ## Summary judgement
@@ -101,15 +103,15 @@ Day 4 estimates a defect rate well. The brochure says "Bayesian modelling and in
 
 The brochure invites "Business Leaders & Decision Makers" and "Strategic Planners & Consultants". Every lab requires typing Python. Pairing helps, but a non-coder paired with a non-coder is a lost pair.
 
-*Closed by:* the interpreter role defined in the handbook — in every pair, one person drives the keyboard and one person writes the briefing, and the roles swap. The non-coding participant has a defined, assessed job. Also record the risk at the pre-course call: ask the organiser for the split of technical and non-technical attendees, and if more than a third are non-technical, agree the adjustment in writing before travel.
+*Closed for no-code delivery by:* the self-contained five-day NO_CODE_WORKBOOK, separate facilitator answers and NO_CODE_DELIVERY schedule. Rotating keyboard roles alone did not close this gap. No participant depends on a coding partner. Share the revised outcomes with the organiser; coding implementation remains optional.
 
 ## Recommended additions to the syllabus
 
-These go beyond the brochure. Each is proposed because a practitioner-level 2026 audience will notice its absence, not to pad the programme. Total added teaching time is 150 minutes, which fits by trimming the extension tasks already marked optional.
+These go beyond the brochure. Each is proposed because a practitioner-level 2026 audience will notice its absence, not to pad the programme. The numbered time estimates total 180 minutes, excluding the capstone already scheduled. These are proposed additions, not extra blocks to stack onto the 300-minute day. The no-code route integrates selected topics into its existing activities.
 
 | # | Addition | Day | Time | Why it earns its place |
 |---|---|---|---|---|
-| 1 | **Chart choice and chart repair** — pick the right form, then fix three bad charts | 1 | 30 min | Delivers the "Visualisation" half of the course category. Highest-rated segment in courses of this type. |
+| 1 | **Chart choice and chart repair** — pick the right form, then fix three bad charts | 1 | 30 min | Delivers the "Visualisation" half of the course category. Provides explicit practice matching charts to questions. |
 | 2 | **The one-page briefing** — finding, evidence, limitation, next step | 1 | 15 min | Turns five days of group reporting into deliberate practice. Reused daily at no extra cost. |
 | 3 | **Permutation importance and partial dependence** — what the model used, and how | 2 | 30 min | "Why did it predict that?" is the first question any stakeholder asks. Its absence is conspicuous at practitioner level. |
 | 4 | **Rolling-origin backtesting** | 3 | 25 min | The Day 3 guide already says real deployment needs multiple rolling origins, then evaluates on one window. Closing that loop is the single most useful forecasting skill here. |

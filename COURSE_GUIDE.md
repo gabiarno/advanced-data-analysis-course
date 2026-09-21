@@ -1,5 +1,7 @@
 # Course guide
 
+**Default delivery while technical level is unknown:** use [the no-code delivery guide](instructor/NO_CODE_DELIVERY.md), [participant workbook](participant/NO_CODE_WORKBOOK.md) and [facilitator answers](instructor/NO_CODE_ANSWER_KEY.md). The five-day core can be completed on paper; notebooks are optional extensions.
+
 ## Delivery context
 
 20 participants from Saudi Arabia, attending in person in Genoa. English instruction with Arabic interpretation. Technical level and interpretation mode remain unconfirmed. Start with [classroom and interpreter guidance](instructor/CLASSROOM_AND_INTERPRETER.md); the schedule assumes consecutive interpretation until confirmed.
@@ -8,10 +10,10 @@
 
 1. Read [the Spanish quick guide](instructor/GUIA_RAPIDA_ES.md) for how this repository is organised and what to decide first.
 2. Read [the preparation plan](instructor/PREPARATION_PLAN.md).
-3. Follow [environment setup](SETUP.md).
-4. Run [your first model](instructor/first_model.ipynb).
+3. Solve the no-code workbook and check the facilitator answers. For optional demos, follow [environment setup](SETUP.md).
+4. If using Python demonstrations, run [your first model](instructor/first_model.ipynb).
 5. Rehearse [Day 1](day-01-eda/TEACHING_GUIDE.md), then run the worked notebook and student exercises.
-6. Use [the diagnostic](assessments/ENTRY_DIAGNOSTIC.md) to check prerequisites before delivery, and send [the pre-course pack](participant/PRE_COURSE_PACK.md) ten days ahead.
+6. Use [the diagnostic](assessments/ENTRY_DIAGNOSTIC.md) to check prerequisites before delivery, and send [the pre-course pack](participant/PRE_COURSE_PACK.md) as soon as possible.
 7. Keep [the day-of runbook](instructor/RUNBOOK.md) and [the question bank](instructor/QUESTION_BANK.md) to hand while teaching.
 
 ## Scope and status

@@ -1,5 +1,7 @@
 # Day-of runbook
 
+**Route selection:** this is the coding-route runbook. For zero programmers or an unknown/mixed cohort, follow [NO_CODE_DELIVERY.md](NO_CODE_DELIVERY.md) instead. It replaces these notebook activities and has its own Day 5 presentation timing.
+
 The compressed version. Print it, hold it, work from it. The full explanations live in each day's `TEACHING_GUIDE.md`; this is what you need while standing up.
 
 ## Every morning, before participants arrive (30 minutes)
@@ -168,7 +170,7 @@ If interpretation is running long, **cut an extension task**. Never cut a break,
 | Your demo throws an error | Do not debug live for more than 60 seconds. Switch to the saved results, continue, fix at the break. |
 | Interpretation is taking much longer than planned | Cut extensions, then cut the third lab to a demonstration. Never the break. |
 | The cohort is far more advanced than expected | Move to the extension tasks, raise the depth of questions — and tell the organiser the same day, in writing. |
-| The cohort has no Python at all | Switch to guided modification of working code rather than writing it. Tell the organiser the same day, in writing. |
+| The cohort has no Python at all | Switch to NO_CODE_DELIVERY.md and its paper workbook; no code modification is required. Explain the outcome distinction to the organiser. |
 | A question you cannot answer | Use the sentence. Write it in the parking list. Answer it the next morning. |
 | A participant dominates discussion | Move to "each group agrees one finding" — the format already does this work for you. |
 | You are 20 minutes behind at the break | Recalculate from the fixed points: breaks and the 285-minute close do not move. Everything else does. |

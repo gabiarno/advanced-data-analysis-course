@@ -1,6 +1,6 @@
 # Before the course — participant pack
 
-Send this to participants about ten days before Day 1, with the entry diagnostic attached.
+Send this as soon as possible before Day 1, with the entry diagnostic attached; preparation does not require ten days.
 
 ---
 
@@ -8,11 +8,15 @@ Send this to participants about ten days before Day 1, with the entry diagnostic
 
 You are booked on **Advanced Data Analysis Techniques**, five days in Genoa. Sessions run for five hours each day with two breaks. Delivery is in English with Arabic interpretation throughout.
 
-This is a hands-on course. You will spend more time working than listening, in pairs, on a laptop. There are three short things to do before Day 1.
+This is a hands-on course. You will spend more time working than listening, in teams of four, using a printed workbook. There are three short things to do before Day 1.
 
-## 1. Bring a laptop, set up in advance
+## 1. Bring a pen; a calculator is optional
 
-**Please arrive with the software already installed and tested.** Installing software in the first session costs everyone an hour.
+The core course requires no laptop, software installation or programming. All tables and model results needed for the activities are supplied. A laptop is optional for viewing materials or choosing technical extensions.
+
+### Optional Python extension setup
+
+If you choose the optional coding extension, install and test the software beforehand.
 
 You need:
 
@@ -39,13 +43,9 @@ A browser window should open. Open `instructor/first_model.ipynb` and run the ce
 
 ### If you cannot install software
 
-Some corporate laptops block installation. Tell us before the course and we will arrange one of:
+Use the core paper workbook. It requires no installation and supports all common assessed outcomes. Any optional computing arrangements must be confirmed with the organiser; no portable or cloud environment is promised.
 
-- a prepared USB drive with a portable environment,
-- a shared laptop for your pair,
-- a browser-based environment.
-
-**You will not be excluded from any exercise.** But we need to know in advance.
+**You will not be excluded from any exercise.** Let the organiser know if you need an accessible format.
 
 ## 2. Complete the short diagnostic
 
@@ -66,14 +66,14 @@ Think about: *What decision would this support? Who makes that decision? How is 
 - Any prior machine-learning experience.
 - A powerful laptop, a GPU, or a cloud account.
 - An internet connection during the sessions — everything runs offline once installed.
-- To be a confident programmer. You will work in pairs with two roles, and one of them does not involve typing code.
+- To be a confident programmer. All core activities can be completed without writing code.
 
 ## What to expect
 
 | | |
 |---|---|
 | Pace | Concept, demonstration, then you try it. Repeated, with interpretation time built in. |
-| Format | Pairs. You will swap between operating the laptop and interpreting the result. |
+| Format | Five teams of four. Rotate decision owner, evidence checker, reviewer and spokesperson. |
 | Data | Synthetic datasets, generated for teaching. No confidential or personal data is used. |
 | Materials | A printed handbook on Day 1, plus all notebooks to keep. |
 | Assessment | Daily questions and a short final exercise. Formative — to help you learn, not to grade you. |

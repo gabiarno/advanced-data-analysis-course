@@ -2,169 +2,48 @@
 
 Five days, in person, Genoa. English delivery with Arabic interpretation. 20 participants.
 
-This is the document to send to the organiser and to hand to participants on Day 1. It states what each day delivers, what participants produce, and how they will know they have learned it. Every session listed here is backed by runnable material in this repository.
+## Audience and outcomes
 
-## How this course is run
+The default route is practical analytics for decisions, accessible without programming experience. Five teams of four use supplied tables and results to calculate, audit, compare and defend recommendations. Python notebooks remain optional technical extensions and instructor demonstrations.
 
-**Practitioner-level, not lecture-level.** Each day is 300 minutes: about 90 minutes of explanation and demonstration, 135 minutes of protected hands-on practice, 45 minutes of interpretation and reporting, and two 15-minute breaks. Participants spend more time working than listening.
+Participants learn to audit data, choose methods, compare with baselines, design honest evaluations, interpret uncertainty and communicate an evidence-based decision. Independent model implementation is an additional coding-route outcome, not a requirement or claimed achievement of the no-code route. Share this distinction with the organiser when confirming contracted depth.
 
-**Everything is evaluated.** No method is shown without a baseline to compare it against, a stated evaluation strategy, and an explicit limitation. Participants leave able to challenge a result, not only produce one.
+## Five-day programme
 
-**Pairs with two real roles.** Participants work in 10 pairs. One drives the keyboard; the other checks the result and writes the briefing. Roles swap every 10–15 minutes, so every participant both codes and communicates. A participant who does not write code has a defined and assessed job from the first hour.
+All core activities are supplied in [the no-code workbook](participant/NO_CODE_WORKBOOK.md). The existing handbook supplies explanations, the method card supplies a reference and the capstone connects the days.
 
-**Reproducible and offline.** All exercises run on a laptop with no internet connection, no cloud account and no GPU, once the environment is installed. Every worked example has been executed and its output recorded, so a failed laptop never stops a lesson.
+| Day | Concepts | Activity A · 40 min | Activity B · 45 min | Activity C · 50 min | Output |
+|---|---|---|---|---|---|
+| 1 | EDA, data quality, averages, visualisation, correlation and causality | Audit eight order records | Calculate revenue and challenge a chart | Management briefing and capstone problem | Audit, hand-drawn chart, recommendation |
+| 2 | Regression, classification, validation, trees/forests, clustering, PCA | Calculate prediction errors and check features | Confusion matrix and error costs | Method selection and vendor critique; capstone | Baseline comparison and cost-based decision |
+| 3 | Trend, seasonality, ARIMA, chronological evaluation, NLP | Compare forecasts and design rolling evaluation | Route ambiguous messages | Text counts over time and availability; capstone | Evaluation design and human-review policy |
+| 4 | Prior, likelihood, posterior, MCMC, generative models | Apply a fictional probability-to-action rule | Critique supplied simulation evidence | Future outcomes and synthetic-data review; capstone | Uncertainty-based recommendation |
+| 5 | Hadoop/MapReduce, Spark/MLlib, neural models, GANs, monitoring | Combine partition totals | Critique models and design a pilot | Finish and present capstones | Briefing, owner and stop condition |
 
-**Honest data.** Practice datasets are synthetic and generated with published rules, so results are reproducible and no confidential or personal data is involved. Participants are told this explicitly and are taught what synthetic results can and cannot support — a discipline that transfers directly to their own data.
+The rolling-evaluation activity is a design exercise, not an executed backtest. All core evidence is synthetic. Small hand-calculation cases and recorded notebook results are labelled separately. No classroom result establishes real-world performance. A licensed real-data case remains an unfilled curriculum item.
 
-## What participants take away
+## Timing and interpretation
 
-- A printed handbook with the full course content, their own recorded results, and reference cards they will use after the course.
-- A one-page method-selection card: which technique fits which question, which metric evaluates it, and its most common failure.
-- A completed capstone briefing on a problem from their own work or a supplied scenario.
-- Runnable notebooks for every method covered, which work on their own machine after the course.
-- A 30-day follow-up plan.
+Each day occupies 300 minutes including two 15-minute breaks: 270 contact minutes, or 22.5 contact hours over the week. If the organiser requires 25 contact hours, add 30 teaching minutes daily and put breaks outside those hours.
 
-## Learning outcomes
+Days 1–4: opening 20; concepts/demo 30; Activity A 40; debrief 15; break 15; concepts/demo 30; Activity B 45; break 15; Activity C 50; reports 25; individual exit/recap 15. Total 300, including 135 minutes in protected activity blocks. Timings include consecutive interpretation, not continuous English speech. Rehearse pacing with the interpreter.
 
-By the end of the course, participants can:
+Day 5 follows the same sequence through minute 210. At 210–225 finish capstones;225–260 present five groups, seven minutes each (three speaking, three interpretation, one feedback). At 260–280 complete the individual final practical;280–285 collect and debrief;285–300 collect feedback and exit self-assessments and explain next steps. Each participant retains an individual written capstone page.
 
-1. Audit a dataset for quality problems and document defensible cleaning decisions.
-2. Choose an appropriate analytical method for a stated business question, and justify the choice.
-3. Evaluate a model honestly, against a baseline, using a split that respects how the data arose.
-4. Recognise and prevent the common failures: leakage, overfitting, contaminated test sets and evaluation on unrepresentative data.
-5. Build and interpret time-series forecasts, text classifiers, Bayesian updates and distributed queries.
-6. Present a quantitative finding to a non-technical stakeholder with its evidence, its limitation and a next step.
-7. State what a result does not establish — reliably and without prompting.
+## Assessment and materials
 
-Outcome 7 is the one that distinguishes this course. It is assessed every day.
+- Entry diagnostic: placement and support, not grading.
+- Daily individual exit answer: check understanding beyond the group spokesperson.
+- Capstone: existing six-heading brief, with a group presentation and individual page.
+- Final practical:20 minutes, no programming; separate 10-point formative rubric.
+- Takeaways: workbook, background handbook, method card, optional notebooks and existing 30-day follow-up pack.
 
-## Day 1 — Exploratory data analysis and communicating findings
-
-*Understand the data before modelling it, and explain what you found.*
-
-| Session | Content |
-|---|---|
-| Opening | Course frame, pair roles, entry diagnostic |
-| Concept | What EDA is, why it precedes modelling, Python for tabular data |
-| **Lab A (40 min)** | Audit a 122-row order table: rows, duplicates, missing values, invalid quantities |
-| Concept | Central tendency, dispersion, correlation; outliers that are errors versus outliers that are real |
-| **Lab B (45 min)** | Apply documented cleaning rules, compute revenue, build one labelled chart |
-| **Concept (new)** | Chart choice: matching chart form to question. Then repair three deliberately bad charts. |
-| **Concept (new)** | The one-page briefing: finding, evidence, limitation, next step, what would change my mind |
-| **Lab C (50 min)** | Produce a management briefing on channel performance; capstone problem chosen |
-| Close | Group reporting, exit check |
-
-Participants produce: a documented data audit, one publication-quality chart, and their first briefing.
-
-Key discipline: *missing is not zero, an outlier is not automatically an error, and association is not cause.*
-
-## Day 2 — Machine learning for decisions
-
-*Predict something, then prove the prediction is worth trusting.*
-
-| Session | Content |
-|---|---|
-| Concept | What machine learning is; supervised versus unsupervised; what information exists at decision time |
-| Concept | The split before the algorithm: train, validate, test, and why the order matters |
-| **Lab A (40 min)** | Regression on delivery duration; compare against a baseline using MAE |
-| Concept | Classification, confusion matrices, precision and recall, and the cost of each error type |
-| **Lab B (45 min)** | Classify delayed routes; count missed delays and false alarms; state the operational consequence |
-| Concept | Decision trees, random forests, cross-validation and hyperparameter tuning |
-| **Concept (new)** | Explainability: permutation importance and partial dependence — what the model used and how |
-| **Lab C (50 min)** | Clustering and PCA walkthrough, then tree-depth comparison on training folds only |
-| Close | Group reporting, exit check |
-
-Participants produce: an evaluated regression model, an evaluated classifier with an error-cost argument, and a written model-selection justification.
-
-Key discipline: *a model that beats no baseline has not been shown to work, and a test set inspected repeatedly is no longer a test set.*
-
-## Day 3 — Time series and natural language
-
-*Data with an order, and data without a table.*
-
-| Session | Content |
-|---|---|
-| Concept | Time-series types and challenges; why time order changes evaluation |
-| Concept | Trend, seasonality, periodicity, decomposition |
-| **Lab A (40 min)** | Naive and seasonal-naive baselines; guided decomposition and ARIMA |
-| **Concept (new)** | Rolling-origin backtesting: evaluating a forecast the way it will actually be used |
-| Concept | NLP: turning text into features; the text-classification pipeline |
-| **Lab B (45 min)** | Classify support messages; inspect the cases the model gets wrong and why |
-| **Concept (new)** | The link between text and time: message volume as a series, and when a text-derived feature legitimately enters a forecast |
-| **Concept (new)** | Where embeddings and language models fit — what changes, what does not, and why evaluation matters more, not less |
-| **Lab C (50 min)** | Validate a forecast using training data only; find and explain a text failure case |
-| Close | Group reporting, exit check |
-
-Participants produce: a backtested forecast with a baseline comparison, and a text classifier with a documented failure analysis.
-
-Key discipline: *never train on the future, and a perfect score on eight examples is not evidence.*
-
-## Day 4 — Bayesian analysis and generative models
-
-*Reasoning with uncertainty, and manufacturing data responsibly.*
-
-| Session | Content |
-|---|---|
-| Concept | Bayesian thinking: prior, likelihood, posterior; probability distributions |
-| **Lab A (40 min)** | Update a defect probability exactly; compare the effect of different priors |
-| **Concept (new)** | From posterior to decision: the probability that the rate exceeds a contractual threshold, and the action it triggers |
-| Concept | Credible intervals, and parameter uncertainty versus outcome variability |
-| Concept | MCMC in three actions: propose, compare, accept or stay |
-| **Lab B (45 min)** | Run four chains; inspect traces, chain means and autocorrelation against the exact answer |
-| Concept | Generative models and synthetic data |
-| **Concept (new)** | Synthetic data governance: legitimate uses, the privacy claims it does not automatically support, and what to check before sharing |
-| **Lab C (50 min)** | Simulate a future batch; generate and critique synthetic service durations |
-| Close | Group reporting, exit check |
-
-Participants produce: a posterior-based recommendation with a stated decision threshold, and a critique of a synthetic dataset.
-
-Key discipline: *a credible interval describes a model's belief, not a guarantee, and synthetic data inherits every flaw of the data that generated it.*
-
-## Day 5 — Big data, advanced models and the capstone
-
-*Scale, and what it takes to put any of this into production.*
-
-| Session | Content |
-|---|---|
-| Concept | When one machine stops being enough; distributed computing, partitioned aggregation |
-| Concept | The Hadoop ecosystem, MapReduce, and where Spark sits relative to it |
-| **Lab A (40 min)** | Spark DataFrame and Spark SQL aggregation; confirm the two agree |
-| Concept | Spark MLlib pipelines |
-| **Lab B (45 min)** | Fit and evaluate an MLlib model against a baseline |
-| Concept | Deep learning applied to big data; GANs — generator and discriminator |
-| **Concept (new)** | From notebook to production: monitoring, drift, retraining, and who owns the model |
-| **Capstone (50 min)** | Complete and present the briefing on your own problem or a supplied scenario |
-| Close | Final practical assessment, course evaluation, recap and next steps |
-
-Participants produce: a Spark query and an evaluated MLlib model, and the finished capstone briefing.
-
-Key discipline: *running locally proves the code works, not that the system scales; and a model that nobody monitors is a model that is quietly failing.*
-
-## Assessment
-
-| Instrument | When | Purpose |
-|---|---|---|
-| Entry diagnostic, 8 questions | Before or on Day 1 | Placement, not grading. Sets the depth of support. |
-| Daily exit questions | End of each day | Confirms the day's key discipline landed. |
-| Capstone briefing | Threaded across the week, presented Day 5 | Applied transfer to the participant's own context. |
-| Final practical, 20 minutes | Day 5 | Method choice, evaluation design, interpretation, correcting three false claims. |
-| Exit self-assessment | Day 5 | Compared against the entry diagnostic, gives the organiser evidence of movement. |
-| Course evaluation | Day 5 | Participant feedback on delivery, pace and interpretation. |
-
-This is formative assessment for a short professional course. It is not an accredited competency certification, and is not presented as one.
+This is a short professional course, not an accredited certification of advanced implementation competence.
 
 ## Delivery requirements
 
-**Room:** projector readable from the back row, power at every seat, seating that allows pairs to share one screen and then re-form into five groups of four.
+Room: projector, writing surfaces and five groups of four. Participants need paper and pen; a calculator is optional. No laptop, account, installation or internet connection is required for core activities. The instructor needs offline materials and rehearsed explanations; Python setup is only needed for chosen demonstrations.
 
-**Laptops:** one per participant preferred, one per pair minimum. Python 3.12 installed with the supplied requirements before Day 1. A zero-install fallback is prepared for participants who cannot install software.
+Confirm interpretation mode and review the draft English–Arabic glossary with the interpreter. Permit interpreted contributions and Arabic written answers when the interpreter can review them. Print 20 participant copies plus five spares; keep facilitator answers separate.
 
-**Interpretation:** an Arabic interpreter briefed before Day 1, with the glossary and the first demonstration reviewed in advance. Mode must be confirmed — the timetable assumes consecutive interpretation.
-
-**Printing:** 20 handbooks, double-sided, plus five spare. Alternatively the handbook is distributed as a single self-contained HTML file that works offline on any device.
-
-**Contingency:** every worked example has recorded outputs, so any lesson can continue from saved results if an environment fails. Spark has a documented offline alternative.
-
-## Scope note
-
-The brochure describes a broad syllabus. This programme delivers it at a practitioner-introductory depth: each method is taught to the point where a participant can apply it to a well-posed problem, evaluate it honestly and state its limits. It does not produce specialists in any single method, and it does not claim to. If the cohort proves more advanced than expected, the extension tasks in each day's task cards provide additional depth; a materially different depth requires an agreed change of scope before delivery.
+Existing PPTX and Canva materials retain outstanding review items. The workbook provides activity instructions independently. Follow [the no-code delivery guide](instructor/NO_CODE_DELIVERY.md) for pacing, preparation and slide substitutions. Use [the original coding runbook](instructor/RUNBOOK.md) only for participants choosing implementation practice.

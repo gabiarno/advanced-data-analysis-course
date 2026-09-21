@@ -1,5 +1,7 @@
 # Advanced Data Analysis Techniques
 
+**Default delivery while technical level is unknown:** use [the no-code delivery guide](instructor/NO_CODE_DELIVERY.md), [participant workbook](participant/NO_CODE_WORKBOOK.md) and [facilitator answers](instructor/NO_CODE_ANSWER_KEY.md). The five-day core can be completed on paper; notebooks are optional extensions.
+
 English course materials for five days of in-person delivery in Genoa: 20 participants, with Arabic interpretation.
 
 ## Start here
@@ -10,7 +12,7 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 
 **Preparing the room?** [Classroom and interpreter guidance](instructor/CLASSROOM_AND_INTERPRETER.md), then [the day-of runbook](instructor/RUNBOOK.md).
 
-**Setting up?** [Environment setup](SETUP.md), then [your first model](instructor/first_model.ipynb).
+**Setting up optional Python demonstrations?** [Environment setup](SETUP.md), then [your first model](instructor/first_model.ipynb).
 
 **Building the slides?** [The presentation index](presentations/README.md) lists the Canva designs for Days 1, 2, 3 and 5, the generated decks for all five days, and what still needs reviewing.
 
@@ -58,7 +60,7 @@ The handbook is one self-contained file: print it to A4 double-sided, or send it
 
 [Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation.
 
-Still open: Day 4 has no Canva design, the Canva decks need their slide-by-slide review and three of them do not match their plans' slide counts, the generated decks need their visual placeholders replaced, the six teaching modules recommended in [the curriculum review](CURRICULUM_REVIEW.md) are specified but not implemented, and no real dataset is included. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
+Still open: Day 4 has no Canva design, the Canva decks need their slide-by-slide review and three of them do not match their plans' slide counts, the generated decks need their visual placeholders replaced, the no-code route now includes text/time availability, posterior decisions, synthetic-data critique and production-readiness activities; advanced executable additions in [the curriculum review](CURRICULUM_REVIEW.md) remain a separate backlog, and no real dataset is included. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
 
 The provisional schedule includes two 15-minute breaks within each five-hour day. Confirm whether the organiser instead requires five contact hours, excluding breaks. Technical level and interpretation mode are not yet confirmed. Advanced coverage requires an agreed scope and instructor rehearsal.
 

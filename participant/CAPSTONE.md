@@ -44,7 +44,7 @@ Six headings. One short paragraph each. Total about 400 words.
 
 ## Presenting
 
-Three minutes, plus interpretation. Use the five-line briefing format from the front of the handbook. Lead with the decision, not the method — your audience cares what changes, not which library you used.
+In the no-code route, five groups present one shared briefing each: three minutes speaking, three minutes interpretation and one minute feedback. Every participant retains an individual written page. Use the five-line briefing format from the front of the handbook. Lead with the decision, not the method — your audience cares what changes, not which library you used.
 
 ## How it is assessed
 

@@ -23,6 +23,7 @@ OUTPUT = ROOT / "dist" / "participant-handbook.html"
 
 # Order matters: this is the order the printed handbook is bound in.
 SECTIONS = [
+    "NO_CODE_WORKBOOK.md",
     "HANDBOOK.md",
     "CAPSTONE.md",
     "CHEATSHEET_METHODS.md",
@@ -272,6 +273,9 @@ def main() -> None:
             raise SystemExit(f"missing source file: {path}")
         slug = path.stem.lower().replace("_", "-")
         rendered, toc = render(path.read_text(encoding="utf-8"), slug)
+        for included in SECTIONS:
+            target = Path(included).stem.lower().replace("_", "-")
+            rendered = rendered.replace(f'href="{included}"', f'href="#{target}"')
         body.append(f'<section id="{slug}">{rendered}</section>')
         contents.extend(toc)
 
