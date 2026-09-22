@@ -1,6 +1,6 @@
 # Day-of runbook
 
-**Route selection:** this is the coding-route runbook. For zero programmers or an unknown/mixed cohort, follow [NO_CODE_DELIVERY.md](NO_CODE_DELIVERY.md) instead. It replaces these notebook activities and has its own Day 5 presentation timing.
+**Current delivery:** use [TUTOR_SCRIPT.md](TUTOR_SCRIPT.md) for the complete spoken workshop and interpreted Day 5 timing. This condensed coding runbook remains a preparation reference. The confirmed cohort already uses Python.
 
 The compressed version. Print it, hold it, work from it. The full explanations live in each day's `TEACHING_GUIDE.md`; this is what you need while standing up.
 

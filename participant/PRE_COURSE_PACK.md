@@ -1,6 +1,6 @@
 # Before the course — participant pack
 
-Send this as early as possible before Day 1, with the entry diagnostic attached.
+Send this as soon as possible before Day 1, with the entry diagnostic attached; preparation does not require ten days.
 
 ---
 
@@ -8,83 +8,81 @@ Send this as early as possible before Day 1, with the entry diagnostic attached.
 
 You are booked on **Advanced Data Analysis Techniques**, five days in Genoa. Sessions run for five hours each day with two breaks. Delivery is in English with Arabic interpretation throughout.
 
-We understand you already work with Python and analyse data as part of your role. The course is pitched accordingly: we will not spend time on syntax or on a first introduction to modelling. You will read and modify working code from the first hour, and the time goes into method choice, evaluation design and judgement.
+This is a hands-on course. You will spend more time working than listening, in pairs at laptops, with groups of four for discussion. There are three short things to do before Day 1.
 
-Every exercise is drawn from public administration — service-centre demand, inspection scheduling, emergency call volume, records quality, road safety — so you should not have to translate a retail example into your own work.
+We have also been told you want to see how this work is done in Europe. The methods themselves are not European — a baseline is a baseline anywhere. What genuinely differs is the governance around public-sector analysis: which rules apply to which kind of processing, the principles that shape how a European public body designs a project, and two European systems that went badly wrong and changed the law as a result. That runs alongside the practical work rather than as a separate lecture.
 
-We have also been told you want to see how this work is done in Europe. That runs through all five days: which rules apply to what, the principles that shape how European public bodies design an analytics project, and two European systems that went badly wrong and changed the law as a result.
+## 1. Bring a laptop and test the course environment
 
-There are three things to do before Day 1.
+You already use Python, so we will build on that experience with prepared notebooks. You will run, inspect and modify selected parts of the examples. Bring a laptop or arrange to share one with a partner.
 
-## 1. Set up your laptop and confirm it runs
+### Python setup
 
-**Please arrive with the software installed and tested.** Installing in the first session costs everyone an hour.
+Please test the course environment before the first morning.
 
 You need:
 
 - A laptop you can install software on, with at least 4 GB of free disk space.
-- **Python 3.12** — from [python.org](https://www.python.org/downloads/).
-- The course materials, sent to you as a download link.
+- **Python 3.12** — download from [python.org](https://www.python.org/downloads/).
+- The course materials, which will be sent as a download link.
 
-Open a terminal in the course folder:
+Then open a terminal in the course folder and run:
 
 ```
 python -m venv .venv
 ```
 
-Activate it — macOS or Linux `source .venv/bin/activate`, Windows PowerShell `.venv\Scripts\Activate.ps1` — then:
+Activate it — on macOS or Linux `source .venv/bin/activate`, on Windows PowerShell `.venv\Scripts\Activate.ps1` — then:
 
 ```
 python -m pip install -r requirements.txt
 python -m jupyterlab
 ```
 
-Open `day-01-eda/worked.ipynb` and run all cells. If it completes without error, you are ready. **Please reply to confirm it ran**, or send us the error — either answer is useful, and both are much easier to deal with now than on Monday morning.
+A browser window should open. Open `instructor/first_model.ipynb` and run the cells from top to bottom. If it runs to the end without an error, you are ready.
 
-If you would like to attempt the optional Spark lab on Day 5, that needs Java 17 and a separate install; instructions are in `SETUP.md`. It is genuinely optional and there is a prepared alternative.
+**If anything fails, do not spend hours on it.** Email us the error message and we will resolve it before Day 1, or set you up with the alternative below.
 
-### If your laptop is locked down
+### If you cannot install software
 
-Some official laptops block installation. Tell us in advance and we will arrange a prepared environment or a shared machine. There is also a complete paper route through every activity, so **nobody is excluded from anything** — but we need to know beforehand.
+Tell the organiser so a shared prepared laptop can be arranged where possible. The saved outputs and paper workbook let you continue the analytical activities without installation. Any optional computing arrangements must be confirmed with the organiser; no portable or cloud environment is promised.
 
-## 2. Complete the diagnostic
+**You will not be excluded from any exercise.** Let the organiser know if you need an accessible format.
 
-Twelve questions, about twelve minutes. **It is not scored against you and no individual result is shared with anyone.** It tells us where to pitch the week.
+## 2. Complete the short diagnostic
 
-It is deliberately not easy. Several questions have no single right answer and ask what you would do. Answer honestly, including "I don't know" — a diagnostic everyone passes tells us nothing and wastes your week.
+Attached is an eight-question diagnostic that takes about ten minutes. **It is not a test and it is not scored against you.** It tells us where to pitch the explanations so that nobody is bored and nobody is lost. Answer honestly, including "I don't know".
 
 ## 3. Bring a problem
 
-On Day 1 you choose a problem to work on across the week, and on Day 5 you present a one-page recommendation on it.
+On Day 1 you will choose a problem to work on across the week, and you will present a one-page recommendation on it on Day 5.
 
-The best choice is a real question from your own work — ideally a decision made on judgement today, or one where you suspect the current method has never been properly checked.
+The best choice is a real question from your own work — ideally a decision currently made on judgement, or one where you suspect the existing method has never been properly checked.
 
-**Bring the problem, not the data.** Describe it in general terms. Nothing confidential is needed and no data of yours is uploaded anywhere. Supplied scenarios are available if you prefer.
+**Bring the problem, not the data.** Describe it in general terms. You do not need to share anything confidential, and no data of yours will be uploaded anywhere. Supplied scenarios are available if you prefer.
 
 Think about: *What decision would this support? Who makes that decision? How is it made today?*
 
-One framing note that will save you time. The exercises all concern allocating resources — which locations, which times, which rounds, which process steps — rather than scoring individuals. European practice treats those two very differently, and we spend real time on why. If your problem is about individuals, still bring it: there is almost always a resource-shaped version of the same question, and finding it together is one of the more useful hours of the week.
+## What you do not need
+
+- Any prior machine-learning experience.
+- A powerful laptop, a GPU, or a cloud account.
+- An internet connection during the sessions — everything runs offline once installed.
+- To be a software developer. The notebooks are prepared; your task is to understand, experiment and interpret.
+- Legal expertise. The European material is a framework and its reasoning, not legal training.
 
 ## What to expect
 
 | | |
 |---|---|
-| Level | Working analyst. Method choice and evaluation, not syntax |
-| Pace | Concept, short demonstration, then you work. Interpretation time is built in |
-| Format | Pairs — one drives the keyboard, one checks and writes the finding. Roles swap |
-| Data | Synthetic, generated for teaching. Nothing confidential or personal |
-| Materials | A printed handbook on Day 1, plus all notebooks to keep |
-| Assessment | Daily questions, a capstone and a short final exercise. Formative, to help you learn |
+| Pace | Concept, demonstration, then you try it. Repeated, with interpretation time built in. |
+| Format | Ten working pairs, forming five reporting groups. Swap operating and checking roles at useful checkpoints. |
+| Data | Synthetic datasets, generated for teaching. No confidential or personal data is used. |
+| Materials | A printed handbook on Day 1, plus all notebooks to keep. |
+| Assessment | Daily questions and a short final exercise. Formative — to help you learn, not to grade you. |
 
-## What you do not need
+## Questions before the course
 
-- A powerful laptop, a GPU or a cloud account.
-- An internet connection during the sessions — everything runs offline once installed.
-- Prior experience of machine learning specifically.
-- Legal expertise. The European material is a framework and its reasoning, not legal training.
-
-## Questions
-
-Contact your course organiser. Setup problems in particular are far easier to fix the week before than on Monday morning.
+Contact your course organiser. Setup problems in particular are much easier to fix the week before than on Monday morning.
 
 We look forward to meeting you.

@@ -65,6 +65,25 @@ In the meantime the instructor says one sentence at the start of each lab: *"Thi
 
 **No real dataset.** Still open, still needs a licence decision.
 
+## Merged with the workshop revision
+
+This review was written against `9a57450`. While it was open, `main` gained two substantial commits — a tutor script, an illustrated PDF handbook built from `participant/handbook_content.json`, a rewritten participant handbook with the earlier one preserved as `HANDBOOK_TECHNICAL_REFERENCE.md`, fifteen activity cards, and five executed experiments in `workshops/`.
+
+That work independently delivers several items this review had only specified: rolling-origin backtesting, validation-based cost thresholds, case-mix reversal and monitoring triggers, all executed with recorded results. Those rows in the backlog are closed by it, not by this change.
+
+The merge took the newer versions of every shared file. Two consequences worth knowing:
+
+- **The timetable moved.** Workshops now run 50/50/60 minutes with 20 minutes of peer review. `european-practice/DAILY_INTEGRATION.md` was written against the older structure; its content holds but its placements need re-fitting to the activity cards, which is roughly two hours and has not been done.
+- **The no-code workbook is no longer bound into the printed handbook.** That was a deliberate choice on `main` and it was preserved.
+
+## An open disagreement to settle
+
+`PROGRAMME.md` on `main` says: *"The venue does not make these methods uniquely European. Local examples can be used if helpful, but geography is not a teaching objective."*
+
+That is correct about methods and about examples, and the sentence was kept. But the cohort's stated request was to learn how this work is done in Europe, and there is a reading of that request which is neither geography nor decoration: the **governance framework** around public-sector analysis genuinely differs, and for ministry staff it is substantive. That is what `european-practice/` contains — not European-flavoured examples.
+
+The merge keeps both, with the European material scoped explicitly to governance rather than geography. **If the intent was to drop the European thread rather than to scope it, say so and it comes out** — it is self-contained in `european-practice/`, `participant/EUROPEAN_PRACTICE.md`, one section of `PROGRAMME.md` and one line in the build script. This is a judgement about what the client asked for, and it is not the instructor's to make alone.
+
 ## What the instructor must verify before delivery
 
 1. **The regulatory content is current.** Regulation moves and a directive applies through each member state's transposing law. Check the official sources at the end of `REGULATORY_FRAME.md`, not summaries — including that one.

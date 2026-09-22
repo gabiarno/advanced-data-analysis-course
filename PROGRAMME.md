@@ -1,190 +1,70 @@
-# Advanced Data Analysis Techniques — programme
+# Advanced Data Analysis | A practical workshop
 
-Five days, in person, Genoa. English delivery with Arabic interpretation. 20 participants.
+## Make the next decision better
 
-## Who this is for
+You already work with data and use Python. This week gives you room to take the next step: test more demanding methods, question promising results and turn the evidence into a recommendation someone can use.
 
-Confirmed cohort: personnel of the Ministry of Interior of Saudi Arabia. They work with Python and are not beginners. They are not IT professionals — they are domain and decision-making staff who analyse data as part of their work. They have asked specifically to learn how this work is done in Europe.
+We will work as a small analysis team. Expect short explanations, prepared notebooks, experiments with selected parameters and plenty of discussion. You do not need to be a software developer. You do need to be willing to explain why you trust an answer.
 
-The programme is built on that profile:
+The group consists of 20 participants from Saudi Arabia's Ministry of Interior, meeting in Genoa. Teaching is in English with Arabic interpretation. Public-service examples concern appointment capacity, facilities maintenance, processing times and request routing. Existing numerical notebooks retain their clearly labelled synthetic retail, logistics and service examples.
 
-- **Pitched at working analyst level.** No Python syntax teaching, no guided first model, no line-by-line walkthroughs. Participants read and modify working code from the first hour. Time is spent on method choice, evaluation design and judgement, which is where domain specialists gain most.
-- **Framed in public administration throughout.** Service-centre demand, inspection scheduling, emergency call volume, records quality, road safety. Not retail, not logistics, not customer support.
-- **European practice woven through every day.** Roughly 150 minutes across the week, attached to analytical activities rather than delivered as a compliance lecture. This is content the cohort asked for and it is the distinguishing feature of the programme.
-- **Built on resource allocation, not scoring people.** Every exercise concerns places, processes, documents and resources. European practice draws a hard line there, and the course teaches that line explicitly, using European case law and Europe's own failures.
+## What we will work on
 
-A no-code route covers any participant who turns out not to code, and any session where laptops fail. It is a fallback, not the default.
+| Day | Our question | What we will do | What you will leave with |
+|---|---|---|---|
+| 1 | Can we trust this report? | Audit data in Python, make a fair comparison and improve a chart | A documented audit and a short management briefing |
+| 2 | Is the prediction useful? | Compare regression and classification with baselines, explore validation and error costs, discuss clustering/PCA | A model-selection argument with clear limitations |
+| 3 | What could we know at the time? | Compare forecasts, respect time order, classify text and investigate ambiguity | An evaluation design and a human-review rule |
+| 4 | Can we act under uncertainty? | Update a probability, inspect MCMC and critique generated data | A recommendation linking probability, assumptions and action |
+| 5 | What would a pilot need? | Explore partitioned aggregation and Spark, compare advanced models and present proposals | A one-page pilot proposal with an owner and stop condition |
 
-## How the course runs
+The governance thread described below runs through all five days, attached to the analytical activity of each one.
 
-**Practitioner level.** Each day is 300 minutes: about 90 minutes of explanation and demonstration, 135 minutes of protected hands-on work, 45 minutes of interpretation and reporting, and two 15-minute breaks.
+The advanced ideas stay in the course: trees and forests, tuning, dimensionality reduction, ARIMA, Bayesian inference, MCMC, Spark/MLlib, neural networks and a toy adversarial generator. We teach them through prepared examples and analytical decisions. This is broad practical coverage, not specialist mastery of every method or distributed production engineering.
 
-**Everything is evaluated.** No method is presented without a baseline to beat, a stated evaluation strategy and an explicit limitation. Participants leave able to challenge a result, not only produce one. This is the same discipline European regulation requires, which is why the two fit together without friction.
+## How the room will work
 
-**Pairs with two roles.** Ten pairs. One drives the keyboard; the other checks the result and writes the briefing. Roles swap every 10–15 minutes.
+Ten pairs work at laptops. One person operates while the other checks and explains; swap at a useful checkpoint. Two pairs form each reporting group. Faster pairs take an extension; everyone is responsible for the interpretation.
 
-**Reproducible and offline.** Everything runs on a laptop with no internet, no cloud account and no GPU once installed. Every worked example has been executed and its output recorded, so a failed laptop never stops a lesson.
+The core route uses Python. Saved outputs and the paper workbook keep the analysis moving if an environment fails. There is no need to turn a classroom problem into a long live debugging session.
 
-**Synthetic data, honestly labelled.** Practice datasets are generated from published rules. No confidential or personal data is involved, results are reproducible, and participants keep everything without restriction. They are also taught precisely what synthetic results can and cannot support.
+Each day lasts 300 minutes including two 15-minute breaks. Workshops A/B/C occupy 50/50/60 minutes, with 20 additional minutes for peer review: 180 protected practical minutes. Short demonstrations total 30 minutes including interpretation. The remaining 60 minutes cover warm-up, debrief, reporting and exit work. All timings include interpretation. Follow the exact schedule in the activity cards.
 
-## What participants take away
+Day 5 uses Workshop C for 20 minutes of final preparation,35 for five interpreted presentations and 5 for peer feedback. Minutes 270–290 are the individual practical; 290–300 are feedback and closing. Each participant keeps an individual written proposal.
 
-- A printed handbook with the full content, their own recorded results, and four reference cards: method selection, Python, the English–Arabic glossary, and European practice.
-- A completed capstone on a problem from their own work, including its governance case.
-- Runnable notebooks for every method, working on their own machine.
-- A 30-day follow-up plan.
+This provides 22.5 contact hours across the week. If 25 are required, place breaks outside five teaching hours and extend the practice blocks by 30 minutes daily.
 
-## Learning outcomes
+## What good work looks like
 
-By the end of the course, participants can:
+You can explain the data-quality decisions, select a method for a specific question, compare with a baseline, avoid leakage, interpret uncertainty and describe a sensible next action. You can also recognise what the evidence does not establish.
 
-1. Audit a dataset for quality problems and document defensible cleaning decisions.
-2. Choose an appropriate method for a stated administrative question and justify the choice.
-3. Evaluate a model honestly, against a baseline, using a split that respects how the data arose.
-4. Recognise and prevent leakage, overfitting, contaminated test sets and unrepresentative evaluation.
-5. Build and interpret forecasts, text classifiers, Bayesian updates and distributed queries.
-6. Distinguish allocating resources from scoring people, and explain why European practice treats them differently.
-7. Apply purpose limitation, minimisation, necessity and proportionality to the design of an analytics project.
-8. Present a quantitative finding to a non-technical decision-maker with its evidence, its limitation and a next step.
-9. State what a result does not establish — reliably and without prompting.
+The entry discussion helps us adjust the support. Daily individual exit answers and the final practical check judgement rather than memorised syntax. The capstone develops across the week: decision, method, data, evaluation, limitation and next step. Assessment is formative; the course is not an accredited competency certification.
 
-Outcomes 6, 7 and 9 are what distinguish this programme. All three are assessed daily.
+## What makes the workshop worth your time
 
-## Day 1 — Data quality, description and communicating findings
+The value is practical: try a technique, change an assumption, compare results and defend an action. The venue does not make these methods uniquely European. Local examples can be used if helpful, but geography is not a teaching objective.
 
-*Understand the data before modelling it, explain what you found, and know why the purpose comes first.*
+## How this work is governed in Europe
 
-**Scenario.** A service-centre request log: counter and online channels, documents processed, fees collected. A directorate wants to report channel performance before deciding on counter opening hours.
+There is one sense in which "how it is done in Europe" has real content, and it is not the examples. A baseline is a baseline anywhere. What genuinely differs is the governance around public-sector analysis, and for people who work in a ministry that is substantive rather than decorative.
 
-| Session | Content |
-|---|---|
-| Opening | Course frame, pair roles, entry diagnostic |
-| **European** | Purpose before data. The resource-versus-people distinction, written on the board for the week. What an ordinary compliant project looks like, and why its first three steps remove more risk than the rest combined |
-| Concept | Data quality as an obligation, not housekeeping. What a row represents |
-| **Lab A (40 min)** | Audit the request log: rows, duplicates, missing values, invalid counts |
-| Concept | Central tendency, dispersion, correlation. Outliers that are errors against outliers that are real |
-| **Lab B (45 min)** | Apply documented cleaning rules, compute fees collected, build one publication-quality chart |
-| Concept | Chart choice and chart repair. The one-page briefing format, used every day from here |
-| **Lab C (50 min)** | Management briefing on channel performance. Capstone problem chosen |
-| Close | Group reporting, exit check |
+We cover four things, alongside the practical work rather than as a separate lecture:
 
-**Key discipline:** missing is not zero, an outlier is not automatically an error, association is not cause — and purpose limitation means data collected for one purpose is not automatically available for another.
+- **Which rules apply to which processing.** General data protection is not the whole picture; processing for criminal-justice purposes sits under a separate regime, and AI systems are treated by risk tier. Several uses relevant to an interior ministry are named explicitly, and a few are not permitted at all.
+- **The principles that shape a project's design.** Purpose stated before collection, minimisation, necessity and proportionality, and being able to explain a decision to the person it was made about. These constrain what you build more than any single article does.
+- **Two European failures.** A Dutch fraud-scoring system stopped by a court in 2020, and a benefits risk model that wrongly accused tens of thousands of families and brought down a government in 2021. Both are studied for what went wrong analytically, not as compliance anecdotes.
+- **One distinction worth carrying home.** European practice treats allocating resources very differently from scoring individuals, even where the statistics are nearly identical. Forecasting how many calls arrive on Friday is planning. Scoring which residents will offend is not.
 
-## Day 2 — Prediction, evaluation and what an error costs
+This is a framework and its reasoning, not legal advice and not a description of your own national law. The tutor is not a lawyer and says so on the first morning. What transfers to your context is your judgement.
 
-*Predict something, prove it is worth trusting, and know who pays when it is wrong.*
+The material is in [european-practice/](european-practice/) for the tutor and [the participant reference](participant/EUROPEAN_PRACTICE.md) for the room. It replaces syntax teaching this group does not need rather than extending the timetable.
 
-**Scenario.** Scheduled inspection rounds. Which will overrun their slot, so the day can be rebalanced before citizens' appointments are cancelled?
+Five additional executable experiments address case-mix reversal, validation-based cost thresholds, rolling-origin backtesting, sensitivity of Bayesian decisions and monitoring triggers. Synthetic cases are sufficient for these objectives; a real-data case is optional, not a missing requirement for this delivery.
 
-| Session | Content |
-|---|---|
-| Concept | Supervised and unsupervised tasks. What information exists at decision time |
-| Concept | The split before the algorithm; train, validate, test, and why the order matters |
-| **Lab A (40 min)** | Regression on round duration, evaluated against a baseline |
-| Concept | Classification, confusion matrices, precision and recall, the cost of each error type |
-| **Lab B (45 min)** | Classify overrunning rounds; count missed overruns and false alarms; state the operational consequence |
-| **European** | The Dutch childcare benefits scandal. Error cost to the citizen rather than the department. Protected attributes and their proxies. Feedback loops in enforcement. Distinguishing fact from assessment in administrative records |
-| Concept | Trees, forests, cross-validation, tuning. Explainability: what the model used, and how |
-| **Lab C (50 min)** | Clustering and dimensionality reduction; tree-depth comparison on training folds only |
-| Close | Group reporting, exit check |
+Use [the activity cards](workshops/ACTIVITY_CARDS.md) for fifteen varied workshops and [the experiment notebook](workshops/experiments.ipynb) for the additional techniques. They replace parts of existing labs rather than extending the timetable.
 
-**Key discipline:** a model that beats no baseline has not been shown to work; a test set inspected repeatedly is no longer a test set; and the cost of a false positive is the cost to the person it lands on.
+## Before the first morning
 
-## Day 3 — Time series, text, and the high-risk boundary
+Bring a tested Python environment or arrange to share one. Bring a generalised analytical problem rather than confidential records. The tutor has worked examples and recorded results available as a fallback. Confirm interpretation mode and rehearse the pace.
 
-*Data with an order, data without a table, and the line European law draws through both.*
-
-**Scenario.** Daily emergency call volume for a control room, for shift planning. Separately, routing written incident reports to the responsible operational unit.
-
-| Session | Content |
-|---|---|
-| Concept | Time-series challenges; why time order changes evaluation |
-| Concept | Trend, seasonality, periodicity, decomposition |
-| **Lab A (40 min)** | Naive and seasonal-naive baselines; decomposition and ARIMA on a chronological holdout |
-| Concept | Rolling-origin backtesting — evaluating a forecast the way it will be used |
-| **European** | AI Act Annex III covers dispatch prioritisation for emergency services. This exercise, deployed for real, would be high-risk. The obligations that follow, and the difference between forecasting how many calls arrive and prioritising which caller is answered |
-| Concept | Turning text into features; the classification pipeline; where embeddings and language models fit |
-| **Lab B (45 min)** | Route incident reports; inspect what the model gets wrong and why |
-| **European** | Purpose limitation applied to free text. Narrative fields record assessments as though they were facts |
-| **Lab C (50 min)** | Validate a forecast on training data only; document a text failure case |
-| Close | Group reporting, exit check |
-
-**Key discipline:** never train on the future; a perfect score on eight examples is not evidence; and forecasting demand is planning, while prioritising individuals is a different legal object.
-
-## Day 4 — Uncertainty, decisions and verifiability
-
-*Reasoning when you do not know, turning that into a decision, and being able to prove it.*
-
-**Scenario.** A quarterly quality audit of processed records against a service standard. Eight errors in a sample of one hundred — a real deterioration, or normal variation?
-
-| Session | Content |
-|---|---|
-| Concept | Prior, likelihood, posterior. Probability distributions |
-| **Lab A (40 min)** | Update the error rate exactly; compare the effect of different priors |
-| Concept | From posterior to decision: the probability the rate exceeds the service standard, and the action it triggers |
-| Concept | Credible intervals; parameter uncertainty against outcome variability |
-| **Lab B (45 min)** | MCMC — run four chains, inspect traces and autocorrelation against the exact answer |
-| **European** | SyRI, stopped by a Dutch court in 2020. Verifiability as a legal requirement, not only a technical virtue. Necessity and proportionality as tests that come before accuracy. Limits on solely automated adverse decisions |
-| Concept | Generative models and synthetic data; governance, and why synthetic does not mean anonymous |
-| **Lab C (50 min)** | Simulate the next audit batch; generate and critique synthetic processing times |
-| Close | Group reporting, exit check |
-
-**Key discipline:** a credible interval describes a model's belief under stated assumptions, not a guarantee; and if nobody outside your team can verify a claim, it cannot be shown to be proportionate.
-
-## Day 5 — Scale, production and the capstone
-
-*What changes when data outgrows one machine, and what it takes to deploy any of this responsibly.*
-
-**Scenario.** Service transaction records held per regional office, no longer comfortable on one machine.
-
-| Session | Content |
-|---|---|
-| Concept | When one machine stops being enough; partitioned aggregation; the Hadoop ecosystem and where Spark sits |
-| **Lab A (40 min)** | Spark DataFrame and SQL aggregation across regional partitions; confirm they agree |
-| Concept | Spark MLlib pipelines. Why splitting regional data by record id is the wrong split |
-| **Lab B (45 min)** | Fit and evaluate an MLlib model against a baseline |
-| Concept | Deep learning applied at scale; GANs — generator and discriminator |
-| **European** | Impact assessments as project design tools, not paperwork. Procurement as the control point: the vendor supplies the evidence, and the buyer must know what to demand. Independent supervision. Production readiness in European terms — monitoring, logging, a stop condition, a named owner, an appeal route |
-| **Capstone (50 min)** | Complete and present the briefing, including its three governance questions |
-| Close | Final practical, course evaluation, exit self-assessment, recap |
-
-**Key discipline:** running locally proves the code works, not that the system scales; and a model nobody monitors is a model quietly failing.
-
-## The European thread
-
-Roughly 150 minutes across the week, attached to analytical activities rather than taught separately. It covers which instrument applies to what — the general regulation, the separate law-enforcement regime, the AI Act's risk tiers, and the Council of Europe treaty that is open to non-EU states; the principles that constrain project design; two European systems that harmed citizens badly enough to reach a court and bring down a government; and what ordinary compliant practice looks like day to day.
-
-It is presented as a framework and its reasoning, led by Europe's own failures. It is not legal advice, the instructor is not a lawyer, and it does not describe the participants' national law. What transfers is their judgement, and this is said plainly on Day 1.
-
-The thread costs no additional time. Because the cohort is comfortable with Python, the syntax teaching, guided first model and pipeline mechanics are removed, and that reclaimed time pays for it almost exactly.
-
-## Assessment
-
-| Instrument | When | Purpose |
-|---|---|---|
-| Entry diagnostic | Before or on Day 1 | Placement, not grading. Pitched at working-analyst level |
-| Daily exit questions | End of each day | Confirms the day's key discipline landed |
-| Capstone | Threaded across the week, presented Day 5 | Applied transfer, including the governance case |
-| Final practical, 20 minutes | Day 5 | Method choice, evaluation design, interpretation, correcting three false claims |
-| Exit self-assessment | Day 5 | Compared against the entry diagnostic; gives the organiser evidence of movement |
-| Course evaluation | Day 5 | Feedback on delivery, pace and interpretation |
-
-Formative assessment for a short professional course. Not an accredited competency certification, and not presented as one.
-
-## Delivery requirements
-
-**Laptops.** One per participant preferred, one per pair minimum, with Python 3.12 and the supplied requirements installed and tested before Day 1. Participants are asked to confirm the environment runs in advance. A no-code route and saved results cover any failure.
-
-**Room.** Projector readable from the back row, power at every seat, seating for pairs that re-forms into five groups of four.
-
-**Interpretation.** An Arabic interpreter briefed before Day 1, with the glossary and the first demonstration reviewed in advance. The European vocabulary — proportionality, purpose limitation, redress, fundamental rights — is harder to interpret consistently than the statistical terms and needs its own briefing time. Mode must be confirmed; the timetable assumes consecutive interpretation.
-
-**Printing.** 20 handbooks plus five spares, double-sided A4. Alternatively distributed as a single self-contained HTML file that works offline on any device.
-
-**Contingency.** Every worked example has recorded outputs, so any lesson can continue from saved results. Spark has a documented offline alternative, and the no-code workbook covers a total environment failure.
-
-## Scope note
-
-This programme delivers the contracted syllabus at practitioner depth: each method is taught to the point where a participant can apply it to a well-posed administrative problem, evaluate it honestly and state its limits. It does not produce specialists in any single method.
-
-It covers analytics for public administration — service demand, resource planning, emergency response, road safety, records quality, inspection scheduling, administrative processing. It does not provide operational guidance on surveillance, biometric identification or individual-level risk scoring of people. For several of those applications the European position is that they are prohibited or tightly restricted, and describing that position is part of what the cohort asked for.
+Read the [participant handbook](participant/HANDBOOK.md), [illustrated PDF](dist/participant-handbook.pdf), [tutor script](instructor/TUTOR_SCRIPT.md) and [activity cards](workshops/ACTIVITY_CARDS.md). Existing slide files still need their separate visual review.

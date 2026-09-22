@@ -1,6 +1,6 @@
 # Advanced Data Analysis Techniques
 
-**Default delivery while technical level is unknown:** use [the no-code delivery guide](instructor/NO_CODE_DELIVERY.md), [participant workbook](participant/NO_CODE_WORKBOOK.md) and [facilitator answers](instructor/NO_CODE_ANSWER_KEY.md). The five-day core can be completed on paper; notebooks are optional extensions.
+**Current delivery:** a practical Python workshop for analysts who already work with data. Start with the [complete English tutor script](instructor/TUTOR_SCRIPT.md), [humanised programme](PROGRAMME.md) and [illustrated participant PDF](dist/participant-handbook.pdf). The no-code materials are a fallback.
 
 English course materials for five days of in-person delivery in Genoa: 20 participants, with Arabic interpretation.
 
@@ -8,15 +8,19 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 
 ## Start here
 
-**Delivering the course?** Read [the Spanish quick guide](instructor/GUIA_RAPIDA_ES.md) — it explains how everything here is organised, in what order to use it, and what to decide first. Then work through [the seven-day preparation plan](instructor/PREPARATION_PLAN.md).
+**Delivering the course?** Start with [TUTOR_SCRIPT.md](instructor/TUTOR_SCRIPT.md), which contains the full spoken delivery across five days. For repository orientation, read [the Spanish quick guide](instructor/GUIA_RAPIDA_ES.md) — it explains how everything here is organised, in what order to use it, and what to decide first. Then work through [the seven-day preparation plan](instructor/PREPARATION_PLAN.md).
 
 **Presenting to the organiser?** Send [the programme](PROGRAMME.md), and use the traceability table in [the curriculum review](CURRICULUM_REVIEW.md) to show the contracted outline is covered.
 
 **Preparing the room?** [Classroom and interpreter guidance](instructor/CLASSROOM_AND_INTERPRETER.md), then [the day-of runbook](instructor/RUNBOOK.md).
 
-**Setting up optional Python demonstrations?** [Environment setup](SETUP.md), then [your first model](instructor/first_model.ipynb).
+**Preparing Python practicals?** [Environment setup](SETUP.md), then [your first model](instructor/first_model.ipynb).
 
 **Building the slides?** [The presentation index](presentations/README.md) lists the Canva designs for Days 1, 2, 3 and 5, the generated decks for all five days, and what still needs reviewing.
+
+## Practical workshop format
+
+Use [fifteen activity cards](workshops/ACTIVITY_CARDS.md) and [five executable experiments](workshops/experiments.ipynb) for varied pair work, peer review, role-play and incident analysis. The revised schedule protects180 minutes daily for workshops and peer review. Geography is not a teaching objective; synthetic cases are sufficient.
 
 ## What is here
 
@@ -53,18 +57,20 @@ Days 1–5 each include a teaching guide, timed task cards, runnable student/wor
 
 ```bash
 python -m pip install -r requirements-build.txt
-python scripts/build_participant_handbook.py    # dist/participant-handbook.html
+python -m pip install -r requirements-handbook.txt
+python scripts/build_visual_handbook.py         # PDF + Markdown + visual assets
+python scripts/build_participant_handbook.py    # self-contained HTML
 python scripts/build_slide_decks.py             # dist/slides/day-0N.pptx
 ```
 
-The handbook is one self-contained file: print it to A4 double-sided, or send it as the online version. It works offline on any device. See [dist/README.md](dist/README.md).
+The illustrated handbook is a 28-page PDF. Its Markdown and self-contained HTML versions are also available. It works offline on any device. See [dist/README.md](dist/README.md).
 
 ## Status
 
 [Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation.
 
-Still open: Day 4 has no Canva design, the Canva decks need their slide-by-slide review and three of them do not match their plans' slide counts, the generated decks need their visual placeholders replaced, the no-code route now includes text/time availability, posterior decisions, synthetic-data critique and production-readiness activities; advanced executable additions in [the curriculum review](CURRICULUM_REVIEW.md) remain a separate backlog, and no real dataset is included. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
+Still open: Day 4 has no Canva design, the Canva decks need their slide-by-slide review and three of them do not match their plans' slide counts, the generated decks need their visual placeholders replaced, the no-code route now includes text/time availability, posterior decisions, synthetic-data critique and production-readiness activities; advanced executable additions in [the curriculum review](CURRICULUM_REVIEW.md) remain a separate backlog, and synthetic datasets are intentionally retained for this workshop. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
 
-The provisional schedule includes two 15-minute breaks within each five-hour day. Confirm whether the organiser instead requires five contact hours, excluding breaks. Technical level and interpretation mode are not yet confirmed. Advanced coverage requires an agreed scope and instructor rehearsal.
+The provisional schedule includes two 15-minute breaks within each five-hour day. Confirm whether the organiser instead requires five contact hours, excluding breaks. Existing Python use is confirmed; specific modelling experience and interpretation mode still need checking. Advanced coverage requires an agreed scope and instructor rehearsal.
 
 All practice data included here are synthetic. No participant information is required.

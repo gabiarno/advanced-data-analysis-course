@@ -1,19 +1,13 @@
 # Delivery with zero programmers
 
-**Status: fallback route, not the default.** The cohort has since been confirmed as Ministry of Interior personnel who work with Python and are not beginners, so the coding route in `RUNBOOK.md` is the default and `PROGRAMME.md` is written around it. This document remains fully valid and stays in the pack for four situations:
+This is the contingency route. The confirmed cohort already uses Python; follow TUTOR_SCRIPT.md for the main delivery.
 
-1. **Individual participants who turn out not to code.** Run them on this route within a mixed room; the assessed outcomes and the capstone are common to both.
-2. **A total environment failure.** Locked-down laptops, a venue problem, no power at the seats.
-3. **A cohort that does not match the briefing.** If the entry diagnostic shows most participants struggling with its foundational questions, switch and tell the organiser the same day, in writing.
-4. **Any single activity** where the point is judgement rather than implementation. Several of these paper activities are better than their coded equivalents and can be used on the default route deliberately.
-
-Do not discard this material. A confirmed profile is a briefing, not a guarantee, and the cost of discovering on Monday morning that it was wrong is a wasted week.
-
-**Two adjustments when using it with this cohort.** Re-frame every scenario using `DOMAIN_MAPPING.md` — the workbook's retail framing is wrong for this audience regardless of route. And keep the European segments from `european-practice/DAILY_INTEGRATION.md`; they need no laptop at all, so they transfer to this route unchanged.
+Keep it prepared rather than discarded. A confirmed profile is a briefing, not a guarantee, and it is still the right route for an individual who turns out not to code, for a total environment failure, and for any single activity where the point is judgement rather than implementation. Two notes if you do use it: re-frame the scenarios with `DOMAIN_MAPPING.md`, and the governance segments in `european-practice/DAILY_INTEGRATION.md` need no laptop, so they transfer unchanged.
+ It builds on the participant handbook, capstone and runbook added in the curriculum revision. It replaces mandatory coding labs with supplied evidence, calculations, critique and decisions. No participant needs to install software or modify code. Python is an optional instructor demonstration and a technical extension.
 
 ## Start here
 
-1. Print participant/NO_CODE_WORKBOOK.md for 20 people plus five spares, and the method card and capstone brief. Keep instructor/NO_CODE_ANSWER_KEY.md for the instructor only. The generated handbook includes the no-code workbook first.
+1. Print participant/NO_CODE_WORKBOOK.md for 20 people plus five spares, and the method card and capstone brief. Keep instructor/NO_CODE_ANSWER_KEY.md for the instructor only. Print the fallback workbook separately; the main handbook follows the confirmed Python workshop.
 2. Read the answers before teaching. Rehearse the calculation and one plain-language explanation for every activity.
 3. Arrange five groups of four. Rotate decision owner, evidence checker, critical reviewer and spokesperson every activity. Each person writes an individual exit answer and final assessment.
 4. Brief the Arabic interpreter using the existing draft glossary. Use short sentences, pause after one idea, and avoid speaking while participants read or calculate. Have the interpreter validate Arabic terminology; do not treat draft translations as approved.

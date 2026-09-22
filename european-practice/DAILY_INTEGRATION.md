@@ -2,6 +2,8 @@
 
 The European thread is not a sixth day and not a compliance lecture. It attaches to analytical activities that already exist.
 
+> **The timetable changed under this document.** It was written against the earlier 300-minute structure (labs of 40/45/50 minutes). `PROGRAMME.md` now runs workshops A/B/C at 50/50/60 minutes with 20 minutes of peer review — 180 protected practical minutes — and `instructor/TUTOR_SCRIPT.md` and `workshops/ACTIVITY_CARDS.md` hold the current minute-by-minute plan. The content below and the size of the trade still hold; the exact placements need re-fitting to the workshop cards before delivery. That is about two hours of work and it has not been done.
+
 ## The time trade, stated honestly
 
 Each day is already a full 300 minutes. Nothing can be added without removing something. Fortunately the two changes cancel out almost exactly.
