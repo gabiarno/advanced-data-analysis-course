@@ -1,10 +1,10 @@
 # Delivery with zero programmers
 
-This is the default route while participant experience is unknown. It builds on the participant handbook, capstone and runbook added in the curriculum revision. It replaces mandatory coding labs with supplied evidence, calculations, critique and decisions. No participant needs to install software or modify code. Python is an optional instructor demonstration and a technical extension.
+This is the contingency route. The confirmed cohort already uses Python; follow TUTOR_SCRIPT.md for the main delivery. It builds on the participant handbook, capstone and runbook added in the curriculum revision. It replaces mandatory coding labs with supplied evidence, calculations, critique and decisions. No participant needs to install software or modify code. Python is an optional instructor demonstration and a technical extension.
 
 ## Start here
 
-1. Print participant/NO_CODE_WORKBOOK.md for 20 people plus five spares, and the method card and capstone brief. Keep instructor/NO_CODE_ANSWER_KEY.md for the instructor only. The generated handbook includes the no-code workbook first.
+1. Print participant/NO_CODE_WORKBOOK.md for 20 people plus five spares, and the method card and capstone brief. Keep instructor/NO_CODE_ANSWER_KEY.md for the instructor only. Print the fallback workbook separately; the main handbook follows the confirmed Python workshop.
 2. Read the answers before teaching. Rehearse the calculation and one plain-language explanation for every activity.
 3. Arrange five groups of four. Rotate decision owner, evidence checker, critical reviewer and spokesperson every activity. Each person writes an individual exit answer and final assessment.
 4. Brief the Arabic interpreter using the existing draft glossary. Use short sentences, pause after one idea, and avoid speaking while participants read or calculate. Have the interpreter validate Arabic terminology; do not treat draft translations as approved.

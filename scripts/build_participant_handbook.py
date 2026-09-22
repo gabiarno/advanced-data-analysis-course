@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import html
 import re
+import base64
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -23,7 +24,6 @@ OUTPUT = ROOT / "dist" / "participant-handbook.html"
 
 # Order matters: this is the order the printed handbook is bound in.
 SECTIONS = [
-    "NO_CODE_WORKBOOK.md",
     "HANDBOOK.md",
     "CAPSTONE.md",
     "CHEATSHEET_METHODS.md",
@@ -82,6 +82,17 @@ def render(markdown: str, slug: str) -> tuple[str, list[tuple[int, str, str]]]:
         stripped = line.strip()
 
         if not stripped:
+            index += 1
+            continue
+
+        picture = re.fullmatch(r"!\[(.*?)\]\(([^)]+)\)", stripped)
+        if picture:
+            source = (SOURCE / picture.group(2)).resolve()
+            if not source.is_relative_to(ROOT.resolve()) or source.suffix != '.png':
+                raise ValueError(f"Unsupported handbook image: {source}")
+            encoded = base64.b64encode(source.read_bytes()).decode('ascii')
+            alt = html.escape(picture.group(1), quote=True)
+            out.append(f'<figure><img style="width:100%;height:auto" alt="{alt}" src="data:image/png;base64,{encoded}"></figure>')
             index += 1
             continue
 

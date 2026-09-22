@@ -1,49 +1,49 @@
-# Advanced Data Analysis Techniques — programme
+# Advanced Data Analysis | A practical workshop
 
-Five days, in person, Genoa. English delivery with Arabic interpretation. 20 participants.
+## Make the next decision better
 
-## Audience and outcomes
+You already work with data and use Python. This week gives you room to take the next step: test more demanding methods, question promising results and turn the evidence into a recommendation someone can use.
 
-The default route is practical analytics for decisions, accessible without programming experience. Five teams of four use supplied tables and results to calculate, audit, compare and defend recommendations. Python notebooks remain optional technical extensions and instructor demonstrations.
+We will work as a small analysis team. Expect short explanations, prepared notebooks, experiments with selected parameters and plenty of discussion. You do not need to be a software developer. You do need to be willing to explain why you trust an answer.
 
-Participants learn to audit data, choose methods, compare with baselines, design honest evaluations, interpret uncertainty and communicate an evidence-based decision. Independent model implementation is an additional coding-route outcome, not a requirement or claimed achievement of the no-code route. Share this distinction with the organiser when confirming contracted depth.
+The group consists of 20 participants from Saudi Arabia's Ministry of Interior, meeting in Genoa. Teaching is in English with Arabic interpretation. Public-service examples concern appointment capacity, facilities maintenance, processing times and request routing. Existing numerical notebooks retain their clearly labelled synthetic retail, logistics and service examples.
 
-## Five-day programme
+## What we will work on
 
-All core activities are supplied in [the no-code workbook](participant/NO_CODE_WORKBOOK.md). The existing handbook supplies explanations, the method card supplies a reference and the capstone connects the days.
+| Day | Our question | What we will do | What you will leave with |
+|---|---|---|---|
+| 1 | Can we trust this report? | Audit data in Python, make a fair comparison and improve a chart | A documented audit and a short management briefing |
+| 2 | Is the prediction useful? | Compare regression and classification with baselines, explore validation and error costs, discuss clustering/PCA | A model-selection argument with clear limitations |
+| 3 | What could we know at the time? | Compare forecasts, respect time order, classify text and investigate ambiguity | An evaluation design and a human-review rule |
+| 4 | Can we act under uncertainty? | Update a probability, inspect MCMC and critique generated data | A recommendation linking probability, assumptions and action |
+| 5 | What would a pilot need? | Explore partitioned aggregation and Spark, compare advanced models and present proposals | A one-page pilot proposal with an owner and stop condition |
 
-| Day | Concepts | Activity A · 40 min | Activity B · 45 min | Activity C · 50 min | Output |
-|---|---|---|---|---|---|
-| 1 | EDA, data quality, averages, visualisation, correlation and causality | Audit eight order records | Calculate revenue and challenge a chart | Management briefing and capstone problem | Audit, hand-drawn chart, recommendation |
-| 2 | Regression, classification, validation, trees/forests, clustering, PCA | Calculate prediction errors and check features | Confusion matrix and error costs | Method selection and vendor critique; capstone | Baseline comparison and cost-based decision |
-| 3 | Trend, seasonality, ARIMA, chronological evaluation, NLP | Compare forecasts and design rolling evaluation | Route ambiguous messages | Text counts over time and availability; capstone | Evaluation design and human-review policy |
-| 4 | Prior, likelihood, posterior, MCMC, generative models | Apply a fictional probability-to-action rule | Critique supplied simulation evidence | Future outcomes and synthetic-data review; capstone | Uncertainty-based recommendation |
-| 5 | Hadoop/MapReduce, Spark/MLlib, neural models, GANs, monitoring | Combine partition totals | Critique models and design a pilot | Finish and present capstones | Briefing, owner and stop condition |
+The advanced ideas stay in the course: trees and forests, tuning, dimensionality reduction, ARIMA, Bayesian inference, MCMC, Spark/MLlib, neural networks and a toy adversarial generator. We teach them through prepared examples and analytical decisions. This is broad practical coverage, not specialist mastery of every method or distributed production engineering.
 
-The rolling-evaluation activity is a design exercise, not an executed backtest. All core evidence is synthetic. Small hand-calculation cases and recorded notebook results are labelled separately. No classroom result establishes real-world performance. A licensed real-data case remains an unfilled curriculum item.
+## How the room will work
 
-## Timing and interpretation
+Ten pairs work at laptops. One person operates while the other checks and explains; swap at a useful checkpoint. Two pairs form each reporting group. Faster pairs take an extension; everyone is responsible for the interpretation.
 
-Each day occupies 300 minutes including two 15-minute breaks: 270 contact minutes, or 22.5 contact hours over the week. If the organiser requires 25 contact hours, add 30 teaching minutes daily and put breaks outside those hours.
+The core route uses Python. Saved outputs and the paper workbook keep the analysis moving if an environment fails. There is no need to turn a classroom problem into a long live debugging session.
 
-Days 1–4: opening 20; concepts/demo 30; Activity A 40; debrief 15; break 15; concepts/demo 30; Activity B 45; break 15; Activity C 50; reports 25; individual exit/recap 15. Total 300, including 135 minutes in protected activity blocks. Timings include consecutive interpretation, not continuous English speech. Rehearse pacing with the interpreter.
+Each day is 300 minutes including two fifteen-minute breaks. The schedule includes consecutive interpretation: opening 20; explanation 30; Lab A 40; debrief 15; break 15; explanation 30; Lab B 45; break 15; Lab C/project 50; reports 25; close 15. That gives 270 contact minutes daily, or 22.5 contact hours across the week. If the contract requires 25 contact hours, add 30 teaching minutes daily and place breaks outside them.
 
-Day 5 follows the same sequence through minute 210. At 210–225 finish capstones;225–260 present five groups, seven minutes each (three speaking, three interpretation, one feedback). At 260–280 complete the individual final practical;280–285 collect and debrief;285–300 collect feedback and exit self-assessments and explain next steps. Each participant retains an individual written capstone page.
+On Day 5, the final 90 minutes are:15 to finish proposals;35 for five interpreted group presentations;20 for the individual practical;5 for collection/debrief;15 for feedback and next steps. Each presentation has three minutes speaking, three interpretation and one feedback. Each participant keeps an individual written proposal.
 
-## Assessment and materials
+## What good work looks like
 
-- Entry diagnostic: placement and support, not grading.
-- Daily individual exit answer: check understanding beyond the group spokesperson.
-- Capstone: existing six-heading brief, with a group presentation and individual page.
-- Final practical:20 minutes, no programming; separate 10-point formative rubric.
-- Takeaways: workbook, background handbook, method card, optional notebooks and existing 30-day follow-up pack.
+You can explain the data-quality decisions, select a method for a specific question, compare with a baseline, avoid leakage, interpret uncertainty and describe a sensible next action. You can also recognise what the evidence does not establish.
 
-This is a short professional course, not an accredited certification of advanced implementation competence.
+The entry discussion helps us adjust the support. Daily individual exit answers and the final practical check judgement rather than memorised syntax. The capstone develops across the week: decision, method, data, evaluation, limitation and next step. Assessment is formative; the course is not an accredited competency certification.
 
-## Delivery requirements
+## A practical view of working in Spain and Europe
 
-Room: projector, writing surfaces and five groups of four. Participants need paper and pen; a calculator is optional. No laptop, account, installation or internet connection is required for core activities. The instructor needs offline materials and rehearsed explanations; Python setup is only needed for chosen demonstrations.
+We will use documented examples from INE and datos.gob.es as reference points for quality, documentation and reuse. Our workshop routine is to agree definitions, make analysis repeatable, invite a colleague's review and record the decision. This is a proposed working method, not a claim that every organisation in Spain or Europe works identically. Participants can compare it with their own processes and decide what transfers.
 
-Confirm interpretation mode and review the draft English–Arabic glossary with the interpreter. Permit interpreted contributions and Arabic written answers when the interpreter can review them. Print 20 participant copies plus five spares; keep facilitator answers separate.
+## Before the first morning
 
-Existing PPTX and Canva materials retain outstanding review items. The workbook provides activity instructions independently. Follow [the no-code delivery guide](instructor/NO_CODE_DELIVERY.md) for pacing, preparation and slide substitutions. Use [the original coding runbook](instructor/RUNBOOK.md) only for participants choosing implementation practice.
+Bring a laptop with the course environment tested, or arrange to share one with your partner. Bring a generalised work problem rather than confidential records. The tutor will have local saved outputs and a paper fallback. Confirm interpretation mode and review the draft glossary with the interpreter.
+
+The five-hour assumption and presentation pace need rehearsal. Data are synthetic; a licensed real-data exercise remains a separate open item. Existing slide decks retain their visual-review tasks and have not been rewritten by this handbook update.
+
+Read the [participant handbook](participant/HANDBOOK.md), [illustrated PDF](dist/participant-handbook.pdf) and [complete tutor script](instructor/TUTOR_SCRIPT.md). The script is the delivery authority for this confirmed audience; the older runbooks remain supporting references.

@@ -1,6 +1,8 @@
 # Curriculum review — brochure promises against current materials
 
-**Delivery adaptation after this review:** a complete paper-based route now exists in [instructor/NO_CODE_DELIVERY.md](instructor/NO_CODE_DELIVERY.md), with [participant activities](participant/NO_CODE_WORKBOOK.md) and [answers](instructor/NO_CODE_ANSWER_KEY.md). It preserves the existing handbook, capstone and technical notebooks. This route teaches evaluation and decisions; it does not certify independent implementation.
+**Audience update:** the cohort already uses Python. The current delivery follows instructor/TUTOR_SCRIPT.md, with guided notebook experiments and a conversational participant handbook. No-code materials are retained as a fallback.
+
+**Earlier delivery adaptation after this review:** a complete paper-based route now exists in [instructor/NO_CODE_DELIVERY.md](instructor/NO_CODE_DELIVERY.md), with [participant activities](participant/NO_CODE_WORKBOOK.md) and [answers](instructor/NO_CODE_ANSWER_KEY.md). It preserves the existing handbook, capstone and technical notebooks. This route teaches evaluation and decisions; it does not certify independent implementation.
 
 Reviewed on 2026-09-21 against the LPC Training brochure *Advanced Data Analysis Techniques* (5 days, category "Data Science & Visualisation"). This document records what the brochure commits to, where the repository already delivers it, what is missing, and what should be added. It is a planning document for the instructor and the organiser, not classroom material.
 
