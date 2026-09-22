@@ -4,6 +4,51 @@ Este es el único documento de este repositorio escrito en español. Existe para
 
 ---
 
+## Perfil confirmado del grupo — léelo antes que nada
+
+Ya sabemos quiénes son, y cambia bastante:
+
+- **Personal del Ministerio del Interior de Arabia Saudí.**
+- **Manejan Python. No son principiantes.** Nada de enseñar sintaxis ni "tu primer modelo".
+- **No son informáticos.** Son perfiles de dominio y de decisión que analizan datos como parte de su trabajo. El tiempo va a elección de método, diseño de la evaluación y criterio, no a programar.
+- **Han pedido explícitamente aprender cómo se hace esto en Europa.**
+
+Qué se ha hecho con esa información, en `instructor/AUDIENCE_FIT_REVIEW.md`. Los tres cambios grandes:
+
+1. **La ruta por defecto vuelve a ser la de programar**, subida a nivel de analista. La ruta sin código no se borra: queda como plan B documentado para quien no programe, para un fallo de portátiles, o si el diagnóstico contradice el briefing.
+2. **Todo el dominio se re-enfoca a administración pública** — oficinas de atención, inspecciones programadas, volumen de llamadas de emergencia, calidad de registros, seguridad vial. Ver `instructor/DOMAIN_MAPPING.md`. **Los números no cambian**: es un reetiquetado de los mismos datos sintéticos, así que todos los resultados validados siguen valiendo.
+3. **Hay un hilo europeo nuevo** que atraviesa los cinco días, en `european-practice/`. Unos 150 minutos en total.
+
+### Lo que tienes que entender del hilo europeo
+
+No es una charla de cumplimiento normativo. Es metodología: cada pieza se engancha a una actividad analítica que ya existía. Y **no cuesta tiempo extra** — como el grupo programa, se quita la enseñanza de sintaxis, el primer modelo guiado y la mecánica de pipelines, y eso paga casi exactamente el hilo europeo. La tabla del trueque, día a día, está en `european-practice/DAILY_INTEGRATION.md`.
+
+Se apoya en dos fracasos europeos, los dos holandeses: **SyRI** (un tribunal lo paró en 2020) y el **escándalo de las ayudas a la infancia** (tumbó al gobierno en 2021). Eso es deliberado: un marco explicado a través de sus propios fallos es creíble; un marco presentado como modelo a imitar es un sermón, y no han pedido un sermón, han preguntado cómo se hace.
+
+**La distinción que organiza todo el hilo** y que conviene escribir en la pizarra el día 1: Europa trata de forma muy distinta **asignar recursos** y **puntuar personas**. Prever cuántas llamadas entrarán el viernes es planificación. Puntuar qué residentes delinquirán, no. La estadística puede ser casi idéntica; el tratamiento legal no se parece en nada.
+
+Todos los ejercicios del curso están del lado de asignar recursos. Es intencionado, y es contenido, no evasión: para varias aplicaciones de puntuar personas la respuesta europea es que están prohibidas o muy restringidas, así que describir esa posición *es* lo que han pedido.
+
+### Tres cosas que tienes que decir el día 1
+
+En voz alta, una vez, y ya está:
+
+1. No eres abogada.
+2. Esto es un marco y su razonamiento, no asesoramiento legal.
+3. No describe la legislación de su país, que es la que de verdad rige su trabajo. Lo que sea trasladable lo deciden ellos.
+
+Y verifica la vigencia normativa antes de impartir. Las fuentes oficiales están al final de `european-practice/REGULATORY_FRAME.md`. La normativa se mueve.
+
+### Con el intérprete
+
+El vocabulario de gobernanza — proporcionalidad, limitación de finalidad, derechos fundamentales, vía de recurso — es más difícil de interpretar de forma consistente que el estadístico. Hay una sección nueva en el glosario y tres ambigüedades añadidas. Dedícale tiempo propio en la sesión de briefing.
+
+### Lo que sigue sin hacerse
+
+Los notebooks todavía dicen `retail_orders.csv`. Completar el reetiquetado exige tocar cinco días de notebooks y volver a ejecutarlo todo, y eso no se ha podido validar. Está presupuestado (unas 10 horas) en `DOMAIN_MAPPING.md`.
+
+**Mientras tanto, se dice en voz alta** al empezar cada laboratorio: *"esta columna se llama `units`; en vuestro trabajo son documentos tramitados. El análisis es idéntico."* Una frase por laboratorio. Un grupo de este nivel lo asimila sin problema.
+
 ## En una frase
 
 El repositorio contiene un curso de cinco días completo y ejecutable. Lo que falta no es contenido: es ensayo, las decisiones que solo puede tomar el organizador, y las diapositivas finales.

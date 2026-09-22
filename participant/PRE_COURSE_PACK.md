@@ -10,6 +10,8 @@ You are booked on **Advanced Data Analysis Techniques**, five days in Genoa. Ses
 
 This is a hands-on course. You will spend more time working than listening, in pairs at laptops, with groups of four for discussion. There are three short things to do before Day 1.
 
+We have also been told you want to see how this work is done in Europe. The methods themselves are not European — a baseline is a baseline anywhere. What genuinely differs is the governance around public-sector analysis: which rules apply to which kind of processing, the principles that shape how a European public body designs a project, and two European systems that went badly wrong and changed the law as a result. That runs alongside the practical work rather than as a separate lecture.
+
 ## 1. Bring a laptop and test the course environment
 
 You already use Python, so we will build on that experience with prepared notebooks. You will run, inspect and modify selected parts of the examples. Bring a laptop or arrange to share one with a partner.
@@ -67,6 +69,7 @@ Think about: *What decision would this support? Who makes that decision? How is 
 - A powerful laptop, a GPU, or a cloud account.
 - An internet connection during the sessions — everything runs offline once installed.
 - To be a software developer. The notebooks are prepared; your task is to understand, experiment and interpret.
+- Legal expertise. The European material is a framework and its reasoning, not legal training.
 
 ## What to expect
 

@@ -1,6 +1,6 @@
 # Course guide
 
-**Confirmed audience:** experienced analysts who already use Python, without a software-development profile. Follow [TUTOR_SCRIPT.md](instructor/TUTOR_SCRIPT.md) and [PROGRAMME.md](PROGRAMME.md). Use the no-code pack only as a contingency.
+**Confirmed audience:** Ministry of Interior personnel — experienced analysts who already use Python, without a software-development profile — who have asked to see how this work is done in Europe. Follow [TUTOR_SCRIPT.md](instructor/TUTOR_SCRIPT.md) and [PROGRAMME.md](PROGRAMME.md). Use the no-code pack only as a contingency.
 
 ## Delivery context
 
@@ -8,11 +8,11 @@
 
 ## Start here
 
-1. Read [the Spanish quick guide](instructor/GUIA_RAPIDA_ES.md) for how this repository is organised and what to decide first.
-2. Read [the preparation plan](instructor/PREPARATION_PLAN.md).
+1. Read [the Spanish quick guide](instructor/GUIA_RAPIDA_ES.md) for how this repository is organised and what to decide first, and [the audience fit review](instructor/AUDIENCE_FIT_REVIEW.md) for what the confirmed cohort changed.
+2. Read [the preparation plan](instructor/PREPARATION_PLAN.md) and [the European practice material](european-practice/), which needs its own rehearsal.
 3. Rehearse the prepared Python labs using [environment setup](SETUP.md), the saved outputs and the tutor script.
 4. Run [your first model](instructor/first_model.ipynb).
-5. Rehearse [Day 1](day-01-eda/TEACHING_GUIDE.md), then run the worked notebook and student exercises.
+5. Rehearse [Day 1](day-01-eda/TEACHING_GUIDE.md) with [the domain mapping](instructor/DOMAIN_MAPPING.md) beside you, then run the worked notebook and student exercises.
 6. Use [the diagnostic](assessments/ENTRY_DIAGNOSTIC.md) to check prerequisites before delivery, and send [the pre-course pack](participant/PRE_COURSE_PACK.md) as soon as possible.
 7. Keep [the day-of runbook](instructor/RUNBOOK.md) and [the question bank](instructor/QUESTION_BANK.md) to hand while teaching.
 

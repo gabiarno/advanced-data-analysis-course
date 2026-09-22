@@ -1,6 +1,9 @@
 # Delivery with zero programmers
 
-This is the contingency route. The confirmed cohort already uses Python; follow TUTOR_SCRIPT.md for the main delivery. It builds on the participant handbook, capstone and runbook added in the curriculum revision. It replaces mandatory coding labs with supplied evidence, calculations, critique and decisions. No participant needs to install software or modify code. Python is an optional instructor demonstration and a technical extension.
+This is the contingency route. The confirmed cohort already uses Python; follow TUTOR_SCRIPT.md for the main delivery.
+
+Keep it prepared rather than discarded. A confirmed profile is a briefing, not a guarantee, and it is still the right route for an individual who turns out not to code, for a total environment failure, and for any single activity where the point is judgement rather than implementation. Two notes if you do use it: re-frame the scenarios with `DOMAIN_MAPPING.md`, and the governance segments in `european-practice/DAILY_INTEGRATION.md` need no laptop, so they transfer unchanged.
+ It builds on the participant handbook, capstone and runbook added in the curriculum revision. It replaces mandatory coding labs with supplied evidence, calculations, critique and decisions. No participant needs to install software or modify code. Python is an optional instructor demonstration and a technical extension.
 
 ## Start here
 

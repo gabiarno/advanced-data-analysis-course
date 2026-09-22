@@ -4,6 +4,8 @@
 
 English course materials for five days of in-person delivery in Genoa: 20 participants, with Arabic interpretation.
 
+**Confirmed cohort:** Ministry of Interior personnel, Saudi Arabia. They work with Python and are not beginners; they are domain and decision-making staff rather than IT professionals, and they asked to learn how this work is done in Europe. The materials are pitched, framed and sequenced for that profile — see [the audience fit review](instructor/AUDIENCE_FIT_REVIEW.md).
+
 ## Start here
 
 **Delivering the course?** Start with [TUTOR_SCRIPT.md](instructor/TUTOR_SCRIPT.md), which contains the full spoken delivery across five days. For repository orientation, read [the Spanish quick guide](instructor/GUIA_RAPIDA_ES.md) — it explains how everything here is organised, in what order to use it, and what to decide first. Then work through [the seven-day preparation plan](instructor/PREPARATION_PLAN.md).
@@ -27,8 +29,9 @@ Use [fifteen activity cards](workshops/ACTIVITY_CARDS.md) and [five executable e
 | [PROGRAMME.md](PROGRAMME.md) | The client-facing programme: outcomes, daily content, assessment, requirements |
 | [CURRICULUM_REVIEW.md](CURRICULUM_REVIEW.md) | Brochure promises against delivered material; gaps, additions and the open questions for the organiser |
 | [COURSE_GUIDE.md](COURSE_GUIDE.md) | Material status and delivery principles |
-| [instructor/](instructor/) | Preparation plan, day-of runbook, question bank, interpreter glossary, Spanish orientation |
-| [participant/](participant/) | Handbook, reference cards, capstone, pre- and post-course packs, evaluation forms |
+| [european-practice/](european-practice/) | GDPR, the Law Enforcement Directive, the AI Act; European case studies; daily integration |
+| [instructor/](instructor/) | Audience fit review, domain mapping, day-of runbook, question bank, no-code fallback, Spanish orientation |
+| [participant/](participant/) | Handbook, four reference cards, capstone, no-code workbook, pre- and post-course packs, evaluation forms |
 | [day-01-eda/](day-01-eda/) … [day-05-big-data/](day-05-big-data/) | Teaching guides, task cards, notebooks, solutions and recorded results |
 | [assessments/](assessments/) | Entry diagnostic, final practical and rubric |
 | [presentations/](presentations/) | Five slide plans, the Canva design index and the deck review status |

@@ -18,6 +18,8 @@ The group consists of 20 participants from Saudi Arabia's Ministry of Interior, 
 | 4 | Can we act under uncertainty? | Update a probability, inspect MCMC and critique generated data | A recommendation linking probability, assumptions and action |
 | 5 | What would a pilot need? | Explore partitioned aggregation and Spark, compare advanced models and present proposals | A one-page pilot proposal with an owner and stop condition |
 
+The governance thread described below runs through all five days, attached to the analytical activity of each one.
+
 The advanced ideas stay in the course: trees and forests, tuning, dimensionality reduction, ARIMA, Bayesian inference, MCMC, Spark/MLlib, neural networks and a toy adversarial generator. We teach them through prepared examples and analytical decisions. This is broad practical coverage, not specialist mastery of every method or distributed production engineering.
 
 ## How the room will work
@@ -41,6 +43,21 @@ The entry discussion helps us adjust the support. Daily individual exit answers 
 ## What makes the workshop worth your time
 
 The value is practical: try a technique, change an assumption, compare results and defend an action. The venue does not make these methods uniquely European. Local examples can be used if helpful, but geography is not a teaching objective.
+
+## How this work is governed in Europe
+
+There is one sense in which "how it is done in Europe" has real content, and it is not the examples. A baseline is a baseline anywhere. What genuinely differs is the governance around public-sector analysis, and for people who work in a ministry that is substantive rather than decorative.
+
+We cover four things, alongside the practical work rather than as a separate lecture:
+
+- **Which rules apply to which processing.** General data protection is not the whole picture; processing for criminal-justice purposes sits under a separate regime, and AI systems are treated by risk tier. Several uses relevant to an interior ministry are named explicitly, and a few are not permitted at all.
+- **The principles that shape a project's design.** Purpose stated before collection, minimisation, necessity and proportionality, and being able to explain a decision to the person it was made about. These constrain what you build more than any single article does.
+- **Two European failures.** A Dutch fraud-scoring system stopped by a court in 2020, and a benefits risk model that wrongly accused tens of thousands of families and brought down a government in 2021. Both are studied for what went wrong analytically, not as compliance anecdotes.
+- **One distinction worth carrying home.** European practice treats allocating resources very differently from scoring individuals, even where the statistics are nearly identical. Forecasting how many calls arrive on Friday is planning. Scoring which residents will offend is not.
+
+This is a framework and its reasoning, not legal advice and not a description of your own national law. The tutor is not a lawyer and says so on the first morning. What transfers to your context is your judgement.
+
+The material is in [european-practice/](european-practice/) for the tutor and [the participant reference](participant/EUROPEAN_PRACTICE.md) for the room. It replaces syntax teaching this group does not need rather than extending the timetable.
 
 Five additional executable experiments address case-mix reversal, validation-based cost thresholds, rolling-origin backtesting, sensitivity of Bayesian decisions and monitoring triggers. Synthetic cases are sufficient for these objectives; a real-data case is optional, not a missing requirement for this delivery.
 

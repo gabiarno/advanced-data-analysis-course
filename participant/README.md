@@ -12,6 +12,7 @@ Start with [the illustrated handbook](../dist/participant-handbook.pdf). It foll
 | [Capstone](CAPSTONE.md) | Develop your one-page proposal through the week |
 | [Pre-course pack](PRE_COURSE_PACK.md) | Prepare the laptop and bring a generalised problem |
 | [Post-course pack](POST_COURSE_PACK.md) | Plan what to try after the workshop |
+| [European practice](EUROPEAN_PRACTICE.md) | See how European public bodies govern this work, and two cases where it failed |
 | [English–Arabic glossary](GLOSSARY_EN_AR.md) | Draft terminology for interpreter validation |
 | [Paper fallback](NO_CODE_WORKBOOK.md) | Continue the analysis if a laptop is unavailable |
 

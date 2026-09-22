@@ -28,6 +28,7 @@ SECTIONS = [
     "CAPSTONE.md",
     "CHEATSHEET_METHODS.md",
     "CHEATSHEET_PYTHON.md",
+    "EUROPEAN_PRACTICE.md",
     "GLOSSARY_EN_AR.md",
 ]
 
