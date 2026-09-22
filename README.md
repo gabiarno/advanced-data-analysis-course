@@ -16,6 +16,10 @@ English course materials for five days of in-person delivery in Genoa: 20 partic
 
 **Building the slides?** [The presentation index](presentations/README.md) lists the Canva designs for Days 1, 2, 3 and 5, the generated decks for all five days, and what still needs reviewing.
 
+## Practical workshop format
+
+Use [fifteen activity cards](workshops/ACTIVITY_CARDS.md) and [five executable experiments](workshops/experiments.ipynb) for varied pair work, peer review, role-play and incident analysis. The revised schedule protects180 minutes daily for workshops and peer review. Geography is not a teaching objective; synthetic cases are sufficient.
+
 ## What is here
 
 | | |
@@ -62,7 +66,7 @@ The illustrated handbook is a 28-page PDF. Its Markdown and self-contained HTML 
 
 [Execution evidence](KERNEL_VALIDATION.md) records successful code execution and the remaining Jupyter startup check. [Technical references](REFERENCES.md) support further preparation.
 
-Still open: Day 4 has no Canva design, the Canva decks need their slide-by-slide review and three of them do not match their plans' slide counts, the generated decks need their visual placeholders replaced, the no-code route now includes text/time availability, posterior decisions, synthetic-data critique and production-readiness activities; advanced executable additions in [the curriculum review](CURRICULUM_REVIEW.md) remain a separate backlog, and no real dataset is included. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
+Still open: Day 4 has no Canva design, the Canva decks need their slide-by-slide review and three of them do not match their plans' slide counts, the generated decks need their visual placeholders replaced, the no-code route now includes text/time availability, posterior decisions, synthetic-data critique and production-readiness activities; advanced executable additions in [the curriculum review](CURRICULUM_REVIEW.md) remain a separate backlog, and synthetic datasets are intentionally retained for this workshop. Teaching and interpretation timing, audience fit, and classroom setup still require rehearsal.
 
 The provisional schedule includes two 15-minute breaks within each five-hour day. Confirm whether the organiser instead requires five contact hours, excluding breaks. Existing Python use is confirmed; specific modelling experience and interpretation mode still need checking. Advanced coverage requires an agreed scope and instructor rehearsal.
 

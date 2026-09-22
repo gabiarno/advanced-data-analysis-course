@@ -1,6 +1,6 @@
 # Conversational workshop update
 
-Prepared against repository commit `9a57450def87e66b6229d65b07cf46716b637fcc`.
+Prepared against repository commit `6b9e37689ffad8d479e22a81163f3c613af05f47`.
 
 ## The current audience
 
@@ -28,8 +28,12 @@ Edit `participant/handbook_content.json` for the participant edition. The visual
 
 All 28 PDF pages were rendered and visually reviewed, with full-size checks of dense charts. Text bounds stay within each page. Schedule totals, selected calculations, posterior tail probability, HTML image embedding and internal anchors were checked. The handbook's text and PDF are generated from the same content source.
 
-Original notebook code and PPTX files were not changed or rerun. Existing slide review tasks remain open. A licensed real-data activity remains open. Classroom timing and interpretation need rehearsal. INE and datos.gob.es are cited as documented reference points; the proposed working routine is not presented as universal European practice.
+Original notebook code and PPTX files were not changed or rerun. Existing slide review tasks remain open. A real-data activity is optional, not required for this delivery. Classroom timing and interpretation need rehearsal. Regional reference points are optional examples; they are not the focus of the current programme.
 
 ## Applying a downloaded update archive
 
 The archive contains changed and new files, not a complete clone. Open a fresh checkout of the repository, compare its current version with the baseline above, then copy the reviewed files into matching paths. Preserve any later changes made by others. Commit the result after review. The archive does not include authentication information and does not change repository history by itself.
+
+## Participation update
+
+The current schedule protects 180 minutes daily for workshops and peer review, with fifteen varied activity cards and five executable experiments. Real-data and regional context are optional. The new notebook's eight code cells were executed sequentially in a fresh Python namespace; learner Jupyter startup remains an environment check.

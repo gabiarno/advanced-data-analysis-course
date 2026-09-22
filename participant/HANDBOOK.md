@@ -26,11 +26,11 @@ Your notes: __________________________________________________
 
 *OUR WEEK*
 
-Every day includes discussion, two substantial practical sessions and time to develop your proposal. Day 5 brings the work together.
+Every day protects180 minutes for workshops and peer review, alongside short demonstrations and discussions. You will work in pairs and groups, write individual predictions and exchange feedback.
 
-The five-hour day includes two fifteen-minute breaks. Explanations and reporting allow time for interpretation. When someone is speaking or interpreting, give them the room; there will be time to test the code afterwards.
+The five-hour day includes two fifteen-minute breaks. A50-minute workshop includes instructions and interpretation, investigation and a written result. We do not add translation time on top.
 
-The core route uses the existing Python notebooks. If a laptop fails, use the saved results and keep working on the same analytical question. The paper-only workbook is a backup, not a lower standard of reasoning.
+The core route uses prepared Python notebooks. The additional experiment notebook deepens selected techniques. If a laptop fails, use saved outputs and keep working on the analytical question. Workshops replace lecture time; they are not extra homework.
 
 | Day | The question | What you take away |
 | --- | --- | --- |
@@ -42,23 +42,23 @@ The core route uses the existing Python notebooks. If a laptop fails, use the sa
 
 > Your contribution can be a useful calculation, a good question or a well-supported disagreement.
 
-## What can we learn from practice in Spain?
+## Try it. Change it. Challenge it.
 
-*A WORKING METHOD, WITH LOCAL REFERENCE POINTS*
+*MORE THAN A WORKING NOTEBOOK*
 
-There is no single way that every Spanish or European team works. Two documented reference points are helpful: Spain's INE describes its commitment to a European statistical quality framework; datos.gob.es publishes guidance on documenting and improving open data. See the reference page for the original sources.
+The point of coming together is to add useful techniques and sharpen the way you work. Bring a familiar analytical problem and discover a different way to investigate it.
 
-Our workshop translates that quality emphasis into a proposed team routine. Agree what a measure means. Make the analysis repeatable. Let a colleague challenge the result. Explain what remains uncertain. Record who will act and what evidence would change the decision.
+You will meet the material in different ways: predict a result before running it, repair a chart, exchange ambiguous messages, negotiate error costs, investigate a failing simulation and respond to a pilot incident. A partner will challenge your assumptions before you present the conclusion.
 
-For a public-service team, a useful case might concern appointment capacity, facilities maintenance, processing times or routing service requests. Start with a generalised problem; we do not need operational records to discuss its design.
+Five extra experiments go beyond the prepared examples: compare teams under a common workload mix, choose thresholds using validation costs, backtest several forecast origins, test whether assumptions change an action and detect a monitoring trigger.
 
-The numerical classroom datasets are synthetic. The Spanish sources are examples of documented practice, not the source of our teaching data.
+Use workshops/experiments.ipynb for these synthetic cases. They are separate from the original notebook datasets. All the information you need is supplied, so you can focus on the technique and the assumptions behind it.
 
-![Proposed workshop routine. Adapt the ownership and review stages to your organisation.](../dist/handbook-assets/review.png)
+![Our workshop rhythm: investigate, compare, challenge and explain.](../dist/handbook-assets/review.png)
 
-Proposed workshop routine. Adapt the ownership and review stages to your organisation.
+Our workshop rhythm: investigate, compare, challenge and explain.
 
-> Discuss: Which step already works well in your team? Which step is often rushed?
+> What will you try differently in your next analysis? Choose a technique, not a tool name.
 
 ## Before we trust the dashboard
 
@@ -122,11 +122,11 @@ Your notes: __________________________________________________
 
 Open day-01-eda/student.ipynb. Use the worked notebook when you need a syntax reminder; explain the operation you borrow.
 
-Lab A · 40 minutes. Audit the table before editing. Record the raw count, duplicates, missing fields and invalid quantities. Agree your cleaning rules and justify them.
+Lab A · 50 minutes. Audit the table before editing. Record the raw count, duplicates, missing fields and invalid quantities. Agree your cleaning rules and justify them.
 
-Lab B · 45 minutes. Apply the rules, calculate revenue and create one labelled chart. Compare mean and median. Run a clearly labelled sensitivity check for the bulk order.
+Lab B · 50 minutes. Apply the rules, calculate revenue and create one labelled chart. Compare mean and median. Run a clearly labelled sensitivity check for the bulk order.
 
-Lab C · 50 minutes. In your reporting group, write a briefing and let another pair challenge it. Then choose your capstone decision and owner.
+Lab C · 60 minutes. Predict and investigate the case-mix reversal in workshops/experiments.ipynb. Compare teams at a common workload mix, write a briefing and choose your capstone decision.
 
 Stretch if you finish early: identify a plausible way the ranking could change without any calculation being wrong. Explain what extra information would settle it.
 
@@ -195,15 +195,15 @@ Original classifier test: 100 synthetic routes. TN 55, FP 2, FN 9, TP 34.
 
 *DAY 2 | GUIDED EXPERIMENTS*
 
-Open day-02-machine-learning/student.ipynb. The examples run before the pair challenges; use them as a starting point.
+Open day-02-machine-learning/student.ipynb, then use the Day2 section of workshops/experiments.ipynb for the deeper challenge.
 
-Lab A · 40 minutes. Reproduce the regression and baseline results. Explain MAE in minutes and audit the input features for decision-time availability.
+Lab A · 50 minutes. Predict which method will win, run the regression and baseline, then audit feature availability.
 
-Lab B · 45 minutes. Inspect candidate selection using validation results. Read the final confusion matrix and compare the supplied error costs. Do not tune against the final test.
+Lab B · 50 minutes. Negotiate error costs with your partner using the original classification results. Show how changing the assumptions can reverse the decision.
 
-Lab C · 50 minutes. Compare tree depths 1, 3 and 8 on training folds only. Record training accuracy and validation F1, recognising they are different measures. Join the guided clustering/PCA discussion and add the method, target and baseline to your capstone.
+Lab C · 60 minutes. Select an operating threshold using validation data in the new experiment. Fix it before final evaluation. Another pair reviews your split, baseline and cost assumptions. Keep the guided clustering/PCA discussion to ten minutes.
 
-A tree makes successive decisions; a forest combines randomised trees. Neither family always wins. Clusters need stability and a useful interpretation. PCA retains variation, not necessarily business relevance.
+The original tree-depth experiment remains a stretch option. Clusters need stability and useful interpretation; PCA retains variation, not necessarily business relevance.
 
 > Stretch: design a split for repeated visits to the same sites over several months. What overlap would make the result too optimistic?
 
@@ -237,7 +237,7 @@ Rolling-origin evaluation asks the same practical question at several historical
 
 For each origin, refit the relevant preprocessing and model using the past, evaluate the next window and record the errors. Look at when performance changes, not only an overall mean.
 
-Today the notebook challenge uses the last fourteen training days as a validation window. The diagram below explains a broader rolling design; it is not a claim that the original notebook executes the full backtest automatically.
+The original notebook uses a fourteen-day development window. The added Day3 experiment now executes four rolling origins, selects on development errors and checks a separate final fourteen-day holdout. The diagram illustrates the general pattern.
 
 ![Schematic expanding-window evaluation. Preserve a separate final holdout after development choices.](../dist/handbook-assets/rolling.png)
 
@@ -273,11 +273,11 @@ Embeddings and language models offer other representations and capabilities, but
 
 Open day-03-time-series-nlp/student.ipynb.
 
-Lab A · 40 minutes. Compare the three predeclared forecast errors. Explain the time boundary and reserve training-only data for experiments.
+Lab A · 50 minutes. Compare the three predeclared forecast errors. Explain the time boundary and reserve training-only data for experiments.
 
-Lab B · 45 minutes. Run the text pipeline, inspect its test messages and write two ambiguous examples. Record what the output misses and when human review is needed.
+Lab B · 50 minutes. Run the text pipeline, inspect its test messages and write two ambiguous examples. Record what the output misses and when human review is needed.
 
-Lab C · 50 minutes. Compare last-value and weekly forecasts on the fourteen-day development window. Then discuss the separate teaching counts below and update the capstone's evaluation split.
+Lab C · 60 minutes. Run the four-origin backtest in workshops/experiments.ipynb. Inspect individual windows, choose on validation and evaluate once on the final window. Then discuss the separate teaching counts below and update the capstone's evaluation split.
 
 Wednesday's completed counts cannot be an input to a forecast issued Wednesday morning. Tuesday's counts can only be used if they were available before the cutoff. A change in the classifier may change category counts without changing the underlying workload.
 
@@ -354,11 +354,11 @@ Two different questions: uncertainty about a rate, and variability in a future b
 
 Open day-04-bayesian-generative/student.ipynb.
 
-Lab A · 40 minutes. Run the exact update. Compare Beta(1,1) with the original prior using the same observations. Then inspect sixteen defects in two hundred with the original prior. Compare posterior means and interval widths.
+Lab A · 50 minutes. Run the exact update. Compare Beta(1,1) with the original prior using the same observations. Then inspect sixteen defects in two hundred with the original prior. Compare posterior means and interval widths.
 
-Lab B · 45 minutes. Run or inspect the four-chain sampler. Compare with the exact distribution. Explain what the trace and autocorrelation tell you. The tiny-proposal experiment is an extension, not a mandatory coding test.
+Lab B · 50 minutes. Run or inspect the four-chain sampler. Compare with the exact distribution. Explain what the trace and autocorrelation tell you. The tiny-proposal experiment is an extension, not a mandatory coding test.
 
-Lab C · 50 minutes. Compare the future-count distribution with the rate's posterior. Inspect generated durations. Add uncertainty, an action rule and the responsible owner to your capstone.
+Lab C · 60 minutes. Use the added sensitivity experiment to compare priors and action triggers. Hold a short decision hearing with your group. Review the original future-count and generated-duration examples, then add uncertainty and an owner to the capstone.
 
 Keep the units visible. A probability of exceeding a rate threshold is not an expected number of defects.
 
@@ -410,9 +410,9 @@ A model becomes useful inside a process. Someone must know when the input is rea
 
 Define a representative evaluation and a baseline. Specify which errors matter, including performance on relevant groups or service conditions. Agree review frequency, a measurable stop rule and a return to the existing process.
 
-Lab A · 40 minutes. Run the Spark SQL and DataFrame aggregation if the environment is ready; otherwise use the offline activity. Reconcile the results and explain the memory implications.
+Lab A · 50 minutes. Run the Spark SQL and DataFrame aggregation if the environment is ready; otherwise use the offline activity. Reconcile the results and explain the memory implications.
 
-Lab B · 45 minutes. Compare the MLlib result with its baseline, inspect the neural/GAN evidence and draft a monitored pilot. Keep optional training short enough to leave time for the decision.
+Lab B · 50 minutes. Investigate the weekly monitoring incident in the added notebook. Name an action and an owner, then inspect the MLlib/neural/GAN evidence. Draft a monitored pilot rather than spend the session waiting for optional training.
 
 | Pilot detail | Your agreement |
 | --- | --- |
@@ -430,7 +430,7 @@ Choose a generalised problem from your work or a supplied scenario: appointment 
 
 Use six headings: decision, method, data, evaluation, limitation and next step. Write enough for another person to understand what is proposed and what is not yet known.
 
-On Day 5, use fifteen minutes to finish the page. Five groups then have seven minutes each: three speaking, three interpretation and one feedback. Each person keeps an individual page even if the group presents one shared scenario.
+On Day 5, use twenty minutes to finish the page. Five groups then have seven minutes each: three speaking, three interpretation and one feedback. Use the final five minutes for written peer feedback. Each person keeps an individual page even if the group presents one shared scenario.
 
 Avoid “collect better data” as a next step. Say who will request which definition, sample or permission, from whom and by when.
 
@@ -515,10 +515,8 @@ This handbook's diagrams are original teaching illustrations. Numerical charts u
 
 The technical reference preserves the earlier handbook's more detailed explanations. The English–Arabic glossary remains a draft for interpreter validation. For formal policies or legal questions, consult the appropriate current organisational source.
 
-> Sources checked 21 September 2026. The workshop routine is a teaching proposal, not a claim that all Spanish or European organisations work identically.
+For varied workshop formats, use workshops/ACTIVITY_CARDS.md. The added experiments and recorded results are in workshops/. The reproducible synthetic cases let you isolate assumptions and compare approaches.
 
-- [INE | Quality framework](https://www.ine.es/dyngs/MYP/es/index.htm?cid=35)
-
-- [datos.gob.es | Practical guide to open-data quality](https://datos.gob.es/es/documentacion/guia-practica-para-la-mejora-de-la-calidad-de-datos-abiertos)
+> Choose the technique that improves your analysis, test its assumptions and explain what you learned.
 
 - [Course repository](https://github.com/gabiarno/advanced-data-analysis-course)

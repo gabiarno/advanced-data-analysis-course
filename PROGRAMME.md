@@ -26,9 +26,11 @@ Ten pairs work at laptops. One person operates while the other checks and explai
 
 The core route uses Python. Saved outputs and the paper workbook keep the analysis moving if an environment fails. There is no need to turn a classroom problem into a long live debugging session.
 
-Each day is 300 minutes including two fifteen-minute breaks. The schedule includes consecutive interpretation: opening 20; explanation 30; Lab A 40; debrief 15; break 15; explanation 30; Lab B 45; break 15; Lab C/project 50; reports 25; close 15. That gives 270 contact minutes daily, or 22.5 contact hours across the week. If the contract requires 25 contact hours, add 30 teaching minutes daily and place breaks outside them.
+Each day lasts 300 minutes including two 15-minute breaks. Workshops A/B/C occupy 50/50/60 minutes, with 20 additional minutes for peer review: 180 protected practical minutes. Short demonstrations total 30 minutes including interpretation. The remaining 60 minutes cover warm-up, debrief, reporting and exit work. All timings include interpretation. Follow the exact schedule in the activity cards.
 
-On Day 5, the final 90 minutes are:15 to finish proposals;35 for five interpreted group presentations;20 for the individual practical;5 for collection/debrief;15 for feedback and next steps. Each presentation has three minutes speaking, three interpretation and one feedback. Each participant keeps an individual written proposal.
+Day 5 uses Workshop C for 20 minutes of final preparation,35 for five interpreted presentations and 5 for peer feedback. Minutes 270–290 are the individual practical; 290–300 are feedback and closing. Each participant keeps an individual written proposal.
+
+This provides 22.5 contact hours across the week. If 25 are required, place breaks outside five teaching hours and extend the practice blocks by 30 minutes daily.
 
 ## What good work looks like
 
@@ -36,14 +38,16 @@ You can explain the data-quality decisions, select a method for a specific quest
 
 The entry discussion helps us adjust the support. Daily individual exit answers and the final practical check judgement rather than memorised syntax. The capstone develops across the week: decision, method, data, evaluation, limitation and next step. Assessment is formative; the course is not an accredited competency certification.
 
-## A practical view of working in Spain and Europe
+## What makes the workshop worth your time
 
-We will use documented examples from INE and datos.gob.es as reference points for quality, documentation and reuse. Our workshop routine is to agree definitions, make analysis repeatable, invite a colleague's review and record the decision. This is a proposed working method, not a claim that every organisation in Spain or Europe works identically. Participants can compare it with their own processes and decide what transfers.
+The value is practical: try a technique, change an assumption, compare results and defend an action. The venue does not make these methods uniquely European. Local examples can be used if helpful, but geography is not a teaching objective.
+
+Five additional executable experiments address case-mix reversal, validation-based cost thresholds, rolling-origin backtesting, sensitivity of Bayesian decisions and monitoring triggers. Synthetic cases are sufficient for these objectives; a real-data case is optional, not a missing requirement for this delivery.
+
+Use [the activity cards](workshops/ACTIVITY_CARDS.md) for fifteen varied workshops and [the experiment notebook](workshops/experiments.ipynb) for the additional techniques. They replace parts of existing labs rather than extending the timetable.
 
 ## Before the first morning
 
-Bring a laptop with the course environment tested, or arrange to share one with your partner. Bring a generalised work problem rather than confidential records. The tutor will have local saved outputs and a paper fallback. Confirm interpretation mode and review the draft glossary with the interpreter.
+Bring a tested Python environment or arrange to share one. Bring a generalised analytical problem rather than confidential records. The tutor has worked examples and recorded results available as a fallback. Confirm interpretation mode and rehearse the pace.
 
-The five-hour assumption and presentation pace need rehearsal. Data are synthetic; a licensed real-data exercise remains a separate open item. Existing slide decks retain their visual-review tasks and have not been rewritten by this handbook update.
-
-Read the [participant handbook](participant/HANDBOOK.md), [illustrated PDF](dist/participant-handbook.pdf) and [complete tutor script](instructor/TUTOR_SCRIPT.md). The script is the delivery authority for this confirmed audience; the older runbooks remain supporting references.
+Read the [participant handbook](participant/HANDBOOK.md), [illustrated PDF](dist/participant-handbook.pdf), [tutor script](instructor/TUTOR_SCRIPT.md) and [activity cards](workshops/ACTIVITY_CARDS.md). Existing slide files still need their separate visual review.

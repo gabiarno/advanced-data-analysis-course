@@ -6,6 +6,10 @@
 
 Reviewed on 2026-09-21 against the LPC Training brochure *Advanced Data Analysis Techniques* (5 days, category "Data Science & Visualisation"). This document records what the brochure commits to, where the repository already delivers it, what is missing, and what should be added. It is a planning document for the instructor and the organiser, not classroom material.
 
+## Current scope correction
+
+The organiser/user has clarified the aim: useful techniques beyond the basics, with varied participatory workshops. Regional context and real datasets are optional examples, not requirements for this delivery. Treat the original real-data gap and geographic framing below as historical review notes. The current programme and workshop cards take precedence.
+
 ## Summary judgement
 
 The five day folders are substantively complete and unusually careful: every method is paired with a baseline, an evaluation strategy and a stated limitation. That discipline is the strongest asset here and should not be diluted.
